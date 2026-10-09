@@ -11,3 +11,11 @@ venv/
 !tests/**/*.html
 rapor.*
 .DS_Store
+
+# Masaüstü uygulaması: derleme çıktıları hariç kaynakları dahil et
+desktop/node_modules/
+desktop/dist/
+desktop/release/
+!desktop/index.html
+!desktop/build/
+!desktop/build/**

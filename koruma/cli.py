@@ -57,6 +57,8 @@ def build_parser() -> argparse.ArgumentParser:
                    help="Bu önem düzeyi veya üstünde bulgu varsa çıkış kodu 2 döndür (CI için)")
     p.add_argument("-q", "--quiet", action="store_true", help="Tarama ilerleme çıktısını gösterme")
     p.add_argument("-y", "--yes", action="store_true", help="Yetki onayını otomatik kabul et")
+    p.add_argument("--progress-json", action="store_true",
+                   help="İlerlemeyi stderr'e '@@KORUMA@@{json}' satırları olarak yaz (arayüz için)")
     p.add_argument("--version", action="version", version=f"Koruma {__version__}")
     return p
 
@@ -77,7 +79,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     if not args.quiet:
-        print(BANNER)
+        print(BANNER, file=sys.stderr)
 
     # Yetki onayı: aracın yalnızca kendi sitenizde kullanılması içindir.
     if not args.yes:
@@ -101,7 +103,18 @@ def main(argv: list[str] | None = None) -> int:
             print(f"Geçerli kontroller: {', '.join(ALL_CHECKS)}", file=sys.stderr)
             return 1
 
-    log = (lambda *a, **k: None) if args.quiet else print
+    # İlerleme bilgisi her zaman stderr'e gider; stdout yalnızca rapor içindir
+    # (böylece JSON/HTML çıktısı bozulmaz ve Electron temiz ayrıştırabilir).
+    if args.quiet:
+        log = lambda *a, **k: None
+    elif args.progress_json:
+        def log(*a, **k):
+            import json as _json
+            print("@@KORUMA@@" + _json.dumps({"msg": " ".join(str(x) for x in a)},
+                                             ensure_ascii=False), file=sys.stderr, flush=True)
+    else:
+        def log(*a, **k):
+            print(*a, **{**k, "file": sys.stderr, "flush": True})
 
     try:
         result = scan(

@@ -27,6 +27,15 @@ Tüm testler **yıkıcı değildir**: hiçbir veriyi silmez/değiştirmez, yaln�
 sunucunun yanıtını okur. Varsayılan olarak `logout`, `delete`, `sil` gibi
 bağlantılara girilmez ve POST formları yalnızca `--test-post-forms` ile test edilir.
 
+## 🖥️ Masaüstü uygulaması (Electron + React)
+
+Komut satırını kullanmak istemiyorsanız, `desktop/` klasöründe tam bir
+**Windows/Linux masaüstü uygulaması** vardır: bir kutuya sitenizin adresini
+yazıp **Açıkları Tara** düğmesine basmanız yeterli. Kurulum, çalıştırma ve
+`.exe` paketleme için bkz. [`desktop/README.md`](desktop/README.md).
+
+![Masaüstü arayüzü](scanner-ui.png)
+
 ## Kurulum
 
 ```bash

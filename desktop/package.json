@@ -1,0 +1,52 @@
+{
+  "name": "koruma-desktop",
+  "version": "0.1.0",
+  "description": "Koruma - Kendi web sitenizdeki güvenlik açıklarını bulan masaüstü uygulaması",
+  "author": "Koruma",
+  "license": "MIT",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"wait-on tcp:5123 && cross-env KORUMA_DEV=1 electron .\"",
+    "build:ui": "vite build",
+    "start": "npm run build:ui && electron .",
+    "dist:win": "npm run build:ui && electron-builder --win --x64",
+    "dist:linux": "npm run build:ui && electron-builder --linux",
+    "dist:dir": "npm run build:ui && electron-builder --dir"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "concurrently": "9.1.2",
+    "cross-env": "7.0.3",
+    "electron": "33.3.1",
+    "electron-builder": "25.1.8",
+    "vite": "6.0.7",
+    "wait-on": "8.0.1"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "build": {
+    "appId": "com.koruma.desktop",
+    "productName": "Koruma",
+    "directories": { "output": "release", "buildResources": "build" },
+    "files": ["electron/**/*", "dist/**/*", "package.json"],
+    "extraResources": [
+      { "from": "../koruma", "to": "engine/koruma", "filter": ["**/*", "!**/__pycache__/**"] }
+    ],
+    "win": {
+      "target": [{ "target": "nsis", "arch": ["x64"] }],
+      "icon": "build/icon.ico",
+      "artifactName": "Koruma-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "language": "1055"
+    },
+    "linux": {
+      "target": ["AppImage"],
+      "category": "Security"
+    }
+  }
+}
