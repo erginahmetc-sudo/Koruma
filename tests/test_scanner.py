@@ -221,7 +221,7 @@ def test_secret_scanner_breadth():
     # Not: sahte token'lar parça parça birleştirilir; depoda gerçek sır deseni
     # oluşmasın (GitHub gizli tarama koruması) diye.
     cases = [
-        "AKIA" + "9" * 16,
+        "AKIA" + "A" * 16,
         "ghp_" + "a" * 36,
         "sk_live_" + "b" * 30,
         "xoxb-" + "1" * 11 + "-" + "2" * 11 + "-" + "x" * 16,
