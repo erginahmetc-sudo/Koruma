@@ -51,10 +51,12 @@
         "/\\*!?[\\s\\S]{0,40}Bootstrap v(§§version§§)"
       ],
       "vulns": [
+        {"atOrAbove": "1.4.0", "below": "3.4.2", "ids": ["CVE-2024-6485", "CVE-2025-1647"], "severity": "MEDIUM", "summary": "carousel/button bileşenlerinde XSS."},
         {"below": "3.4.1", "ids": ["CVE-2019-8331"], "severity": "MEDIUM", "summary": "data-template/tooltip/popover aracılığıyla XSS."},
-        {"below": "3.4.0", "ids": ["CVE-2018-14042", "CVE-2018-14040", "CVE-2018-14041"], "severity": "MEDIUM", "summary": "collapse/scrollspy/data-target ile XSS."},
+        {"below": "3.4.0", "ids": ["CVE-2018-14042", "CVE-2018-14040", "CVE-2018-20676", "CVE-2018-20677"], "severity": "MEDIUM", "summary": "collapse/scrollspy/data-target/affix ile XSS."},
+        {"atOrAbove": "3.0.0", "below": "3.4.0", "ids": ["CVE-2016-10735"], "severity": "MEDIUM", "summary": "data-target ile XSS."},
         {"atOrAbove": "4.0.0", "below": "4.3.1", "ids": ["CVE-2019-8331"], "severity": "MEDIUM", "summary": "data-template ile XSS."},
-        {"atOrAbove": "4.0.0", "below": "4.1.2", "ids": ["CVE-2018-14041"], "severity": "MEDIUM", "summary": "data-target ile XSS."}
+        {"atOrAbove": "4.0.0", "below": "4.1.2", "ids": ["CVE-2018-14042", "CVE-2018-14041", "CVE-2018-14040"], "severity": "MEDIUM", "summary": "data-target/tooltip ile XSS."}
       ]
     },
     "lodash": {
@@ -78,9 +80,11 @@
         "//!\\s*moment\\.js[\\s\\S]{0,60}?version[\"']?\\s*[:=]\\s*[\"'](§§version§§)[\"']"
       ],
       "vulns": [
-        {"below": "2.29.4", "ids": ["CVE-2022-31129"], "severity": "HIGH", "summary": "Uzun tarih dizelerinde ReDoS (hizmet reddi)."},
+        {"atOrAbove": "2.18.0", "below": "2.29.4", "ids": ["CVE-2022-31129"], "severity": "HIGH", "summary": "Uzun tarih dizelerinde ReDoS (hizmet reddi)."},
         {"below": "2.29.2", "ids": ["CVE-2022-24785"], "severity": "HIGH", "summary": "Yerelleştirme (locale) yolu üzerinden dizin geçişi (path traversal)."},
-        {"below": "2.19.3", "ids": ["CVE-2017-18214"], "severity": "MEDIUM", "summary": "moment() ile ReDoS."}
+        {"below": "2.19.3", "ids": ["CVE-2017-18214"], "severity": "HIGH", "summary": "moment() ile ReDoS."},
+        {"below": "2.15.2", "ids": [], "severity": "MEDIUM", "summary": "Ayrıştırmada ReDoS."},
+        {"below": "2.11.2", "ids": ["CVE-2016-4055"], "severity": "MEDIUM", "summary": "duration ayrıştırmada ReDoS."}
       ]
     },
     "handlebars": {
@@ -117,6 +121,77 @@
         {"below": "1.6.0", "ids": ["CVE-2023-45857"], "severity": "MEDIUM", "summary": "XSRF-TOKEN'ın çapraz kökene sızması (SSRF/kimlik sızıntısı)."},
         {"below": "0.21.2", "ids": ["CVE-2021-3749"], "severity": "HIGH", "summary": "trim ile ReDoS."},
         {"below": "0.21.1", "ids": ["CVE-2020-28168"], "severity": "MEDIUM", "summary": "Proxy atlatma ile SSRF."}
+      ]
+    },
+    "underscore": {
+      "extractors": [
+        "/(§§version§§)/underscore(\\.min)?\\.js",
+        "underscore[.-](§§version§§)(\\.min)?\\.js",
+        "//[\\s]*Underscore\\.js (§§version§§)"
+      ],
+      "vulns": [
+        {"atOrAbove": "1.3.2", "below": "1.12.1", "ids": ["CVE-2021-23358"], "severity": "HIGH", "summary": "template() ile kod enjeksiyonu (arbitrary code execution)."}
+      ]
+    },
+    "vue": {
+      "extractors": [
+        "/vue@(§§version§§)/dist/vue",
+        "/(§§version§§)/vue(\\.min|\\.global|\\.runtime)?\\.js",
+        "vue[.-](§§version§§)(\\.min)?\\.js",
+        "/\\*!?[\\s\\S]{0,20}Vue\\.js v(§§version§§)"
+      ],
+      "vulns": [
+        {"below": "2.6.11", "ids": [], "severity": "MEDIUM", "summary": "serialize-javascript bağımlılığı üzerinden XSS/kod enjeksiyonu."},
+        {"below": "2.5.17", "ids": [], "severity": "MEDIUM", "summary": "SSR v-bind ile XSS."},
+        {"below": "2.4.3", "ids": [], "severity": "MEDIUM", "summary": "XSS vektörü."}
+      ]
+    },
+    "react-dom": {
+      "extractors": [
+        "/(§§version§§)/react-dom(\\.min|\\.production\\.min|\\.development)?\\.js",
+        "react-dom[.-](§§version§§)(\\.min)?\\.js"
+      ],
+      "vulns": [
+        {"below": "16.4.2", "ids": ["CVE-2018-6341"], "severity": "MEDIUM", "summary": "Sunucu tarafı render'da (SSR) XSS."}
+      ]
+    },
+    "ckeditor": {
+      "extractors": [
+        "/(§§version§§)/ckeditor(\\.min)?\\.js",
+        "ckeditor[.-](§§version§§)(\\.min)?\\.js"
+      ],
+      "vulns": [
+        {"atOrAbove": "4.0.0", "below": "4.21.0", "ids": ["CVE-2023-28439"], "severity": "MEDIUM", "summary": "Iframe Dialog/Media Embed eklentisinde XSS."},
+        {"atOrAbove": "4.0.0", "below": "4.17.0", "ids": ["CVE-2021-41164", "CVE-2021-41165"], "severity": "MEDIUM", "summary": "Çekirdekte XSS."},
+        {"atOrAbove": "4.0.0", "below": "4.16.2", "ids": ["CVE-2021-37695", "CVE-2021-32809", "CVE-2021-32808"], "severity": "MEDIUM", "summary": "Clipboard/Widget/Fake Objects ile XSS."},
+        {"atOrAbove": "4.0.0", "below": "4.11.0", "ids": ["CVE-2018-17960"], "severity": "MEDIUM", "summary": "XSS."}
+      ]
+    },
+    "ckeditor5": {
+      "extractors": [
+        "CKEDITOR_VERSION=[\"'](§§version§§)[\"']"
+      ],
+      "vulns": [
+        {"atOrAbove": "40.0.0", "below": "43.1.1", "ids": ["CVE-2024-45613"], "severity": "MEDIUM", "summary": "Clipboard ile XSS."},
+        {"below": "35.0.0", "ids": ["CVE-2022-31175"], "severity": "MEDIUM", "summary": "Markdown/HTML embed ile XSS."}
+      ]
+    },
+    "bootstrap-select": {
+      "extractors": [
+        "/(§§version§§)/bootstrap-select(\\.min)?\\.js",
+        "bootstrap-select[.-](§§version§§)(\\.min)?\\.js"
+      ],
+      "vulns": [
+        {"below": "1.13.6", "ids": ["CVE-2019-20921"], "severity": "MEDIUM", "summary": "title/option içeriği üzerinden XSS."}
+      ]
+    },
+    "flowplayer": {
+      "extractors": [
+        "/(§§version§§)/flowplayer(\\.min)?\\.js",
+        "flowplayer[.-](§§version§§)(\\.min)?\\.js"
+      ],
+      "vulns": [
+        {"below": "5.4.3", "ids": [], "severity": "MEDIUM", "summary": "XSS."}
       ]
     }
   }

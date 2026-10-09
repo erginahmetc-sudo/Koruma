@@ -14,6 +14,7 @@ keywords = ["security", "scanner", "web", "guvenlik", "zafiyet"]
 dependencies = [
     "requests>=2.28",
     "beautifulsoup4>=4.11",
+    "dnspython>=2.3",
 ]
 
 [project.optional-dependencies]

@@ -17,6 +17,7 @@ PAGES = {
         <a href="/item?id=1">Ürün</a>
         <a href="/go?next=/profil">Profil</a>
         <a href="/read?file=notlar.txt">Dosya</a>
+        <a href="/hesap?token=gizli123">Hesap</a>
         <a href="/login">Giriş</a>
         <!-- Kasıtlı olarak savunmasız/eski kütüphaneler ve SRI eksikliği -->
         <script src="https://cdn.example.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -45,6 +46,12 @@ def app(environ, start_response):
     path = environ.get("PATH_INFO", "/")
     qs = parse_qs(environ.get("QUERY_STRING", ""))
 
+    if path == "/":  # Host başlığını mutlak bağlantıya yansıtır (host header injection)
+        fhost = environ.get("HTTP_X_FORWARDED_HOST") or environ.get("HTTP_HOST", "localhost")
+        body = PAGES["/"].replace("</body>",
+                 f'<link rel="canonical" href="http://{escape(fhost)}/"></body>')
+        return _resp(start_response, "200 OK", body)
+
     if path == "/search":  # yansıtılan XSS (kodlanmamış)
         q = qs.get("q", [""])[0]
         return _resp(start_response, "200 OK", f"<html><body>Sonuç: {q}</body></html>")
@@ -63,10 +70,43 @@ def app(environ, start_response):
             return _resp(start_response, "200 OK", "root:x:0:0:root:/root:/bin/bash\n", ctype="text/plain")
         return _resp(start_response, "200 OK", f"<html><body>Dosya: {escape(f)}</body></html>")
 
-    if path == "/go":  # açık yönlendirme
+    if path == "/go":  # açık yönlendirme + CRLF enjeksiyonu taklidi
+        raw_qs = environ.get("QUERY_STRING", "")
         nxt = qs.get("next", ["/"])[0]
-        start_response("302 Found", [("Location", nxt), ("Content-Type", "text/html")])
+        extra = []
+        # Kasıtlı CRLF: 'next' değerindeki ham satır sonlarını başlığa yansıt
+        if "next=" in raw_qs:
+            from urllib.parse import unquote
+            val = unquote(raw_qs.split("next=", 1)[1].split("&", 1)[0])
+            nxt = val.split("\r\n")[0]  # Location yalnızca ilk satır (wsgiref CRLF'i reddeder)
+            for line in val.split("\r\n")[1:]:
+                if ":" in line:
+                    k, _, v = line.partition(":")
+                    extra.append((k.strip(), v.strip()))
+        start_response("302 Found", [("Location", nxt), ("Content-Type", "text/html")] + extra)
         return [b""]
+
+    if path == "/graphql":  # introspection açık
+        import json as _json
+        return _resp(start_response, "200 OK",
+                     _json.dumps({"data": {"__schema": {"queryType": {"name": "Query"}}}}),
+                     ctype="application/json")
+
+    if path == "/crossdomain.xml":  # gevşek çapraz alan politikası
+        return _resp(start_response, "200 OK",
+                     '<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*"/></cross-domain-policy>',
+                     ctype="text/x-cross-domain-policy")
+
+    if path == "/wp-json/wp/v2/users":  # WordPress kullanıcı sayımı
+        import json as _json
+        return _resp(start_response, "200 OK",
+                     _json.dumps([{"id": 1, "name": "Yönetici", "slug": "admin"}]),
+                     ctype="application/json")
+
+    if path == "/hesap":  # oturum çerezi + önbellek kısıtı yok (hassas sayfa)
+        return _resp(start_response, "200 OK",
+                     '<html><body>Hesabım<input type="password" name="p"></body></html>',
+                     headers=[("Set-Cookie", "sessionid=abc123; Path=/")])
 
     if path in PAGES:
         return _resp(start_response, "200 OK", PAGES[path])

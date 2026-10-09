@@ -117,3 +117,50 @@ def test_semver_compare():
     assert semver.lt("3.0.0-rc.1", "3.0.0")
     assert semver.in_range("4.1.0", "4.0.0", "4.3.1", None)
     assert not semver.in_range("4.17.21", None, "4.17.21", None)
+
+
+def test_detects_graphql_introspection(result):
+    assert any("GraphQL" in t for t in titles(result))
+
+
+def test_detects_wordpress_user_enum(result):
+    assert any("kullanıcı sayımı" in t.lower() for t in titles(result))
+
+
+def test_detects_crossdomain_policy(result):
+    assert any("çapraz alan" in t.lower() for t in titles(result))
+
+
+def test_detects_crlf_injection(result):
+    assert any("CRLF" in t for t in titles(result))
+
+
+def test_detects_host_header_injection(result):
+    assert any("Host başlığı" in t for t in titles(result))
+
+
+def test_detects_secret_in_url(result):
+    assert any("hassas parametre" in t.lower() for t in titles(result))
+
+
+def test_detects_cache_on_sensitive_page(result):
+    assert any("önbellekleme" in t.lower() for t in titles(result))
+
+
+def test_detects_more_js_libraries():
+    from koruma.checks import components
+    db = components._load_db()
+    assert len(db) >= 15
+    # Vue sürüm tespiti
+    v = components._detect_version("https://cdn/vue@2.5.0/dist/vue.min.js", db["vue"])
+    assert v == "2.5.0" and components._match_vulns(v, db["vue"])
+
+
+def test_dns_email_skips_ip(server):
+    # IP adresli hedefte DNS/e-posta kontrolü sessizce atlanır
+    from koruma.checks import dns_email
+    from koruma.checks import Context
+    from koruma.http import Client
+    from koruma.crawler import CrawlResult
+    ctx = Context(client=Client(server), base_url=server, crawl=CrawlResult())
+    assert dns_email.run(ctx) == []

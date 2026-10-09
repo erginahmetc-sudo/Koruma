@@ -24,7 +24,7 @@ istek atar (bkz. ana depodaki `README.md`).
 - **Python 3.9+** — uygulama çalışırken motoru çağırmak için gereklidir.
   Python'ın `requests` ve `beautifulsoup4` paketleri kurulu olmalıdır:
   ```bash
-  pip install requests beautifulsoup4
+  pip install requests beautifulsoup4 dnspython
   ```
   > Uygulama, `py`, `python` ve `python3` komutlarını sırayla dener. Farklı bir
   > yorumlayıcı için `KORUMA_PYTHON` ortam değişkenini ayarlayabilirsiniz.

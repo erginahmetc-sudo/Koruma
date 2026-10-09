@@ -43,7 +43,7 @@ def run(ctx) -> list[Finding]:
 
     csp = h.get("content-security-policy", "")
     if csp:
-        directives = {d.strip().split(" ", 1)[0].lower(): d for d in csp.split(";") if d.strip()}
+        directives = {d.strip().split(" ", 1)[0].lower(): d.strip() for d in csp.split(";") if d.strip()}
         script_src = directives.get("script-src") or directives.get("default-src", "")
         if "'unsafe-inline'" in script_src and "'nonce-" not in script_src and "'strict-dynamic'" not in script_src:
             findings.append(Finding(NAME, "CSP 'unsafe-inline' scriptlere izin veriyor", Severity.LOW, page.url,
@@ -53,6 +53,29 @@ def run(ctx) -> list[Finding]:
             findings.append(Finding(NAME, "CSP 'unsafe-eval' içeriyor", Severity.LOW, page.url,
                                     "eval() benzeri dinamik kod çalıştırmaya izin verir.",
                                     "'unsafe-eval' ifadesini kaldırın.", csp[:200]))
+        # Joker (wildcard) kaynak
+        if "*" in script_src.replace("*.", "").split():
+            findings.append(Finding(NAME, "CSP script-src joker (*) içeriyor", Severity.LOW, page.url,
+                                    "'*' kaynağı herhangi bir yerden script yüklenmesine izin verir; korumayı zayıflatır.",
+                                    "script-src'i belirli, güvendiğiniz kaynaklarla sınırlayın.", script_src[:200]))
+        # HTTP (şifresiz) kaynak
+        if "http://" in csp:
+            findings.append(Finding(NAME, "CSP şifresiz (http:) kaynağa izin veriyor", Severity.LOW, page.url,
+                                    "http:// kaynaklar ağdaki saldırganca değiştirilebilir.",
+                                    "Yalnızca https:// kaynaklara izin verin.", csp[:200]))
+        # Önemli yönergelerin eksikliği
+        if "default-src" not in directives and "script-src" not in directives:
+            findings.append(Finding(NAME, "CSP'de script-src/default-src yok", Severity.LOW, page.url,
+                                    "Bu yönergeler olmadan CSP script yüklemeyi kısıtlamaz.",
+                                    "En azından default-src 'self' tanımlayın.", csp[:200]))
+        if "object-src" not in directives and "default-src" not in directives:
+            findings.append(Finding(NAME, "CSP'de object-src yok", Severity.INFO, page.url,
+                                    "object-src 'none' eski eklenti tabanlı saldırıları engeller.",
+                                    "object-src 'none' ekleyin.", csp[:200]))
+        if "base-uri" not in directives:
+            findings.append(Finding(NAME, "CSP'de base-uri yok", Severity.INFO, page.url,
+                                    "base-uri olmadan <base> etiketi enjeksiyonu göreli URL'leri kaçırabilir.",
+                                    "base-uri 'self' (veya 'none') ekleyin.", csp[:200]))
 
     for hdr in ("Server", "X-Powered-By", "X-AspNet-Version", "X-AspNetMvc-Version"):
         val = h.get(hdr.lower())

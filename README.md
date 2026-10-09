@@ -23,7 +23,10 @@ olduğunu** ve **nasıl düzeltileceğini** açıklayan Türkçe bir rapordur.
 | `injection` | Yansıtılan XSS, hata tabanlı SQL enjeksiyonu, şablon enjeksiyonu (SSTI), dizin geçişi (path traversal), eksik CSRF token'ı |
 | `redirect` | Açık yönlendirme (open redirect) |
 | `fingerprint` | Sunucu/çerçeve/CMS tespiti ve sürüm ifşası (OWASP A06 bağlamı) |
-| `components` | **Bilinen CVE'li JavaScript kütüphaneleri** (jQuery, Bootstrap, lodash, AngularJS, Moment, Handlebars, DOMPurify, axios…) + çapraz kökenli scriptlerde SRI eksikliği. İsteğe bağlı `--online` ile OSV.dev doğrulaması. |
+| `components` | **Bilinen CVE'li JavaScript kütüphaneleri** (16 kütüphane, 50+ CVE: jQuery, jQuery-UI, Bootstrap, lodash, AngularJS, Vue, React, Moment, Handlebars, DOMPurify, axios, Underscore, CKEditor 4/5, bootstrap-select, flowplayer) + çapraz kökenli scriptlerde SRI eksikliği. İsteğe bağlı `--online` ile OSV.dev doğrulaması. |
+| `endpoints` | GraphQL introspection, yönetim/API panelleri, çapraz alan politikaları (crossdomain.xml), WordPress kullanıcı sayımı (REST API, `?author=`, xmlrpc.php) |
+| `advanced` | CRLF enjeksiyonu / HTTP yanıt bölme, Host başlığı enjeksiyonu, hassas sayfalarda önbellekleme politikası |
+| `dns_email` | SPF, DMARC, DKIM, CAA, DNSSEC kayıtları (e-posta sahteciliği ve sertifika yanlış verilmesine karşı koruma) |
 
 ### OWASP Top 10 kapsamı
 

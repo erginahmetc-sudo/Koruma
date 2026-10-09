@@ -9,11 +9,23 @@ NAME = "disclosure"
 PATTERNS = [
     ("AWS erişim anahtarı", Severity.CRITICAL, re.compile(r"\bAKIA[0-9A-Z]{16}\b")),
     ("Google API anahtarı", Severity.MEDIUM, re.compile(r"\bAIza[0-9A-Za-z_\-]{35}\b")),
+    ("Google OAuth istemci sırrı", Severity.HIGH, re.compile(r"\bGOCSPX-[0-9A-Za-z_\-]{28}\b")),
     ("Stripe gizli anahtarı", Severity.CRITICAL, re.compile(r"\bsk_live_[0-9a-zA-Z]{24,}\b")),
     ("GitHub token", Severity.CRITICAL, re.compile(r"\bgh[pousr]_[A-Za-z0-9]{36,}\b")),
     ("Slack token", Severity.HIGH, re.compile(r"\bxox[baprs]-[0-9A-Za-z\-]{10,}\b")),
-    ("Özel anahtar (private key)", Severity.CRITICAL, re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")),
+    ("Slack webhook", Severity.HIGH, re.compile(r"https://hooks\.slack\.com/services/T[0-9A-Z]+/B[0-9A-Z]+/[0-9A-Za-z]+")),
+    ("Twilio Account SID", Severity.HIGH, re.compile(r"\bAC[0-9a-f]{32}\b")),
+    ("SendGrid API anahtarı", Severity.HIGH, re.compile(r"\bSG\.[0-9A-Za-z_\-]{22}\.[0-9A-Za-z_\-]{43}\b")),
+    ("Mailgun API anahtarı", Severity.HIGH, re.compile(r"\bkey-[0-9a-f]{32}\b")),
+    ("Firebase sunucu anahtarı", Severity.HIGH, re.compile(r"\bAAAA[A-Za-z0-9_\-]{7}:[A-Za-z0-9_\-]{140,}")),
+    ("npm token", Severity.HIGH, re.compile(r"\bnpm_[A-Za-z0-9]{36}\b")),
+    ("JSON Web Token (JWT)", Severity.MEDIUM, re.compile(r"\beyJ[A-Za-z0-9_\-]{10,}\.eyJ[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{10,}\b")),
+    ("Özel anahtar (private key)", Severity.CRITICAL, re.compile(r"-----BEGIN (?:RSA |EC |DSA |OPENSSH |PGP )?PRIVATE KEY-----")),
 ]
+
+# URL sorgu dizesinde taşınmaması gereken hassas parametre adları
+SECRET_PARAMS = re.compile(r"(?:^|[?&])(password|passwd|pwd|parola|sifre|token|api[_-]?key|apikey|"
+                           r"secret|access[_-]?token|auth|session|jwt|otp|pin)=", re.I)
 
 ERROR_PATTERNS = [
     ("PHP hata mesajı", re.compile(r"<b>(?:Fatal error|Warning|Parse error|Notice)</b>:.*? in <b>[^<]+</b> on line", re.S)),
@@ -39,6 +51,16 @@ def run(ctx) -> list[Finding]:
         if dedupe_key not in reported:
             reported.add(dedupe_key)
             findings.append(f)
+
+    # URL'de taşınan hassas parametreler (kayıtlarda/geçmişte/Referer'da sızar)
+    for url in ctx.crawl.param_urls:
+        m = SECRET_PARAMS.search(url)
+        if m:
+            add(Finding(NAME, f"URL'de hassas parametre: {m.group(1)}", Severity.MEDIUM, url,
+                        "Hassas veriler URL sorgu dizesinde taşınıyor; bu veriler sunucu günlüklerine, "
+                        "tarayıcı geçmişine ve Referer başlığına sızar.",
+                        "Hassas verileri GET yerine POST gövdesiyle gönderin.",
+                        m.group(0)), ("secret_param", m.group(1).lower()))
 
     for page in ctx.crawl.pages:
         body = page.body

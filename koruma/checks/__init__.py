@@ -17,10 +17,13 @@ class Context:
 
 
 from koruma.checks import (  # noqa: E402
+    advanced,
     components,
     cookies,
     cors,
     disclosure,
+    dns_email,
+    endpoints,
     files,
     fingerprint,
     headers,
@@ -42,4 +45,7 @@ ALL_CHECKS = {
     "redirect": redirect,
     "fingerprint": fingerprint,
     "components": components,
+    "endpoints": endpoints,
+    "advanced": advanced,
+    "dns_email": dns_email,
 }

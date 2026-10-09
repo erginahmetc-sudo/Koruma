@@ -44,7 +44,7 @@ app.whenReady().then(async () => {
   ipcMain.handle("scan:start", async () => ({ ok: true, data }));
 
   const win = new BrowserWindow({
-    width: 1180, height: 1760, show: false, backgroundColor: "#0b1120",
+    width: 1180, height: 2100, show: false, backgroundColor: "#0b1120",
     webPreferences: { preload: path.join(__dirname, "electron", "preload.js"), contextIsolation: true },
   });
   await win.loadFile(path.join(__dirname, "dist", "index.html"));
@@ -57,7 +57,7 @@ app.whenReady().then(async () => {
   `);
   await new Promise((r) => setTimeout(r, 300));
   await win.webContents.executeJavaScript(`document.querySelector('.scan-btn').click();`);
-  await new Promise((r) => setTimeout(r, 1500));
+  await new Promise((r) => setTimeout(r, 3000));
   // İlk 6 kartı aç (detayları göstermek için)
   await win.webContents.executeJavaScript(`document.querySelectorAll('.finding-head').forEach((h,i)=>{if(i<2)h.click();});`);
   await new Promise((r) => setTimeout(r, 400));

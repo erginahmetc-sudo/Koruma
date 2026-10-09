@@ -22,4 +22,7 @@ export const CHECKS = [
   { id: "redirect", label: "Açık Yönlendirme", desc: "Doğrulanmamış yönlendirme hedefleri" },
   { id: "fingerprint", label: "Teknoloji Tespiti", desc: "Sunucu, çerçeve, CMS ve sürüm ifşası" },
   { id: "components", label: "Savunmasız Bileşenler", desc: "Bilinen CVE'li JS kütüphaneleri + SRI (OWASP A06)" },
+  { id: "endpoints", label: "Açık Uç Noktalar", desc: "GraphQL, API/yönetim panelleri, WordPress sayımı" },
+  { id: "advanced", label: "Gelişmiş Enjeksiyon", desc: "CRLF, Host başlığı enjeksiyonu, önbellek" },
+  { id: "dns_email", label: "DNS & E-posta", desc: "SPF, DMARC, DKIM, CAA, DNSSEC" },
 ];
