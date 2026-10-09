@@ -19,3 +19,4 @@ desktop/release/
 !desktop/index.html
 !desktop/build/
 !desktop/build/**
+*.pdf

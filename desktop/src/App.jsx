@@ -26,7 +26,10 @@ export default function App() {
   const [headers, setHeaders] = useState("");
 
   const [activeSev, setActiveSev] = useState(new Set(ALL_SEV));
+  const [repeatMin, setRepeatMin] = useState(0); // 0 = kapalı
+  const [dbMsg, setDbMsg] = useState("");
   const logRef = useRef(null);
+  const repeatRef = useRef(null);
 
   useEffect(() => {
     if (!window.koruma) return;
@@ -89,10 +92,29 @@ export default function App() {
 
   async function saveReport(format) {
     if (!result) return;
-    const content = format === "html" ? buildHtmlReport(result) : JSON.stringify(result, null, 2);
-    const r = await window.koruma.saveReport({ content, format });
+    const content = format === "html" ? buildHtmlReport(result)
+      : format === "json" ? JSON.stringify(result, null, 2) : "";
+    const r = await window.koruma.saveReport({ content, format, data: JSON.stringify(result) });
     if (r?.ok) setProgress((p) => [...p, `Rapor kaydedildi: ${r.filePath}`]);
+    else if (r?.error) setError(r.error);
   }
+
+  async function updateDb() {
+    setDbMsg("Veritabanı güncelleniyor…");
+    const r = await window.koruma.updateDb();
+    setDbMsg(r?.ok ? (r.message || "Veritabanı güncellendi.") : ("Hata: " + (r?.error || "bilinmiyor")));
+  }
+
+  // Periyodik tarama: repeatMin değiştiğinde zamanlayıcıyı kur/temizle
+  useEffect(() => {
+    if (repeatRef.current) clearInterval(repeatRef.current);
+    if (repeatMin > 0) {
+      repeatRef.current = setInterval(() => {
+        if (!running && authorized && url.trim()) startScan();
+      }, repeatMin * 60 * 1000);
+    }
+    return () => repeatRef.current && clearInterval(repeatRef.current);
+  }, [repeatMin, running, authorized, url]);
 
   const visibleFindings = useMemo(() => {
     if (!result) return [];
@@ -203,9 +225,27 @@ export default function App() {
                 </label>
               </div>
 
+              <div className="opts-row">
+                <label>
+                  Otomatik tekrar
+                  <select value={repeatMin} onChange={(e) => setRepeatMin(Number(e.target.value))}
+                    disabled={running}>
+                    <option value={0}>Kapalı</option>
+                    <option value={15}>15 dakikada bir</option>
+                    <option value={60}>Saatte bir</option>
+                    <option value={360}>6 saatte bir</option>
+                    <option value={1440}>Günde bir</option>
+                  </select>
+                </label>
+                <button type="button" className="db-btn" onClick={updateDb} disabled={running}>
+                  ⟳ CVE veritabanını güncelle
+                </button>
+                {dbMsg && <span className="db-msg">{dbMsg}</span>}
+              </div>
+
               <div className="opts-row textareas">
                 <label>
-                  Çerezler (her satıra bir tane: ad=değer)
+                  Çerezler — giriş yapılmış alanları ve erişim kontrolünü test eder (ad=değer)
                   <textarea rows="2" value={cookies} placeholder="session=abc123"
                     onChange={(e) => setCookies(e.target.value)} disabled={running} />
                 </label>
@@ -252,6 +292,7 @@ export default function App() {
                 </div>
               </div>
               <div className="save-btns">
+                <button onClick={() => saveReport("pdf")}>PDF kaydet</button>
                 <button onClick={() => saveReport("html")}>HTML kaydet</button>
                 <button onClick={() => saveReport("json")}>JSON kaydet</button>
               </div>

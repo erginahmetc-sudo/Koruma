@@ -5,6 +5,7 @@ contextBridge.exposeInMainWorld("koruma", {
   startScan: (opts) => ipcRenderer.invoke("scan:start", opts),
   cancelScan: () => ipcRenderer.invoke("scan:cancel"),
   saveReport: (payload) => ipcRenderer.invoke("report:save", payload),
+  updateDb: () => ipcRenderer.invoke("db:update"),
   openExternal: (url) => ipcRenderer.invoke("open:external", url),
   onProgress: (cb) => {
     const handler = (_e, msg) => cb(msg);

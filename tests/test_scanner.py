@@ -156,6 +156,49 @@ def test_detects_more_js_libraries():
     assert v == "2.5.0" and components._match_vulns(v, db["vue"])
 
 
+def test_detects_forced_browsing(result):
+    assert any("kimlik doğrulamasız erişilebilir" in t.lower() for t in titles(result))
+
+
+def test_detects_idor(result):
+    assert any("IDOR" in t for t in titles(result))
+
+
+def test_pdf_report_generation(result, tmp_path):
+    from koruma.pdfreport import build_pdf
+    import json as _json
+    from koruma.report import to_json
+    out = tmp_path / "rapor.pdf"
+    build_pdf(_json.loads(to_json(result)), str(out))
+    assert out.exists() and out.stat().st_size > 1000
+    assert out.read_bytes().startswith(b"%PDF")
+
+
+def test_update_db_converter():
+    # Retire.js biçimindeki bir girdiyi doğru dönüştürür
+    from koruma.update import _convert_entry
+    entry = {
+        "extractors": {"uri": ["/(§§version§§)/testlib(\\.min)?\\.js"], "func": ["x"]},
+        "vulnerabilities": [
+            {"ranges": [{"atOrAbove": "1.0.0", "below": "2.0.0"}],
+             "severity": "high", "summary": "örnek açık",
+             "identifiers": {"CVE": ["CVE-2024-0001"]}},
+        ],
+    }
+    conv = _convert_entry(entry)
+    assert conv and conv["vulns"][0]["ids"] == ["CVE-2024-0001"]
+    assert conv["vulns"][0]["below"] == "2.0.0" and conv["vulns"][0]["severity"] == "HIGH"
+
+
+def test_access_auth_diff_requires_user_auth(server):
+    # Kullanıcı kimlik bilgisi vermediyse auth-diff çalışmaz (yanlış pozitif önleme)
+    from koruma.checks import access, Context
+    from koruma.http import Client
+    from koruma.crawler import CrawlResult
+    ctx = Context(client=Client(server), base_url=server, crawl=CrawlResult(), authenticated=False)
+    assert access._check_auth_diff(ctx) == []
+
+
 def test_dns_email_skips_ip(server):
     # IP adresli hedefte DNS/e-posta kontrolü sessizce atlanır
     from koruma.checks import dns_email

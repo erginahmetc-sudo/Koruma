@@ -18,6 +18,7 @@ PAGES = {
         <a href="/go?next=/profil">Profil</a>
         <a href="/read?file=notlar.txt">Dosya</a>
         <a href="/hesap?token=gizli123">Hesap</a>
+        <a href="/profil?id=1">Profil</a>
         <a href="/login">Giriş</a>
         <!-- Kasıtlı olarak savunmasız/eski kütüphaneler ve SRI eksikliği -->
         <script src="https://cdn.example.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -85,6 +86,18 @@ def app(environ, start_response):
                     extra.append((k.strip(), v.strip()))
         start_response("302 Found", [("Location", nxt), ("Content-Type", "text/html")] + extra)
         return [b""]
+
+    if path == "/profil":  # IDOR: id değişince başka kullanıcının profili döner
+        uid = qs.get("id", ["1"])[0]
+        return _resp(start_response, "200 OK",
+                     f"<html><body><h1>Kullanıcı Profili #{escape(uid)}</h1>"
+                     f"<p>Ad: Kullanıcı {escape(uid)}</p><p>E-posta: user{escape(uid)}@ornek.com</p>"
+                     f"<p>Telefon: 0555-000-{escape(uid).zfill(4)}</p></body></html>")
+
+    if path == "/admin" or path == "/admin/":  # korunmasız yönetim paneli
+        return _resp(start_response, "200 OK",
+                     "<html><body><h1>Yönetim Paneli</h1><p>Hoş geldiniz yönetici. "
+                     "Kullanıcıları ve ayarları buradan yönetebilirsiniz.</p></body></html>")
 
     if path == "/graphql":  # introspection açık
         import json as _json

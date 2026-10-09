@@ -13,10 +13,12 @@ class Context:
     crawl: CrawlResult
     test_post_forms: bool = False
     online: bool = False
+    authenticated: bool = False
     log: object = field(default=print)
 
 
 from koruma.checks import (  # noqa: E402
+    access,
     advanced,
     components,
     cookies,
@@ -48,4 +50,5 @@ ALL_CHECKS = {
     "endpoints": endpoints,
     "advanced": advanced,
     "dns_email": dns_email,
+    "access": access,
 }

@@ -27,6 +27,16 @@ olduğunu** ve **nasıl düzeltileceğini** açıklayan Türkçe bir rapordur.
 | `endpoints` | GraphQL introspection, yönetim/API panelleri, çapraz alan politikaları (crossdomain.xml), WordPress kullanıcı sayımı (REST API, `?author=`, xmlrpc.php) |
 | `advanced` | CRLF enjeksiyonu / HTTP yanıt bölme, Host başlığı enjeksiyonu, hassas sayfalarda önbellekleme politikası |
 | `dns_email` | SPF, DMARC, DKIM, CAA, DNSSEC kayıtları (e-posta sahteciliği ve sertifika yanlış verilmesine karşı koruma) |
+| `access` | **Bozuk erişim kontrolü (OWASP A01)**: forced browsing (korunmasız yönetim sayfaları), sıralı kimlik numaralandırma (**olası IDOR**), kimlik doğrulamalı vs doğrulamasız yanıt karşılaştırması |
+
+### Ek özellikler
+
+- **PDF / HTML / JSON rapor** — `--format pdf -o rapor.pdf` (veya arayüzde "PDF kaydet").
+- **Periyodik tarama** — `--repeat 3600` her saat yeniden tarar; arayüzde "Otomatik tekrar".
+- **Kimlik doğrulamalı tarama** — `--cookie "session=..."` veya `--header "Authorization: Bearer ..."`
+  ile giriş yapılmış alanları ve erişim kontrolünü test eder.
+- **CVE veritabanı güncelleme** — `koruma --update-db` Retire.js'ten güncel zafiyet verisini
+  çeker (16 küratörlü → 70+ kütüphane, 500+ CVE'ye genişler). Arayüzde "CVE veritabanını güncelle".
 
 ### OWASP Top 10 kapsamı
 

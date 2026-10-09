@@ -39,8 +39,10 @@ def scan(base_url: str, checks: list[str] | None = None, delay: float = 0.2,
     if not crawl_res.pages:
         result.errors.append("Hiçbir sayfaya ulaşılamadı; URL ve ağ erişimini kontrol edin.")
 
+    authenticated = bool(cookies) or any(k.lower() == "authorization" for k in (headers or {}))
     ctx = Context(client=client, base_url=base_url, crawl=crawl_res,
-                  test_post_forms=test_post_forms, online=online, log=log)
+                  test_post_forms=test_post_forms, online=online,
+                  authenticated=authenticated, log=log)
 
     selected = checks or list(ALL_CHECKS)
     for name in selected:

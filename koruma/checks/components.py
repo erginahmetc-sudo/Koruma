@@ -33,9 +33,13 @@ def _load_db() -> dict:
         data = json.load(fh)
     libs = data["libraries"]
     for lib in libs.values():
-        lib["_compiled"] = [
-            re.compile(pat.replace(_PLACEHOLDER, _VERSION_RX), re.I) for pat in lib["extractors"]
-        ]
+        compiled = []
+        for pat in lib.get("extractors", []):
+            try:
+                compiled.append(re.compile(pat.replace(_PLACEHOLDER, _VERSION_RX), re.I))
+            except re.error:
+                continue  # Retire.js'ten gelen bazı karmaşık kalıpları atla
+        lib["_compiled"] = compiled
     return libs
 
 

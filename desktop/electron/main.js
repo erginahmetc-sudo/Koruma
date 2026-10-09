@@ -182,17 +182,59 @@ ipcMain.handle("scan:cancel", async () => {
   return { ok: false };
 });
 
-// Raporu dosyaya kaydet (HTML veya JSON).
-ipcMain.handle("report:save", async (event, { content, format }) => {
-  const ext = format === "html" ? "html" : "json";
+// Raporu dosyaya kaydet (HTML / JSON / PDF).
+ipcMain.handle("report:save", async (event, { content, format, data }) => {
+  const ext = { html: "html", json: "json", pdf: "pdf" }[format] || "txt";
   const { canceled, filePath } = await dialog.showSaveDialog(mainWindow, {
     title: "Raporu kaydet",
     defaultPath: path.join(os.homedir(), `koruma-rapor.${ext}`),
     filters: [{ name: ext.toUpperCase(), extensions: [ext] }],
   });
   if (canceled || !filePath) return { ok: false };
+
+  if (format === "pdf") {
+    // PDF'i Python motoruyla üret: JSON'u geçici dosyaya yaz, pdfreport'u çağır
+    const py = await pickPython(resolvePython());
+    if (!py) return { ok: false, error: "PDF için Python bulunamadı." };
+    const tmp = path.join(os.tmpdir(), `koruma-${Date.now()}.json`);
+    fs.writeFileSync(tmp, data, "utf-8");
+    const root = engineRoot();
+    const env = { ...process.env, PYTHONPATH: root + path.delimiter + (process.env.PYTHONPATH || ""),
+                  PYTHONUTF8: "1" };
+    const res = await new Promise((resolve) => {
+      const child = spawn(py, ["-m", "koruma.pdfreport", tmp, filePath], { cwd: root, env });
+      let err = "";
+      child.stderr.on("data", (d) => (err += d));
+      child.on("error", (e) => resolve({ ok: false, error: e.message }));
+      child.on("close", (code) => resolve(code === 0
+        ? { ok: true, filePath }
+        : { ok: false, error: err || ("PDF üretilemedi (çıkış " + code + "). reportlab kurulu mu?") }));
+    });
+    try { fs.unlinkSync(tmp); } catch (_) {}
+    return res;
+  }
+
   fs.writeFileSync(filePath, content, "utf-8");
   return { ok: true, filePath };
+});
+
+// Savunmasız bileşen (CVE) veritabanını güncelle.
+ipcMain.handle("db:update", async () => {
+  const py = await pickPython(resolvePython());
+  if (!py) return { ok: false, error: "Python bulunamadı." };
+  const root = engineRoot();
+  const env = { ...process.env, PYTHONPATH: root + path.delimiter + (process.env.PYTHONPATH || ""),
+                PYTHONUTF8: "1" };
+  return new Promise((resolve) => {
+    const child = spawn(py, ["-m", "koruma", "--update-db", "-q"], { cwd: root, env });
+    let out = "", err = "";
+    child.stdout.on("data", (d) => (out += d));
+    child.stderr.on("data", (d) => (err += d));
+    child.on("error", (e) => resolve({ ok: false, error: e.message }));
+    child.on("close", (code) => resolve(code === 0
+      ? { ok: true, message: out.trim() || "Veritabanı güncellendi." }
+      : { ok: false, error: err.trim() || "Güncelleme başarısız." }));
+  });
 });
 
 ipcMain.handle("open:external", async (event, url) => {

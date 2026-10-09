@@ -25,4 +25,5 @@ export const CHECKS = [
   { id: "endpoints", label: "Açık Uç Noktalar", desc: "GraphQL, API/yönetim panelleri, WordPress sayımı" },
   { id: "advanced", label: "Gelişmiş Enjeksiyon", desc: "CRLF, Host başlığı enjeksiyonu, önbellek" },
   { id: "dns_email", label: "DNS & E-posta", desc: "SPF, DMARC, DKIM, CAA, DNSSEC" },
+  { id: "access", label: "Erişim Kontrolü", desc: "Forced browsing, IDOR, oturum karşılaştırması (OWASP A01)" },
 ];
