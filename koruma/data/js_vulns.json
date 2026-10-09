@@ -1,0 +1,123 @@
+{
+  "_meta": {
+    "description": "İstemci tarafı JavaScript kütüphanelerinde bilinen güvenlik açıkları (CVE). Kaynak: Retire.js / OSV veritabanlarından türetilmiş, elle doğrulanmış alt küme.",
+    "version_placeholder": "(§§version§§)",
+    "fields": "extractors: sürüm tespiti için regex (tek yakalama grubu). vulns: {atOrAbove?, below?, above?, ids[], severity, summary}"
+  },
+  "libraries": {
+    "jquery": {
+      "extractors": [
+        "/(§§version§§)/jquery(\\.min)?\\.js",
+        "jquery[.-](§§version§§)(\\.min)?\\.js",
+        "/\\*![\\s]*jQuery (?:JavaScript Library )?v(§§version§§)",
+        "[^a-z.]jquery:[ ]?\"(§§version§§)\""
+      ],
+      "vulns": [
+        {"atOrAbove": "1.0.3", "below": "3.5.0", "ids": ["CVE-2020-11023"], "severity": "MEDIUM", "summary": "<option> içeren güvenilmeyen HTML, DOM metotlarıyla işlenince XSS'e yol açabilir."},
+        {"atOrAbove": "1.2.0", "below": "3.5.0", "ids": ["CVE-2020-11022"], "severity": "MEDIUM", "summary": "Güvenilmeyen HTML'in jQuery DOM metotlarıyla işlenmesi XSS'e yol açar."},
+        {"atOrAbove": "1.1.4", "below": "3.4.0", "ids": ["CVE-2019-11358"], "severity": "MEDIUM", "summary": "jQuery.extend(true, ...) ile prototip kirlenmesi (prototype pollution)."},
+        {"atOrAbove": "1.4.0", "below": "3.0.0", "ids": ["CVE-2015-9251"], "severity": "MEDIUM", "summary": "Cross-domain AJAX isteklerinde yanıtın yürütülmesiyle XSS."},
+        {"atOrAbove": "1.2.1", "below": "1.9.0", "ids": ["CVE-2020-7656"], "severity": "MEDIUM", "summary": "jQuery.parseHTML/load ile güvenilmeyen HTML'den XSS."}
+      ]
+    },
+    "jquery-ui": {
+      "extractors": [
+        "/(§§version§§)/jquery-ui(\\.min)?\\.js",
+        "jquery-ui[.-](§§version§§)(\\.min)?\\.js",
+        "/\\*![\\s]*jQuery UI - v(§§version§§)"
+      ],
+      "vulns": [
+        {"below": "1.13.2", "ids": ["CVE-2022-31160"], "severity": "MEDIUM", "summary": "checkboxradio widget'ında XSS."},
+        {"below": "1.13.0", "ids": ["CVE-2021-41184", "CVE-2021-41183", "CVE-2021-41182"], "severity": "MEDIUM", "summary": "position/datepicker/çeşitli widget'larda XSS."}
+      ]
+    },
+    "angularjs": {
+      "extractors": [
+        "/(§§version§§)/angular(\\.min)?\\.js",
+        "angular(?:js)?-(§§version§§)(\\.min)?\\.js",
+        "/\\*[\\*\\s]+(?:@license )?AngularJS v(§§version§§)"
+      ],
+      "vulns": [
+        {"atOrAbove": "1.3.0", "below": "1.8.4", "ids": ["CVE-2024-21490"], "severity": "HIGH", "summary": "ng-srcset ile ReDoS (hizmet reddi)."},
+        {"below": "1.7.9", "ids": ["CVE-2019-10768"], "severity": "HIGH", "summary": "merge() ile prototip kirlenmesi."},
+        {"below": "1.8.0", "ids": ["CVE-2020-7676"], "severity": "MEDIUM", "summary": "angular.element ile XSS (SVG/style)."},
+        {"below": "1.8.4", "ids": ["CVE-2023-26118", "CVE-2022-25869"], "severity": "MEDIUM", "summary": "input[url]/textarea ve çeşitli bileşenlerde ReDoS/XSS."}
+      ]
+    },
+    "bootstrap": {
+      "extractors": [
+        "/(§§version§§)/(?:js/)?bootstrap(\\.min|\\.bundle|\\.bundle\\.min)?\\.js",
+        "bootstrap[.-](§§version§§)(\\.min|\\.bundle)?\\.js",
+        "/\\*!?[\\s\\S]{0,40}Bootstrap v(§§version§§)"
+      ],
+      "vulns": [
+        {"below": "3.4.1", "ids": ["CVE-2019-8331"], "severity": "MEDIUM", "summary": "data-template/tooltip/popover aracılığıyla XSS."},
+        {"below": "3.4.0", "ids": ["CVE-2018-14042", "CVE-2018-14040", "CVE-2018-14041"], "severity": "MEDIUM", "summary": "collapse/scrollspy/data-target ile XSS."},
+        {"atOrAbove": "4.0.0", "below": "4.3.1", "ids": ["CVE-2019-8331"], "severity": "MEDIUM", "summary": "data-template ile XSS."},
+        {"atOrAbove": "4.0.0", "below": "4.1.2", "ids": ["CVE-2018-14041"], "severity": "MEDIUM", "summary": "data-target ile XSS."}
+      ]
+    },
+    "lodash": {
+      "extractors": [
+        "/(§§version§§)/lodash(\\.min)?\\.js",
+        "lodash[.-](§§version§§)(\\.min)?\\.js",
+        "lodash(?:[\\s\\S]{0,200})VERSION\\s*=\\s*[\"'](§§version§§)[\"']"
+      ],
+      "vulns": [
+        {"below": "4.17.21", "ids": ["CVE-2021-23337"], "severity": "HIGH", "summary": "template() ile komut enjeksiyonu (command injection)."},
+        {"below": "4.17.19", "ids": ["CVE-2020-8203"], "severity": "HIGH", "summary": "zipObjectDeep ile prototip kirlenmesi."},
+        {"below": "4.17.12", "ids": ["CVE-2019-10744"], "severity": "HIGH", "summary": "defaultsDeep ile prototip kirlenmesi."},
+        {"below": "4.17.11", "ids": ["CVE-2018-16487"], "severity": "MEDIUM", "summary": "merge/mergeWith/defaultsDeep ile prototip kirlenmesi."},
+        {"below": "4.17.5", "ids": ["CVE-2018-3721"], "severity": "MEDIUM", "summary": "set/setWith ile prototip kirlenmesi."}
+      ]
+    },
+    "moment": {
+      "extractors": [
+        "/(§§version§§)/moment(\\.min)?\\.js",
+        "moment[.-](§§version§§)(\\.min)?\\.js",
+        "//!\\s*moment\\.js[\\s\\S]{0,60}?version[\"']?\\s*[:=]\\s*[\"'](§§version§§)[\"']"
+      ],
+      "vulns": [
+        {"below": "2.29.4", "ids": ["CVE-2022-31129"], "severity": "HIGH", "summary": "Uzun tarih dizelerinde ReDoS (hizmet reddi)."},
+        {"below": "2.29.2", "ids": ["CVE-2022-24785"], "severity": "HIGH", "summary": "Yerelleştirme (locale) yolu üzerinden dizin geçişi (path traversal)."},
+        {"below": "2.19.3", "ids": ["CVE-2017-18214"], "severity": "MEDIUM", "summary": "moment() ile ReDoS."}
+      ]
+    },
+    "handlebars": {
+      "extractors": [
+        "/(§§version§§)/handlebars(\\.min|\\.runtime|\\.runtime\\.min)?\\.js",
+        "handlebars(?:js)?[.-](§§version§§)(\\.min)?\\.js",
+        "Handlebars\\.VERSION\\s*=\\s*[\"'](§§version§§)[\"']"
+      ],
+      "vulns": [
+        {"below": "4.7.7", "ids": ["CVE-2021-23369", "CVE-2021-23383"], "severity": "HIGH", "summary": "compile() ile prototip kirlenmesi → uzaktan kod çalıştırma (RCE)."},
+        {"atOrAbove": "4.0.0", "below": "4.5.3", "ids": ["CVE-2019-20920"], "severity": "HIGH", "summary": "Şablon derlemede prototip kirlenmesi/RCE."},
+        {"atOrAbove": "4.0.0", "below": "4.4.5", "ids": ["CVE-2019-20922"], "severity": "HIGH", "summary": "lookup yardımcısında ReDoS."},
+        {"below": "4.3.0", "ids": ["CVE-2019-19919"], "severity": "HIGH", "summary": "Şablon derlemede prototip kirlenmesi."}
+      ]
+    },
+    "dompurify": {
+      "extractors": [
+        "/(§§version§§)/(?:purify|dompurify)(\\.min)?\\.js",
+        "dompurify[.-](§§version§§)(\\.min)?\\.js",
+        "DOMPurify[\\s\\S]{0,40}?version\\s*[:=]\\s*[\"'](§§version§§)[\"']"
+      ],
+      "vulns": [
+        {"below": "2.4.2", "ids": ["CVE-2024-48910"], "severity": "HIGH", "summary": "Mutasyon XSS (mXSS) atlatması."},
+        {"below": "2.0.17", "ids": ["CVE-2020-26870"], "severity": "MEDIUM", "summary": "Temizleme atlatma (sanitizer bypass)."},
+        {"below": "2.0.3", "ids": ["CVE-2019-16728"], "severity": "MEDIUM", "summary": "mXSS."}
+      ]
+    },
+    "axios": {
+      "extractors": [
+        "/(§§version§§)/axios(\\.min)?\\.js",
+        "axios[.-](§§version§§)(\\.min)?\\.js"
+      ],
+      "vulns": [
+        {"below": "1.6.0", "ids": ["CVE-2023-45857"], "severity": "MEDIUM", "summary": "XSRF-TOKEN'ın çapraz kökene sızması (SSRF/kimlik sızıntısı)."},
+        {"below": "0.21.2", "ids": ["CVE-2021-3749"], "severity": "HIGH", "summary": "trim ile ReDoS."},
+        {"below": "0.21.1", "ids": ["CVE-2020-28168"], "severity": "MEDIUM", "summary": "Proxy atlatma ile SSRF."}
+      ]
+    }
+  }
+}

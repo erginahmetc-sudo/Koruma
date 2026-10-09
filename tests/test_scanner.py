@@ -89,3 +89,31 @@ def test_scope_enforced(server):
 def test_severity_labels():
     assert Severity.CRITICAL.label == "KRİTİK"
     assert Severity.HIGH > Severity.LOW
+
+
+def test_detects_vulnerable_js_library(result):
+    ts = titles(result)
+    assert any("jquery" in t.lower() for t in ts), "savunmasız jQuery tespit edilmeli"
+    # CVE kanıtı bulunmalı
+    comp = [f for f in result.findings if f.check == "components" and "jquery" in f.title.lower()]
+    assert comp and "CVE-2020-11022" in comp[0].evidence
+
+
+def test_detects_missing_sri(result):
+    assert any("SRI" in t for t in titles(result))
+
+
+def test_detects_cms_version(result):
+    assert any("WordPress 5.8" in t or "CMS sürümü" in t for t in titles(result))
+
+
+def test_fingerprint_reports_tech(result):
+    assert any(f.check == "fingerprint" for f in result.findings)
+
+
+def test_semver_compare():
+    from koruma import semver
+    assert semver.lt("3.4.1", "3.5.0")
+    assert semver.lt("3.0.0-rc.1", "3.0.0")
+    assert semver.in_range("4.1.0", "4.0.0", "4.3.1", None)
+    assert not semver.in_range("4.17.21", None, "4.17.21", None)

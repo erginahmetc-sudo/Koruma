@@ -21,6 +21,7 @@ export default function App() {
   const [delay, setDelay] = useState(0.2);
   const [insecure, setInsecure] = useState(false);
   const [testPost, setTestPost] = useState(false);
+  const [online, setOnline] = useState(false);
   const [cookies, setCookies] = useState("");
   const [headers, setHeaders] = useState("");
 
@@ -70,6 +71,7 @@ export default function App() {
       delay: Number(delay),
       insecure,
       testPostForms: testPost,
+      online,
       cookies: cookies.split("\n").map((s) => s.trim()).filter(Boolean),
       headers: headers.split("\n").map((s) => s.trim()).filter(Boolean),
     };
@@ -193,6 +195,11 @@ export default function App() {
                   <input type="checkbox" checked={testPost}
                     onChange={(e) => setTestPost(e.target.checked)} disabled={running} />
                   POST formlarını da test et
+                </label>
+                <label className="inline">
+                  <input type="checkbox" checked={online}
+                    onChange={(e) => setOnline(e.target.checked)} disabled={running} />
+                  Çevrimiçi CVE doğrulaması (OSV.dev)
                 </label>
               </div>
 

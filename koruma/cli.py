@@ -46,6 +46,9 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--insecure", action="store_true", help="TLS sertifika doğrulamasını atla")
     p.add_argument("--test-post-forms", action="store_true",
                    help="POST formlarını da test et (yan etkisi olabilir; dikkatli kullanın)")
+    p.add_argument("--online", action="store_true",
+                   help="Tespit edilen bileşen sürümlerini OSV.dev veritabanıyla çevrimiçi doğrula "
+                        "(osv.dev'e istek gönderir)")
     p.add_argument("--header", action="append", metavar="Ad: Değer",
                    help="Ek istek başlığı (ör. kimlik doğrulama için). Birden çok kez verilebilir.")
     p.add_argument("--cookie", action="append", metavar="ad=değer",
@@ -120,7 +123,7 @@ def main(argv: list[str] | None = None) -> int:
         result = scan(
             url, checks=checks, delay=args.delay, timeout=args.timeout,
             max_pages=args.max_pages, verify_tls=not args.insecure,
-            test_post_forms=args.test_post_forms,
+            test_post_forms=args.test_post_forms, online=args.online,
             headers=_parse_kv(args.header), cookies=_parse_kv(args.cookie), log=log,
         )
     except KeyboardInterrupt:

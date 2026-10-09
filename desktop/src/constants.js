@@ -20,4 +20,6 @@ export const CHECKS = [
   { id: "disclosure", label: "Bilgi Sızıntısı", desc: "API anahtarı, stack trace, iç IP, yorumlar" },
   { id: "injection", label: "Enjeksiyon", desc: "XSS, SQL, SSTI, dizin geçişi, CSRF" },
   { id: "redirect", label: "Açık Yönlendirme", desc: "Doğrulanmamış yönlendirme hedefleri" },
+  { id: "fingerprint", label: "Teknoloji Tespiti", desc: "Sunucu, çerçeve, CMS ve sürüm ifşası" },
+  { id: "components", label: "Savunmasız Bileşenler", desc: "Bilinen CVE'li JS kütüphaneleri + SRI (OWASP A06)" },
 ];

@@ -22,6 +22,26 @@ olduğunu** ve **nasıl düzeltileceğini** açıklayan Türkçe bir rapordur.
 | `disclosure` | Sayfalarda sızan API anahtarları, yığın izleri (stack trace), iç IP'ler, riskli HTML yorumları, karışık içerik |
 | `injection` | Yansıtılan XSS, hata tabanlı SQL enjeksiyonu, şablon enjeksiyonu (SSTI), dizin geçişi (path traversal), eksik CSRF token'ı |
 | `redirect` | Açık yönlendirme (open redirect) |
+| `fingerprint` | Sunucu/çerçeve/CMS tespiti ve sürüm ifşası (OWASP A06 bağlamı) |
+| `components` | **Bilinen CVE'li JavaScript kütüphaneleri** (jQuery, Bootstrap, lodash, AngularJS, Moment, Handlebars, DOMPurify, axios…) + çapraz kökenli scriptlerde SRI eksikliği. İsteğe bağlı `--online` ile OSV.dev doğrulaması. |
+
+### OWASP Top 10 kapsamı
+
+Koruma, [OWASP Top 10 (2021)](https://owasp.org/Top10/) risk kategorilerinin
+büyük bölümünü hedefler:
+
+- **A01 Broken Access Control** — dizin listeleme, açık dosyalar, HTTP metotları
+- **A02 Cryptographic Failures** — HTTPS/TLS, HSTS, sertifika, çerez bayrakları
+- **A03 Injection** — XSS, SQLi, SSTI, dizin geçişi
+- **A05 Security Misconfiguration** — güvenlik başlıkları, CORS, hata ifşası, phpinfo vb.
+- **A06 Vulnerable & Outdated Components** — `components` + `fingerprint` (CVE eşleşmeli)
+- **A07 Identification & Auth Failures** — CSRF token eksikliği, çerez güvenliği
+- **A08 Software & Data Integrity** — SRI eksikliği (tedarik zinciri)
+- **A09/A10** — bilgi sızıntısı ve güvenli olmayan yönlendirmeler için sınırlı sinyaller
+
+> Güvenlik açığı verisi, [Retire.js](https://github.com/RetireJS/retire.js) ve
+> [OSV.dev](https://osv.dev/) veritabanlarından türetilmiş, elle doğrulanmış bir
+> CVE alt kümesidir. Çevrimdışı çalışır; `--online` ile canlı OSV sorgusu eklenir.
 
 Tüm testler **yıkıcı değildir**: hiçbir veriyi silmez/değiştirmez, yalnızca
 sunucunun yanıtını okur. Varsayılan olarak `logout`, `delete`, `sil` gibi

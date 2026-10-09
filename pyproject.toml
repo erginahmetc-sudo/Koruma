@@ -25,5 +25,8 @@ koruma = "koruma.cli:main"
 [tool.setuptools.packages.find]
 include = ["koruma*"]
 
+[tool.setuptools.package-data]
+koruma = ["data/*.json"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

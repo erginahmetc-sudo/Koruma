@@ -88,6 +88,7 @@ function buildArgs(opts) {
   if (typeof opts.delay === "number") args.push("--delay", String(opts.delay));
   if (opts.insecure) args.push("--insecure");
   if (opts.testPostForms) args.push("--test-post-forms");
+  if (opts.online) args.push("--online");
   for (const c of opts.cookies || []) if (c.trim()) args.push("--cookie", c.trim());
   for (const h of opts.headers || []) if (h.trim()) args.push("--header", h.trim());
   return args;

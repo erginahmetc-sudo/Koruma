@@ -22,7 +22,8 @@ class ScanResult:
 
 def scan(base_url: str, checks: list[str] | None = None, delay: float = 0.2,
          timeout: float = 10.0, max_pages: int = 50, verify_tls: bool = True,
-         test_post_forms: bool = False, headers=None, cookies=None, log=print) -> ScanResult:
+         test_post_forms: bool = False, online: bool = False,
+         headers=None, cookies=None, log=print) -> ScanResult:
     start = time.monotonic()
     client = Client(base_url, delay=delay, timeout=timeout, verify_tls=verify_tls,
                     headers=headers, cookies=cookies)
@@ -39,7 +40,7 @@ def scan(base_url: str, checks: list[str] | None = None, delay: float = 0.2,
         result.errors.append("Hiçbir sayfaya ulaşılamadı; URL ve ağ erişimini kontrol edin.")
 
     ctx = Context(client=client, base_url=base_url, crawl=crawl_res,
-                  test_post_forms=test_post_forms, log=log)
+                  test_post_forms=test_post_forms, online=online, log=log)
 
     selected = checks or list(ALL_CHECKS)
     for name in selected:

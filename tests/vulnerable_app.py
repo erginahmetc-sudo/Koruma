@@ -18,6 +18,11 @@ PAGES = {
         <a href="/go?next=/profil">Profil</a>
         <a href="/read?file=notlar.txt">Dosya</a>
         <a href="/login">Giriş</a>
+        <!-- Kasıtlı olarak savunmasız/eski kütüphaneler ve SRI eksikliği -->
+        <script src="https://cdn.example.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.example.com/lodash/4.17.10/lodash.min.js"></script>
+        <script src="/static/bootstrap-4.1.0.min.js"></script>
+        <meta name="generator" content="WordPress 5.8.1">
         <form action="/comment" method="post">
           <input name="yorum" type="text"><input type="submit">
         </form>
