@@ -1,0 +1,40 @@
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+
+from koruma.crawler import CrawlResult
+from koruma.http import Client
+
+
+@dataclass
+class Context:
+    client: Client
+    base_url: str
+    crawl: CrawlResult
+    test_post_forms: bool = False
+    log: object = field(default=print)
+
+
+from koruma.checks import (  # noqa: E402
+    cookies,
+    cors,
+    disclosure,
+    files,
+    headers,
+    injection,
+    methods,
+    redirect,
+    tls,
+)
+
+ALL_CHECKS = {
+    "headers": headers,
+    "tls": tls,
+    "cookies": cookies,
+    "files": files,
+    "cors": cors,
+    "methods": methods,
+    "disclosure": disclosure,
+    "injection": injection,
+    "redirect": redirect,
+}
