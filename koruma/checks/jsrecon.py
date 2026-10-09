@@ -12,7 +12,7 @@ from __future__ import annotations
 import re
 from urllib.parse import urljoin, urlparse
 
-from koruma.checks.disclosure import PATTERNS
+from koruma import secrets as secrets_scanner
 from koruma.models import Finding, Severity
 from koruma.sitedata import collect
 
@@ -38,16 +38,13 @@ def run(ctx) -> list[Finding]:
     host = urlparse(ctx.base_url).hostname
 
     for url, content in data.scripts:
-        # 1) Gömülü sırlar
-        for label, sev, rx in PATTERNS:
-            m = rx.search(content)
-            if m:
-                val = m.group(0)
-                add(Finding(NAME, f"JS dosyasında gömülü sır: {label}", sev, url,
-                    "İstemciye sunulan JavaScript dosyasında gizli bir anahtar/token bulunuyor; bu dosya "
-                    "herkese açıktır ve anahtar herkes tarafından çıkarılabilir.",
-                    "Anahtarı iptal edip döndürün; gizli bilgileri yalnızca sunucu tarafında tutun.",
-                    f"{url.rsplit('/', 1)[-1]}: {val[:8]}…"), (label, val))
+        # 1) Gömülü sırlar (gitleaks türevi merkezi tarayıcı)
+        for label, val, sev in secrets_scanner.scan(content):
+            add(Finding(NAME, f"JS dosyasında gömülü sır: {label}", sev, url,
+                "İstemciye sunulan JavaScript dosyasında gizli bir anahtar/token bulunuyor; bu dosya "
+                "herkese açıktır ve anahtar herkes tarafından çıkarılabilir.",
+                "Anahtarı iptal edip döndürün; gizli bilgileri yalnızca sunucu tarafında tutun.",
+                f"{url.rsplit('/', 1)[-1]}: {secrets_scanner.redact(val)}"), (label, val))
 
         # 2) Kaynak haritası ifşası
         for mm in SOURCEMAP_COMMENT.finditer(content):

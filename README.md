@@ -58,6 +58,22 @@ büyük bölümünü hedefler:
 > [OSV.dev](https://osv.dev/) veritabanlarından türetilmiş, elle doğrulanmış bir
 > CVE alt kümesidir. Çevrimdışı çalışır; `--online` ile canlı OSV sorgusu eklenir.
 
+### GitHub güvenlik repolarından entegre edilen bilgi tabanları
+
+Koruma, önde gelen açık kaynak güvenlik projelerinin tekniklerini içerir:
+
+- **Sır tespiti** — [gitleaks](https://github.com/gitleaks/gitleaks) kural
+  setinden türetilmiş 31 yüksek-güvenli desen (AWS, GCP, Azure, Stripe, GitHub,
+  GitLab, Slack, Twilio, SendGrid, Mailgun, OpenAI, Anthropic, özel anahtarlar,
+  JWT…). `disclosure` ve `jsrecon` bu merkezi tarayıcıyı (`koruma/secrets.py`)
+  paylaşır.
+- **İçerik keşfi** — [SecLists](https://github.com/danielmiessler/SecLists)
+  quickhits listesinden türetilmiş yüksek-sinyalli hassas dosya/dizin yolları
+  (SSH anahtarları, `.npmrc`/`.netrc`, CI/CD yapılandırmaları, actuator/jolokia,
+  framework config/yedekleri). `files` kontrolü soft-404 filtresiyle dener.
+- **Bileşen CVE'leri** — [Retire.js](https://github.com/RetireJS/retire.js)
+  (`--update-db` ile canlı senkron).
+
 Tüm testler **yıkıcı değildir**: hiçbir veriyi silmez/değiştirmez, yalnızca
 sunucunun yanıtını okur. Varsayılan olarak `logout`, `delete`, `sil` gibi
 bağlantılara girilmez ve POST formları yalnızca `--test-post-forms` ile test edilir.

@@ -2,26 +2,10 @@ from __future__ import annotations
 
 import re
 
+from koruma import secrets as secrets_scanner
 from koruma.models import Finding, Severity
 
 NAME = "disclosure"
-
-PATTERNS = [
-    ("AWS erişim anahtarı", Severity.CRITICAL, re.compile(r"\bAKIA[0-9A-Z]{16}\b")),
-    ("Google API anahtarı", Severity.MEDIUM, re.compile(r"\bAIza[0-9A-Za-z_\-]{35}\b")),
-    ("Google OAuth istemci sırrı", Severity.HIGH, re.compile(r"\bGOCSPX-[0-9A-Za-z_\-]{28}\b")),
-    ("Stripe gizli anahtarı", Severity.CRITICAL, re.compile(r"\bsk_live_[0-9a-zA-Z]{24,}\b")),
-    ("GitHub token", Severity.CRITICAL, re.compile(r"\bgh[pousr]_[A-Za-z0-9]{36,}\b")),
-    ("Slack token", Severity.HIGH, re.compile(r"\bxox[baprs]-[0-9A-Za-z\-]{10,}\b")),
-    ("Slack webhook", Severity.HIGH, re.compile(r"https://hooks\.slack\.com/services/T[0-9A-Z]+/B[0-9A-Z]+/[0-9A-Za-z]+")),
-    ("Twilio Account SID", Severity.HIGH, re.compile(r"\bAC[0-9a-f]{32}\b")),
-    ("SendGrid API anahtarı", Severity.HIGH, re.compile(r"\bSG\.[0-9A-Za-z_\-]{22}\.[0-9A-Za-z_\-]{43}\b")),
-    ("Mailgun API anahtarı", Severity.HIGH, re.compile(r"\bkey-[0-9a-f]{32}\b")),
-    ("Firebase sunucu anahtarı", Severity.HIGH, re.compile(r"\bAAAA[A-Za-z0-9_\-]{7}:[A-Za-z0-9_\-]{140,}")),
-    ("npm token", Severity.HIGH, re.compile(r"\bnpm_[A-Za-z0-9]{36}\b")),
-    ("JSON Web Token (JWT)", Severity.MEDIUM, re.compile(r"\beyJ[A-Za-z0-9_\-]{10,}\.eyJ[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{10,}\b")),
-    ("Özel anahtar (private key)", Severity.CRITICAL, re.compile(r"-----BEGIN (?:RSA |EC |DSA |OPENSSH |PGP )?PRIVATE KEY-----")),
-]
 
 # URL sorgu dizesinde taşınmaması gereken hassas parametre adları
 SECRET_PARAMS = re.compile(r"(?:^|[?&])(password|passwd|pwd|parola|sifre|token|api[_-]?key|apikey|"
@@ -66,14 +50,11 @@ def run(ctx) -> list[Finding]:
         body = page.body
         if not body:
             continue
-        for label, sev, rx in PATTERNS:
-            m = rx.search(body)
-            if m:
-                val = m.group(0)
-                add(Finding(NAME, f"Sayfada gizli bilgi: {label}", sev, page.url,
-                            "Gizli anahtarlar istemciye gönderilen içerikte bulunuyor.",
-                            "Anahtarı hemen iptal edip yenileyin ve sunucu tarafında saklayın.",
-                            val[:8] + "…" + val[-4:]), (label, val))
+        for label, val, sev in secrets_scanner.scan(body):
+            add(Finding(NAME, f"Sayfada gizli bilgi: {label}", sev, page.url,
+                        "Gizli anahtarlar istemciye gönderilen içerikte bulunuyor.",
+                        "Anahtarı hemen iptal edip yenileyin ve sunucu tarafında saklayın.",
+                        secrets_scanner.redact(val)), (label, val))
         for label, rx in ERROR_PATTERNS:
             if rx.search(body):
                 add(Finding(NAME, f"Hata ayrıntısı ifşa ediliyor: {label}", Severity.MEDIUM, page.url,

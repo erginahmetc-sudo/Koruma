@@ -216,6 +216,30 @@ def test_detects_risky_endpoint_in_js(result):
     assert any("riskli uç nokta" in t.lower() for t in titles(result))
 
 
+def test_secret_scanner_breadth():
+    from koruma import secrets
+    # Not: sahte token'lar parça parça birleştirilir; depoda gerçek sır deseni
+    # oluşmasın (GitHub gizli tarama koruması) diye.
+    cases = [
+        "AKIA" + "9" * 16,
+        "ghp_" + "a" * 36,
+        "sk_live_" + "b" * 30,
+        "xoxb-" + "1" * 11 + "-" + "2" * 11 + "-" + "x" * 16,
+        "-----BEGIN OPENSSH PRIVATE KEY-----",
+        "sk-ant-api03-" + "c" * 93 + "AA",
+    ]
+    for c in cases:
+        assert secrets.scan(c), f"tespit edilmeli: {c[:12]}"
+    assert len(secrets._rules()) >= 25
+
+
+def test_seclists_paths_present():
+    from koruma.checks.files import SENSITIVE_PATHS
+    paths = {p[0] for p in SENSITIVE_PATHS}
+    for expected in (".ssh/id_rsa", ".npmrc", "actuator/heapdump", "config/database.yml"):
+        assert expected in paths
+
+
 def test_jwt_role_decode():
     from koruma.checks.baas import _jwt_role
     import base64, json as _json
