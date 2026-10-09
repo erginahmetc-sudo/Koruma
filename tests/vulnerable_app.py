@@ -24,6 +24,7 @@ PAGES = {
         <script src="https://cdn.example.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdn.example.com/lodash/4.17.10/lodash.min.js"></script>
         <script src="/static/bootstrap-4.1.0.min.js"></script>
+        <script src="/app.js"></script>
         <meta name="generator" content="WordPress 5.8.1">
         <form action="/comment" method="post">
           <input name="yorum" type="text"><input type="submit">
@@ -86,6 +87,25 @@ def app(environ, start_response):
                     extra.append((k.strip(), v.strip()))
         start_response("302 Found", [("Location", nxt), ("Content-Type", "text/html")] + extra)
         return [b""]
+
+    if path == "/app.js":  # aynı kökenli JS: gömülü sır, sourceMappingURL, supabase, endpoint
+        js = (
+            "// uygulama paketi\n"
+            "var AWS_KEY='AKIAIOSFODNN7EXAMPLE';\n"
+            "var SUPABASE_URL='https://abcdefghijklmnopqrst.supabase.co';\n"
+            "var SERVICE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
+            "eyJyb2xlIjoic2VydmljZV9yb2xlIiwiaXNzIjoic3VwYWJhc2UiLCJyZWYiOiJhYmNkZWZnaGlqa2xtbm9wcXJzdCJ9."
+            "c2lnbmF0dXJlX2R1bW15X2tvcnVtYV90ZXN0X3h4eHh4eHh4';\n"
+            "var ADMIN='/api/admin/users';\n"
+            "var INTERNAL='http://10.0.0.5:8080/metrics';\n"
+            "//# sourceMappingURL=app.js.map\n"
+        )
+        return _resp(start_response, "200 OK", js, ctype="application/javascript")
+
+    if path == "/app.js.map":  # açık kaynak haritası
+        return _resp(start_response, "200 OK",
+                     '{"version":3,"sources":["src/app.ts"],"mappings":"AAAA","names":[]}',
+                     ctype="application/json")
 
     if path == "/profil":  # IDOR: id değişince başka kullanıcının profili döner
         uid = qs.get("id", ["1"])[0]

@@ -199,6 +199,31 @@ def test_access_auth_diff_requires_user_auth(server):
     assert access._check_auth_diff(ctx) == []
 
 
+def test_detects_supabase_service_role_leak(result):
+    assert any("service_role" in t for t in titles(result))
+
+
+def test_detects_secret_in_js_file(result):
+    comp = [f for f in result.findings if f.check == "jsrecon" and "AWS" in f.title]
+    assert comp, "JS dosyasındaki AWS anahtarı tespit edilmeli"
+
+
+def test_detects_source_map_exposure(result):
+    assert any("Kaynak haritası" in t for t in titles(result))
+
+
+def test_detects_risky_endpoint_in_js(result):
+    assert any("riskli uç nokta" in t.lower() for t in titles(result))
+
+
+def test_jwt_role_decode():
+    from koruma.checks.baas import _jwt_role
+    import base64, json as _json
+    def b64(d): return base64.urlsafe_b64encode(_json.dumps(d).encode()).rstrip(b"=").decode()
+    tok = f"{b64({'alg':'HS256'})}.{b64({'role':'service_role'})}.sig"
+    assert _jwt_role(tok) == "service_role"
+
+
 def test_dns_email_skips_ip(server):
     # IP adresli hedefte DNS/e-posta kontrolü sessizce atlanır
     from koruma.checks import dns_email

@@ -20,6 +20,7 @@ class Context:
 from koruma.checks import (  # noqa: E402
     access,
     advanced,
+    baas,
     components,
     cookies,
     cors,
@@ -30,6 +31,7 @@ from koruma.checks import (  # noqa: E402
     fingerprint,
     headers,
     injection,
+    jsrecon,
     methods,
     redirect,
     tls,
@@ -51,4 +53,6 @@ ALL_CHECKS = {
     "advanced": advanced,
     "dns_email": dns_email,
     "access": access,
+    "baas": baas,
+    "jsrecon": jsrecon,
 }

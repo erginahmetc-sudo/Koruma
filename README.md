@@ -28,6 +28,8 @@ olduğunu** ve **nasıl düzeltileceğini** açıklayan Türkçe bir rapordur.
 | `advanced` | CRLF enjeksiyonu / HTTP yanıt bölme, Host başlığı enjeksiyonu, hassas sayfalarda önbellekleme politikası |
 | `dns_email` | SPF, DMARC, DKIM, CAA, DNSSEC kayıtları (e-posta sahteciliği ve sertifika yanlış verilmesine karşı koruma) |
 | `access` | **Bozuk erişim kontrolü (OWASP A01)**: forced browsing (korunmasız yönetim sayfaları), sıralı kimlik numaralandırma (**olası IDOR**), kimlik doğrulamalı vs doğrulamasız yanıt karşılaştırması |
+| `baas` | **Backend-as-a-Service yanlış yapılandırması** (modern yüksek-etkili açıklar): **Supabase** istemciye sızmış `service_role`/`sb_secret` anahtarı, **RLS kapalı tablolardan anon anahtarıyla veri okunması** (Supabase "rls_disabled_in_public" uyarısı), **Firebase** herkese açık Realtime Database, herkese listelenebilir **S3/GCS bucket**'ları |
+| `jsrecon` | **Derin JavaScript keşfi** (bug bounty avcılarının yöntemi): aynı kökenli JS dosyalarını indirip içlerinde gömülü **sır/anahtar**, **kaynak haritası (.js.map) ifşası** (kaynak kod sızıntısı), **gizli/riskli uç noktalar** (admin/debug/internal API), iç ağ adresleri |
 
 ### Ek özellikler
 

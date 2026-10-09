@@ -26,4 +26,6 @@ export const CHECKS = [
   { id: "advanced", label: "Gelişmiş Enjeksiyon", desc: "CRLF, Host başlığı enjeksiyonu, önbellek" },
   { id: "dns_email", label: "DNS & E-posta", desc: "SPF, DMARC, DKIM, CAA, DNSSEC" },
   { id: "access", label: "Erişim Kontrolü", desc: "Forced browsing, IDOR, oturum karşılaştırması (OWASP A01)" },
+  { id: "baas", label: "Supabase / Firebase", desc: "RLS kapalı tablo, service_role sızıntısı, açık DB, bulut bucket" },
+  { id: "jsrecon", label: "Derin JS Keşfi", desc: "JS içinde sır, kaynak haritası, gizli uç noktalar" },
 ];
