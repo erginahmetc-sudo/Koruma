@@ -82,12 +82,38 @@ bağlantılara girilmez ve POST formları yalnızca `--test-post-forms` ile test
 
 Komut satırını kullanmak istemiyorsanız, `desktop/` klasöründe tam bir
 **Windows/Linux masaüstü uygulaması** vardır: bir kutuya sitenizin adresini
-yazıp **Açıkları Tara** düğmesine basmanız yeterli. Kurulum, çalıştırma ve
-`.exe` paketleme için bkz. [`desktop/README.md`](desktop/README.md).
+yazıp **Açıkları Tara** düğmesine basmanız yeterli.
 
 ![Masaüstü arayüzü](scanner-ui.png)
 
-## Kurulum
+## ⚡ Tek Tık Kurulum
+
+Depoyu indirin, ardından işletim sisteminize göre kurulum dosyasını çalıştırın —
+Python ve Node.js kurulu olup olmadığını kontrol eder, tüm bağımlılıkları kurar
+ve isterseniz masaüstü uygulamasını başlatır.
+
+**Windows:**
+```
+setup.bat dosyasına çift tıklayın
+```
+(Daha sonra uygulamayı tekrar açmak için `baslat.bat` kullanın.)
+
+**Linux / macOS:**
+```bash
+./setup.sh
+```
+(Daha sonra uygulamayı tekrar açmak için `./baslat.sh` kullanın.)
+
+> Setup betiği, Debian/Ubuntu gibi "externally-managed" Python ortamlarında
+> otomatik olarak `--user` / `--break-system-packages` ile yeniden dener.
+> Python 3.9+ ve Node.js 18+ kurulu değilse size resmi indirme adreslerini gösterir.
+
+Windows `.exe` kurulum paketi oluşturmak isterseniz (`desktop/release/` altına
+yazılır), bkz. [`desktop/README.md`](desktop/README.md).
+
+## Manuel Kurulum (yalnızca CLI)
+
+Masaüstü uygulamasını değil, yalnızca komut satırı aracını kullanacaksanız:
 
 ```bash
 git clone <depo-adresi>
