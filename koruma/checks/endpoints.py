@@ -7,8 +7,10 @@ aşamasında aradığı uç noktaları kontrol eder. Hepsi salt-okunur isteklerd
 from __future__ import annotations
 
 import json
+import re
 from urllib.parse import urljoin
 
+from koruma import baseline
 from koruma.models import Finding, Severity
 
 NAME = "endpoints"
@@ -22,7 +24,6 @@ ADMIN_PATHS = [
     ("wp-admin/", Severity.INFO, "WordPress yönetim paneli"),
     ("manager/html", Severity.MEDIUM, "Tomcat Manager"),
     ("jenkins/", Severity.MEDIUM, "Jenkins"),
-    (".git/config", Severity.HIGH, "Git yapılandırması"),
     ("api/", Severity.INFO, "API kökü"),
     ("api/v1/", Severity.INFO, "API v1"),
     ("api-docs", Severity.INFO, "API dokümantasyonu"),
@@ -36,8 +37,10 @@ ADMIN_PATHS = [
 ]
 
 CROSS_DOMAIN = [
-    ("crossdomain.xml", "allow-access-from domain=\"*\"", "Flash çapraz alan politikası her kaynağa izin veriyor"),
-    ("clientaccesspolicy.xml", "domain uri=\"*\"", "Silverlight çapraz alan politikası her kaynağa izin veriyor"),
+    ("crossdomain.xml", r"allow-access-from\s+domain\s*=\s*[\"']\*[\"']",
+     "Flash çapraz alan politikası her kaynağa izin veriyor"),
+    ("clientaccesspolicy.xml", r"domain\s+uri\s*=\s*[\"']\*[\"']",
+     "Silverlight çapraz alan politikası her kaynağa izin veriyor"),
 ]
 
 
@@ -48,6 +51,7 @@ def _ok(resp, soft=None):
 def run(ctx) -> list[Finding]:
     findings: list[Finding] = []
     root = urljoin(ctx.base_url, "/")
+    bl = baseline.get(ctx)   # SPA / catch-all parmak izi (sahte alarm önleme)
 
     # --- GraphQL introspection ---
     for path in GRAPHQL_PATHS:
@@ -73,7 +77,7 @@ def run(ctx) -> list[Finding]:
             continue
         url = urljoin(root, path)
         r = ctx.client.get(url, allow_redirects=False)
-        if r is None:
+        if r is None or bl.matches_response(r):   # sunucunun "olmayan adres" cevabına benziyor
             continue
         if r.status_code in (200, 401, 403) or (r.status_code in (301, 302) and path.rstrip("/") in r.headers.get("Location", "")):
             state = {200: "erişilebilir", 401: "kimlik doğrulama istiyor", 403: "yasak",
@@ -88,8 +92,8 @@ def run(ctx) -> list[Finding]:
     for fname, marker, desc in CROSS_DOMAIN:
         url = urljoin(root, fname)
         r = ctx.client.get(url)
-        if _ok(r) and "xml" in r.headers.get("Content-Type", "") or (_ok(r) and "<" in r.text[:50]):
-            if "*" in r.text:
+        if _ok(r) and not bl.matches_response(r) and r.text.lstrip().startswith("<"):
+            if re.search(marker, r.text, re.I):
                 findings.append(Finding(NAME, f"Gevşek çapraz alan politikası: /{fname}", Severity.MEDIUM, url,
                     desc + ". Bu, başka sitelerin tarayıcı üzerinden verilerinize erişmesine izin verebilir.",
                     "Politikayı yalnızca güvendiğiniz alan adlarıyla sınırlayın veya dosyayı kaldırın.",
@@ -123,7 +127,8 @@ def run(ctx) -> list[Finding]:
 
     # XML-RPC
     r = ctx.client.get(urljoin(root, "xmlrpc.php"))
-    if r is not None and r.status_code in (200, 405) and ("XML-RPC" in r.text or "method" in r.text.lower()):
+    if (r is not None and r.status_code in (200, 405) and not bl.matches_response(r)
+            and "XML-RPC server accepts POST requests only" in r.text):
         findings.append(Finding(NAME, "WordPress XML-RPC etkin", Severity.LOW, urljoin(root, "xmlrpc.php"),
             "xmlrpc.php etkin; system.multicall ile tek istekte yüzlerce parola denemesi yapılabilir "
             "(kaba kuvvet güçlendirme) ve pingback DDoS'a yol açabilir.",

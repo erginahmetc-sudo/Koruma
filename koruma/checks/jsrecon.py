@@ -52,7 +52,8 @@ def run(ctx) -> list[Finding]:
             if urlparse(map_url).hostname != host or not map_url.startswith(("http://", "https://")):
                 continue
             r = ctx.client.get(map_url) if ctx.client.in_scope(map_url) else None
-            if r is not None and r.status_code == 200 and ('"sources"' in r.text[:2000] or '"mappings"' in r.text[:2000]):
+            if r is not None and r.status_code == 200 and r.text.lstrip().startswith("{") \
+                    and ('"sources"' in r.text[:2000] or '"mappings"' in r.text[:2000]):
                 add(Finding(NAME, "Kaynak haritası (source map) herkese açık", Severity.MEDIUM, map_url,
                     "JavaScript kaynak haritası erişilebilir; bu, derlenmemiş/orijinal kaynak kodunuzun "
                     "(iç mantık, yorumlar, olası sırlar) yeniden elde edilebileceği anlamına gelir.",

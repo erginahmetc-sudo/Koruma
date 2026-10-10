@@ -88,6 +88,13 @@ def app(environ, start_response):
         start_response("302 Found", [("Location", nxt), ("Content-Type", "text/html")] + extra)
         return [b""]
 
+    if path == "/.env":  # gerçekten açıkta kalmış ortam dosyası
+        return _resp(start_response, "200 OK",
+                     "APP_ENV=production\nDB_HOST=db.internal\nDB_PASSWORD=ornek-parola\n", ctype="text/plain")
+
+    if path == "/.git/HEAD":  # gerçekten açıkta kalmış git deposu
+        return _resp(start_response, "200 OK", "ref: refs/heads/main\n", ctype="text/plain")
+
     if path == "/app.js":  # aynı kökenli JS: gömülü sır, sourceMappingURL, supabase, endpoint
         js = (
             "// uygulama paketi\n"
@@ -147,7 +154,30 @@ def app(environ, start_response):
     return _resp(start_response, "404 Not Found", "<html><body>Bulunamadı</body></html>")
 
 
-def serve(host="127.0.0.1", port=0):
+def _spa_shell():
+    """Her istekte değişen nonce içeren, eski işaretleri kasten barındıran SPA kabuğu."""
+    import secrets
+    n = secrets.token_hex(8)
+    return (
+        '<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>Benim Uygulamam</title>'
+        f'<script type="module" crossorigin src="/assets/index-abc123.js" nonce="{n}"></script></head>'
+        '<body><div id="root"></div>'
+        f'<script nonce="{n}">window.__CFG__={{host:"app",services:["api"],password:"",packages:[],'
+        'FROM:1,threads:2,ref:"x",DB_PASSWORD:"",PHP:"PHP Version",phpMyAdmin:1,Adminer:1,'
+        'status:200,request:1,value:2,swagger:1,dependencies:{},JConfig:1,SECRET_KEY:1};</script>'
+        '<noscript>JavaScript gerekli = true</noscript></body></html>'
+    )
+
+
+def spa_app(environ, start_response):
+    """Bilinmeyen TÜM adreslere ana sayfa kabuğunu 200 ile döndüren SPA (catch-all) taklidi."""
+    path = environ.get("PATH_INFO", "/")
+    if path == "/assets/index-abc123.js":
+        return _resp(start_response, "200 OK", "console.log('uygulama');", ctype="application/javascript")
+    return _resp(start_response, "200 OK", _spa_shell())
+
+
+def serve(host="127.0.0.1", port=0, wsgi=None):
     """Test için bir thread içinde başlatılabilen WSGI sunucusu döndürür."""
     from wsgiref.simple_server import WSGIServer, make_server
 
@@ -155,7 +185,7 @@ def serve(host="127.0.0.1", port=0):
         def handle_error(self, request, client_address):
             pass
 
-    httpd = make_server(host, port, app, server_class=QuietServer)
+    httpd = make_server(host, port, wsgi or app, server_class=QuietServer)
     return httpd
 
 

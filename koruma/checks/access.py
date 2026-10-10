@@ -17,6 +17,7 @@ from __future__ import annotations
 import re
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
+from koruma import baseline
 from koruma.models import Finding, Severity
 
 NAME = "access"
@@ -66,11 +67,12 @@ def _check_forced_browsing(ctx) -> list[Finding]:
     from urllib.parse import urljoin
     findings = []
     root = urljoin(ctx.base_url, "/")
+    bl = baseline.get(ctx)   # SPA/catch-all: bilinmeyen adrese de 200 dönüyorsa "korunmasız" sayma
     for path, label in PROTECTED_PATHS:
         url = urljoin(root, path)
         # Oturumsuz (kullanıcının verdiği çerezleri atlayan) ayrı istek
         r = ctx.client.get(url, allow_redirects=False)
-        if r is None or r.status_code != 200:
+        if r is None or r.status_code != 200 or bl.matches_response(r):
             continue
         low = (r.text or "")[:600].lower()
         if any(h in low for h in ("login", "giriş", "sign in", "unauthorized", "oturum aç")):
@@ -89,6 +91,7 @@ def _check_forced_browsing(ctx) -> list[Finding]:
 def _check_idor(ctx) -> list[Finding]:
     findings = []
     reported = set()
+    bl = baseline.get(ctx)
     for url in ctx.crawl.param_urls[:20]:
         p, params, numerics = _numeric_params(url)
         for name in numerics:
@@ -97,7 +100,7 @@ def _check_idor(ctx) -> list[Finding]:
                 continue
             base_val = int(params[name])
             base_resp = ctx.client.get(_with(p, params, name, base_val))
-            if not _looks_like_record(base_resp):
+            if not _looks_like_record(base_resp) or bl.matches_response(base_resp):
                 continue
             # Komşu kimlikleri dene
             hits = []
@@ -106,7 +109,7 @@ def _check_idor(ctx) -> list[Finding]:
                 if nv < 0:
                     continue
                 r = ctx.client.get(_with(p, params, name, nv))
-                if _looks_like_record(r) and r.text != base_resp.text:
+                if _looks_like_record(r) and r.text != base_resp.text and not bl.matches_response(r):
                     hits.append(nv)
             if hits:
                 reported.add(key)

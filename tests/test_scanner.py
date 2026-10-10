@@ -256,3 +256,77 @@ def test_dns_email_skips_ip(server):
     from koruma.crawler import CrawlResult
     ctx = Context(client=Client(server), base_url=server, crawl=CrawlResult())
     assert dns_email.run(ctx) == []
+
+
+# --- SPA / catch-all (sahte alarm) regresyon testleri ----------------------------------
+
+SPA_CHECKS = ["files", "endpoints", "access", "fingerprint", "jsrecon", "disclosure",
+              "components", "advanced", "cors", "methods", "injection", "redirect", "cookies"]
+
+
+def _run_server(wsgi):
+    from tests.vulnerable_app import serve
+    httpd = serve(port=0, wsgi=wsgi)
+    threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    return httpd, f"http://127.0.0.1:{httpd.server_port}"
+
+
+def test_spa_catchall_produces_no_false_alarms():
+    """Bilinmeyen her adrese ana sayfayı 200 ile döndüren site, sahte alarm üretmemeli."""
+    from tests.vulnerable_app import spa_app
+    httpd, url = _run_server(spa_app)
+    try:
+        res = scan(url, delay=0, checks=SPA_CHECKS, log=lambda *a, **k: None)
+    finally:
+        httpd.shutdown()
+    bad = [f.title for f in res.findings
+           if f.severity >= Severity.LOW and f.check in ("files", "endpoints", "access", "fingerprint")]
+    assert bad == [], bad
+    assert any("catch-all" in f.title for f in res.findings), "catch-all bilgi notu bulunmalı"
+
+
+def test_real_exposure_still_found_behind_catchall():
+    """SPA'nın arkasında GERÇEKTEN açık bir .env varsa, yine de bulunmalı (yanlış negatif yok)."""
+    from tests.vulnerable_app import spa_app, _resp
+
+    def spa_with_env(environ, start_response):
+        if environ.get("PATH_INFO") == "/.env":
+            return _resp(start_response, "200 OK", "APP_ENV=production\nDB_PASSWORD=ornek\n", ctype="text/plain")
+        return spa_app(environ, start_response)
+
+    httpd, url = _run_server(spa_with_env)
+    try:
+        res = scan(url, delay=0, checks=["files"], log=lambda *a, **k: None)
+    finally:
+        httpd.shutdown()
+    exposed = [f.title for f in res.findings if f.title.startswith("Hassas dosya")]
+    assert exposed == ["Hassas dosya erişilebilir: /.env"], exposed
+
+
+def test_real_env_and_git_head_detected(result):
+    ts = titles(result)
+    assert "Hassas dosya erişilebilir: /.env" in ts
+    assert "Hassas dosya erişilebilir: /.git/HEAD" in ts
+
+
+def test_baseline_ignores_nonce_and_hashes():
+    from koruma.baseline import Baseline, _Sig
+    a = '<html><title>T</title><script nonce="aaaaaaaaaaaaaaaa">x</script></html>'
+    b = '<html><title>T</title><script nonce="bbbbbbbbbbbbbbbb">x</script></html>'
+    bl = Baseline([_Sig(200, "text/html", a)])
+    assert bl.catchall and bl.matches(200, "text/html", b)
+    assert not bl.matches(404, "text/html", b)          # farklı durum kodu = farklı cevap
+    assert not bl.matches(200, "text/plain", "APP_ENV=production\nDB_PASSWORD=x\n")
+
+
+def test_file_validation_rejects_html_and_accepts_real_content():
+    from koruma.checks.files import _validate
+    env_re = r"re:^[A-Za-z_][A-Za-z0-9_.]*\s*="
+    html = "<!doctype html><html><head></head><body>a=b {x}</body></html>"
+    assert not _validate(env_re, html.encode(), html, "text/html")
+    env = "APP_ENV=production\nDB_PASSWORD=x\n"
+    assert _validate(env_re, env.encode(), env, "text/plain")
+    assert not _validate("json", b"<html>", "<html>", "application/json")
+    assert _validate("json:a", b'{"a":1}', '{"a":1}', "application/json")
+    assert _validate("magic:" + b"PK\x03\x04".hex(), b"PK\x03\x04rest", "PK", "application/zip")
+    assert not _validate("magic:" + b"PK\x03\x04".hex(), html.encode(), html, "text/html")

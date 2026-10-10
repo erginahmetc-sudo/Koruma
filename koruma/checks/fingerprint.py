@@ -10,6 +10,7 @@ import re
 
 from bs4 import BeautifulSoup
 
+from koruma import baseline
 from koruma.models import Finding, Severity
 
 NAME = "fingerprint"
@@ -87,11 +88,12 @@ def run(ctx) -> list[Finding]:
 
     # 4) Birkaç belirleyici yol
     from urllib.parse import urljoin
+    bl = baseline.get(ctx)
     for path, label in PATH_TECH:
         if label is None:
             continue
         r = ctx.client.get(urljoin(ctx.base_url, path), allow_redirects=False)
-        if r is not None and r.status_code in (200, 301, 302, 403):
+        if r is not None and r.status_code in (200, 301, 302, 403) and not bl.matches_response(r):
             detected.setdefault(label, f"{path} ({r.status_code})")
 
     if detected:

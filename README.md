@@ -33,6 +33,12 @@ olduğunu** ve **nasıl düzeltileceğini** açıklayan Türkçe bir rapordur.
 
 ### Ek özellikler
 
+- **Sahte alarm koruması (SPA / catch-all)** — Bilinmeyen her adrese ana sayfayı `200` ile döndüren
+  siteler (React/Vue/Next SPA, özel 404 sayfaları, WAF engel sayfaları) için tarayıcı önce var olmayan
+  rastgele adreslerin cevabını öğrenir ve ona benzeyen her şeyi "yok" sayar. Ayrıca dosya kontrolleri HTTP
+  koduna değil içeriğin gerçek biçimine bakar (ör. `.env` için satır başında `ANAHTAR=değer`, `.git/HEAD`
+  için `ref: refs/`, `.zip` için `PK` imzası); HTML dönen cevaplar elenir. Böyle bir site tespit edilirse
+  raporda bir bilgi notu görünür.
 - **PDF / HTML / JSON rapor** — `--format pdf -o rapor.pdf` (veya arayüzde "PDF kaydet").
 - **Periyodik tarama** — `--repeat 3600` her saat yeniden tarar; arayüzde "Otomatik tekrar".
 - **Kimlik doğrulamalı tarama** — `--cookie "session=..."` veya `--header "Authorization: Bearer ..."`
