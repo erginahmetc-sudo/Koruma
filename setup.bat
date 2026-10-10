@@ -1,114 +1,134 @@
 @echo off
-chcp 65001 >nul
-setlocal enabledelayedexpansion
+setlocal EnableExtensions
 title Koruma - Kurulum
+cd /d "%~dp0"
 
 echo.
-echo   ╔══════════════════════════════════════════╗
-echo   ║        KORUMA - Kurulum Sihirbazi         ║
-echo   ║   Kendi web sitenizin guvenlik tarayicisi ║
-echo   ╚══════════════════════════════════════════╝
+echo ============================================
+echo   KORUMA - Kurulum Sihirbazi
+echo   Kendi web sitenizin guvenlik tarayicisi
+echo ============================================
 echo.
 
-set ROOT=%~dp0
-cd /d "%ROOT%"
+call :main
+set "RC=%ERRORLEVEL%"
 
-REM --- Python kontrolu -------------------------------------------------
-echo [1/5] Python kontrol ediliyor...
-set PYCMD=
-where py >nul 2>nul && set PYCMD=py
-if not defined PYCMD (
-    where python >nul 2>nul && set PYCMD=python
+echo.
+if "%RC%"=="0" (
+    echo Kurulum basariyla tamamlandi.
+) else (
+    echo Kurulum TAMAMLANAMADI. Yukaridaki hata mesajini okuyun.
 )
-if not defined PYCMD (
-    echo.
-    echo   HATA: Python bulunamadi.
-    echo   Lutfen https://www.python.org/downloads/ adresinden Python 3.9+ kurun.
-    echo   Kurulum sirasinda "Add Python to PATH" kutusunu isaretlemeyi unutmayin.
-    echo.
-    pause
+echo.
+echo Bu pencereyi kapatmak icin bir tusa basin...
+pause >nul
+exit /b %RC%
+
+
+:main
+set "ROOT=%~dp0"
+
+echo [1/5] Python kontrol ediliyor...
+set "PYCMD="
+py -3 -c "import sys" >nul 2>nul
+if not errorlevel 1 set "PYCMD=py -3"
+if defined PYCMD goto :py_found
+python -c "import sys" >nul 2>nul
+if not errorlevel 1 set "PYCMD=python"
+if defined PYCMD goto :py_found
+python3 -c "import sys" >nul 2>nul
+if not errorlevel 1 set "PYCMD=python3"
+if defined PYCMD goto :py_found
+echo.
+echo   HATA: Python bulunamadi.
+echo   Lutfen https://www.python.org/downloads/ adresinden Python 3.9 veya uzerini kurun.
+echo   Kurulum sirasinda "Add python.exe to PATH" kutusunu isaretlemeyi unutmayin.
+echo   Not: Microsoft Store kisayolu gercek Python degildir, python.org surumunu kurun.
+exit /b 1
+
+:py_found
+%PYCMD% -c "import sys; sys.exit(0 if sys.version_info[:2] >= (3, 9) else 1)" >nul 2>nul
+if errorlevel 1 (
+    echo   HATA: Python surumu cok eski. Python 3.9 veya uzeri gerekli.
     exit /b 1
 )
-for /f "tokens=2" %%v in ('%PYCMD% --version 2^>^&1') do set PYVER=%%v
-echo   Bulundu: Python %PYVER% (%PYCMD%)
+for /f "tokens=2" %%v in ('%PYCMD% --version 2^>^&1') do set "PYVER=%%v"
+echo   Bulundu: Python %PYVER% [%PYCMD%]
 
-REM --- Node.js kontrolu --------------------------------------------------
 echo.
 echo [2/5] Node.js kontrol ediliyor...
 where node >nul 2>nul
 if errorlevel 1 (
-    echo.
     echo   HATA: Node.js bulunamadi.
-    echo   Lutfen https://nodejs.org adresinden Node.js 18+ (LTS) kurun.
-    echo.
-    pause
+    echo   Lutfen https://nodejs.org adresinden Node.js 18 veya uzeri LTS surumunu kurun.
     exit /b 1
 )
-for /f "tokens=*" %%v in ('node --version') do set NODEVER=%%v
+where npm >nul 2>nul
+if errorlevel 1 (
+    echo   HATA: npm bulunamadi. Node.js kurulumunu yeniden yapin.
+    exit /b 1
+)
+for /f "delims=" %%v in ('node --version') do set "NODEVER=%%v"
 echo   Bulundu: Node.js %NODEVER%
 
-REM --- Python bagimliliklari ----------------------------------------------
 echo.
-echo [3/5] Python kutuphaneleri kuruluyor (requests, beautifulsoup4, dnspython, reportlab)...
+echo [3/5] Python kutuphaneleri kuruluyor...
+%PYCMD% -m pip --version >nul 2>nul
+if errorlevel 1 (
+    echo   HATA: pip bulunamadi. Python kurulumunu pip dahil olacak sekilde yenileyin.
+    exit /b 1
+)
 %PYCMD% -m pip install --upgrade pip --quiet >nul 2>nul
 %PYCMD% -m pip install -e . --quiet
-if errorlevel 1 (
-    echo   Normal kurulum basarisiz oldu, --user ile tekrar deneniyor...
-    %PYCMD% -m pip install -e . --quiet --user
-    if errorlevel 1 (
-        echo   HATA: Python kutuphaneleri kurulamadi. Yukaridaki hatayi kontrol edin.
-        pause
-        exit /b 1
-    )
-)
+if not errorlevel 1 goto :pip_ok
+echo   Normal kurulum basarisiz oldu, --user ile tekrar deneniyor...
+%PYCMD% -m pip install -e . --quiet --user
+if not errorlevel 1 goto :pip_ok
+echo.
+echo   HATA: Python kutuphaneleri kurulamadi. Yukaridaki hata mesajini kontrol edin.
+exit /b 1
+
+:pip_ok
 echo   Tamamlandi.
 
-REM --- npm bagimliliklari -------------------------------------------------
 echo.
-echo [4/5] Masaustu uygulamasi bagimliliklari kuruluyor (npm install)...
+echo [4/5] Masaustu uygulamasi bagimliliklari kuruluyor - npm install
 echo   Bu islem birkac dakika surebilir, lutfen bekleyin...
 pushd "%ROOT%desktop"
 call npm install --no-fund --no-audit --loglevel=error
 if errorlevel 1 (
-    echo   HATA: npm install basarisiz oldu.
     popd
-    pause
+    echo   HATA: npm install basarisiz oldu.
+    exit /b 1
+)
+echo   Tamamlandi.
+
+echo.
+echo [5/5] Masaustu arayuzu derleniyor...
+call npm run build:ui --silent
+if errorlevel 1 (
+    popd
+    echo   HATA: Arayuz derlenemedi.
     exit /b 1
 )
 popd
 echo   Tamamlandi.
 
-REM --- Arayuzu derle -------------------------------------------------------
 echo.
-echo [5/5] Masaustu arayuzu derleniyor...
-pushd "%ROOT%desktop"
-call npm run build:ui --silent
-popd
-echo   Tamamlandi.
-
+echo ============================================
+echo   KURULUM TAMAMLANDI
+echo ============================================
 echo.
-echo   ╔══════════════════════════════════════════╗
-echo   ║           KURULUM TAMAMLANDI!             ║
-echo   ╚══════════════════════════════════════════╝
-echo.
-echo   Koruma'yi su sekilde calistirabilirsiniz:
-echo.
-echo     1) Masaustu uygulamasi : baslat.bat dosyasina cift tiklayin
-echo        (veya desktop klasorunde "npm start")
-echo.
-echo     2) Komut satirindan     : koruma https://siteniz.com
-echo.
-echo     3) Windows .exe paketi  : desktop klasorunde "npm run dist:win"
-echo        (kurulum dosyasi desktop\release\ klasorune yazilir)
+echo   Uygulamayi calistirmak icin: baslat.bat dosyasina cift tiklayin
+echo   Komut satirindan           : koruma https://siteniz.com
+echo   Windows kurulum paketi     : desktop klasorunde  npm run dist:win
 echo.
 
-set /p LAUNCH="Simdi masaustu uygulamasini baslatmak ister misiniz? [E/h] "
-if /i "%LAUNCH%"=="" set LAUNCH=E
+set "LAUNCH=E"
+set /p "LAUNCH=Simdi masaustu uygulamasini baslatmak ister misiniz? [E/h] "
 if /i "%LAUNCH%"=="E" (
     pushd "%ROOT%desktop"
-    start "" npm start
+    start "Koruma" cmd /c "npm start"
     popd
 )
-
-echo.
-pause
+exit /b 0

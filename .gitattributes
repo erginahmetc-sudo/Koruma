@@ -1,0 +1,5 @@
+# Windows toplu iş dosyaları CRLF ile kalmalı (git dönüştürmesin)
+*.bat -text
+*.cmd -text
+# Kabuk betikleri LF kalmalı
+*.sh text eol=lf

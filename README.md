@@ -98,6 +98,10 @@ setup.bat dosyasına çift tıklayın
 ```
 (Daha sonra uygulamayı tekrar açmak için `baslat.bat` kullanın.)
 
+> **Pencere hemen kapanıyorsa:** Başlat menüsünden "Komut İstemi"ni (cmd) açın,
+> `cd` ile Koruma klasörüne gidip `setup.bat` yazın; hata mesajını görürsünüz.
+> Betik her durumda sonda bir tuşa basmanızı bekler, hata varsa ekranda kalır.
+
 **Linux / macOS:**
 ```bash
 ./setup.sh
