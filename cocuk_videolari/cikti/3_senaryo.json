@@ -1,0 +1,3022 @@
+[
+ {
+  "tpl": "title",
+  "em": [
+   "🔷",
+   "🍎",
+   "🚗"
+  ],
+  "tr": "Hızlı Öğren: Şekiller, Meyveler, Taşıtlar",
+  "en": "Quick Learn: Shapes, Fruits, Vehicles",
+  "say_tr": "Hızlı Öğren",
+  "say_en": "Quick Learn",
+  "baslangic_sn": 0.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": [
+   "🎉",
+   "🎈",
+   "🎉"
+  ],
+  "tr": "Hadi başlayalım!",
+  "en": "Let's go!",
+  "say_tr": "Hadi başlayalım!",
+  "say_en": "Let's go!",
+  "baslangic_sn": 2.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:circle",
+  "tr": "Daire",
+  "en": "Circle",
+  "say_tr": "Daire",
+  "say_en": "Circle",
+  "baslangic_sn": 4.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:square",
+  "tr": "Kare",
+  "en": "Square",
+  "say_tr": "Kare",
+  "say_en": "Square",
+  "baslangic_sn": 6.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:triangle",
+  "tr": "Üçgen",
+  "en": "Triangle",
+  "say_tr": "Üçgen",
+  "say_en": "Triangle",
+  "baslangic_sn": 8.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:rectangle",
+  "tr": "Dikdörtgen",
+  "en": "Rectangle",
+  "say_tr": "Dikdörtgen",
+  "say_en": "Rectangle",
+  "baslangic_sn": 10.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:star",
+  "tr": "Yıldız",
+  "en": "Star",
+  "say_tr": "Yıldız",
+  "say_en": "Star",
+  "baslangic_sn": 12.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:heart",
+  "tr": "Kalp",
+  "en": "Heart",
+  "say_tr": "Kalp",
+  "say_en": "Heart",
+  "baslangic_sn": 14.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:diamond",
+  "tr": "Baklava dilimi",
+  "en": "Diamond",
+  "say_tr": "Baklava dilimi",
+  "say_en": "Diamond",
+  "baslangic_sn": 16.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:oval",
+  "tr": "Oval",
+  "en": "Oval",
+  "say_tr": "Oval",
+  "say_en": "Oval",
+  "baslangic_sn": 18.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:hexagon",
+  "tr": "Altıgen",
+  "en": "Hexagon",
+  "say_tr": "Altıgen",
+  "say_en": "Hexagon",
+  "baslangic_sn": 20.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:pentagon",
+  "tr": "Beşgen",
+  "en": "Pentagon",
+  "say_tr": "Beşgen",
+  "say_en": "Pentagon",
+  "baslangic_sn": 22.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:crescent",
+  "tr": "Hilal",
+  "en": "Crescent",
+  "say_tr": "Hilal",
+  "say_en": "Crescent",
+  "baslangic_sn": 24.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍎",
+  "tr": "Elma",
+  "en": "Apple",
+  "say_tr": "Elma",
+  "say_en": "Apple",
+  "baslangic_sn": 26.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍌",
+  "tr": "Muz",
+  "en": "Banana",
+  "say_tr": "Muz",
+  "say_en": "Banana",
+  "baslangic_sn": 28.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍊",
+  "tr": "Portakal",
+  "en": "Orange",
+  "say_tr": "Portakal",
+  "say_en": "Orange",
+  "baslangic_sn": 30.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍇",
+  "tr": "Üzüm",
+  "en": "Grapes",
+  "say_tr": "Üzüm",
+  "say_en": "Grapes",
+  "baslangic_sn": 32.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍓",
+  "tr": "Çilek",
+  "en": "Strawberry",
+  "say_tr": "Çilek",
+  "say_en": "Strawberry",
+  "baslangic_sn": 34.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍉",
+  "tr": "Karpuz",
+  "en": "Watermelon",
+  "say_tr": "Karpuz",
+  "say_en": "Watermelon",
+  "baslangic_sn": 36.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍍",
+  "tr": "Ananas",
+  "en": "Pineapple",
+  "say_tr": "Ananas",
+  "say_en": "Pineapple",
+  "baslangic_sn": 38.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥭",
+  "tr": "Mango",
+  "en": "Mango",
+  "say_tr": "Mango",
+  "say_en": "Mango",
+  "baslangic_sn": 40.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍑",
+  "tr": "Şeftali",
+  "en": "Peach",
+  "say_tr": "Şeftali",
+  "say_en": "Peach",
+  "baslangic_sn": 42.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍒",
+  "tr": "Kiraz",
+  "en": "Cherry",
+  "say_tr": "Kiraz",
+  "say_en": "Cherry",
+  "baslangic_sn": 44.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍋",
+  "tr": "Limon",
+  "en": "Lemon",
+  "say_tr": "Limon",
+  "say_en": "Lemon",
+  "baslangic_sn": 46.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥝",
+  "tr": "Kivi",
+  "en": "Kiwi",
+  "say_tr": "Kivi",
+  "say_en": "Kiwi",
+  "baslangic_sn": 48.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍐",
+  "tr": "Armut",
+  "en": "Pear",
+  "say_tr": "Armut",
+  "say_en": "Pear",
+  "baslangic_sn": 50.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍈",
+  "tr": "Kavun",
+  "en": "Melon",
+  "say_tr": "Kavun",
+  "say_en": "Melon",
+  "baslangic_sn": 52.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥥",
+  "tr": "Hindistan cevizi",
+  "en": "Coconut",
+  "say_tr": "Hindistan cevizi",
+  "say_en": "Coconut",
+  "baslangic_sn": 54.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🫐",
+  "tr": "Yaban mersini",
+  "en": "Blueberry",
+  "say_tr": "Yaban mersini",
+  "say_en": "Blueberry",
+  "baslangic_sn": 56.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍅",
+  "tr": "Domates",
+  "en": "Tomato",
+  "say_tr": "Domates",
+  "say_en": "Tomato",
+  "baslangic_sn": 58.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥑",
+  "tr": "Avokado",
+  "en": "Avocado",
+  "say_tr": "Avokado",
+  "say_en": "Avocado",
+  "baslangic_sn": 60.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥕",
+  "tr": "Havuç",
+  "en": "Carrot",
+  "say_tr": "Havuç",
+  "say_en": "Carrot",
+  "baslangic_sn": 62.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥔",
+  "tr": "Patates",
+  "en": "Potato",
+  "say_tr": "Patates",
+  "say_en": "Potato",
+  "baslangic_sn": 64.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🌽",
+  "tr": "Mısır",
+  "en": "Corn",
+  "say_tr": "Mısır",
+  "say_en": "Corn",
+  "baslangic_sn": 66.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥦",
+  "tr": "Brokoli",
+  "en": "Broccoli",
+  "say_tr": "Brokoli",
+  "say_en": "Broccoli",
+  "baslangic_sn": 68.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥒",
+  "tr": "Salatalık",
+  "en": "Cucumber",
+  "say_tr": "Salatalık",
+  "say_en": "Cucumber",
+  "baslangic_sn": 70.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🧅",
+  "tr": "Soğan",
+  "en": "Onion",
+  "say_tr": "Soğan",
+  "say_en": "Onion",
+  "baslangic_sn": 72.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🧄",
+  "tr": "Sarımsak",
+  "en": "Garlic",
+  "say_tr": "Sarımsak",
+  "say_en": "Garlic",
+  "baslangic_sn": 74.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍄",
+  "tr": "Mantar",
+  "en": "Mushroom",
+  "say_tr": "Mantar",
+  "say_en": "Mushroom",
+  "baslangic_sn": 76.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🫑",
+  "tr": "Biber",
+  "en": "Pepper",
+  "say_tr": "Biber",
+  "say_en": "Pepper",
+  "baslangic_sn": 78.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥬",
+  "tr": "Marul",
+  "en": "Lettuce",
+  "say_tr": "Marul",
+  "say_en": "Lettuce",
+  "baslangic_sn": 80.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍠",
+  "tr": "Tatlı patates",
+  "en": "Sweet potato",
+  "say_tr": "Tatlı patates",
+  "say_en": "Sweet potato",
+  "baslangic_sn": 82.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🎃",
+  "tr": "Balkabağı",
+  "en": "Pumpkin",
+  "say_tr": "Balkabağı",
+  "say_en": "Pumpkin",
+  "baslangic_sn": 84.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍆",
+  "tr": "Patlıcan",
+  "en": "Eggplant",
+  "say_tr": "Patlıcan",
+  "say_en": "Eggplant",
+  "baslangic_sn": 86.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚗",
+  "tr": "Araba",
+  "en": "Car",
+  "say_tr": "Araba",
+  "say_en": "Car",
+  "baslangic_sn": 88.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚕",
+  "tr": "Taksi",
+  "en": "Taxi",
+  "say_tr": "Taksi",
+  "say_en": "Taxi",
+  "baslangic_sn": 90.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚌",
+  "tr": "Otobüs",
+  "en": "Bus",
+  "say_tr": "Otobüs",
+  "say_en": "Bus",
+  "baslangic_sn": 92.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚓",
+  "tr": "Polis arabası",
+  "en": "Police car",
+  "say_tr": "Polis arabası",
+  "say_en": "Police car",
+  "baslangic_sn": 94.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚑",
+  "tr": "Ambulans",
+  "en": "Ambulance",
+  "say_tr": "Ambulans",
+  "say_en": "Ambulance",
+  "baslangic_sn": 96.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚒",
+  "tr": "İtfaiye",
+  "en": "Fire truck",
+  "say_tr": "İtfaiye",
+  "say_en": "Fire truck",
+  "baslangic_sn": 98.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚚",
+  "tr": "Kamyon",
+  "en": "Truck",
+  "say_tr": "Kamyon",
+  "say_en": "Truck",
+  "baslangic_sn": 100.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚜",
+  "tr": "Traktör",
+  "en": "Tractor",
+  "say_tr": "Traktör",
+  "say_en": "Tractor",
+  "baslangic_sn": 102.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🏎️",
+  "tr": "Yarış arabası",
+  "en": "Race car",
+  "say_tr": "Yarış arabası",
+  "say_en": "Race car",
+  "baslangic_sn": 104.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🏍️",
+  "tr": "Motosiklet",
+  "en": "Motorcycle",
+  "say_tr": "Motosiklet",
+  "say_en": "Motorcycle",
+  "baslangic_sn": 106.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚲",
+  "tr": "Bisiklet",
+  "en": "Bicycle",
+  "say_tr": "Bisiklet",
+  "say_en": "Bicycle",
+  "baslangic_sn": 108.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🛴",
+  "tr": "Scooter",
+  "en": "Scooter",
+  "say_tr": "Scooter",
+  "say_en": "Scooter",
+  "baslangic_sn": 110.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚂",
+  "tr": "Tren",
+  "en": "Train",
+  "say_tr": "Tren",
+  "say_en": "Train",
+  "baslangic_sn": 112.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚁",
+  "tr": "Helikopter",
+  "en": "Helicopter",
+  "say_tr": "Helikopter",
+  "say_en": "Helicopter",
+  "baslangic_sn": 114.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "✈️",
+  "tr": "Uçak",
+  "en": "Airplane",
+  "say_tr": "Uçak",
+  "say_en": "Airplane",
+  "baslangic_sn": 116.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚀",
+  "tr": "Roket",
+  "en": "Rocket",
+  "say_tr": "Roket",
+  "say_en": "Rocket",
+  "baslangic_sn": 118.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚢",
+  "tr": "Gemi",
+  "en": "Ship",
+  "say_tr": "Gemi",
+  "say_en": "Ship",
+  "baslangic_sn": 120.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "⛵",
+  "tr": "Yelkenli",
+  "en": "Sailboat",
+  "say_tr": "Yelkenli",
+  "say_en": "Sailboat",
+  "baslangic_sn": 122.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚤",
+  "tr": "Sürat teknesi",
+  "en": "Speedboat",
+  "say_tr": "Sürat teknesi",
+  "say_en": "Speedboat",
+  "baslangic_sn": 124.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🛶",
+  "tr": "Kano",
+  "en": "Canoe",
+  "say_tr": "Kano",
+  "say_en": "Canoe",
+  "baslangic_sn": 126.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚇",
+  "tr": "Metro",
+  "en": "Subway",
+  "say_tr": "Metro",
+  "say_en": "Subway",
+  "baslangic_sn": 128.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🚡",
+  "tr": "Teleferik",
+  "en": "Cable car",
+  "say_tr": "Teleferik",
+  "say_en": "Cable car",
+  "baslangic_sn": 130.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "👀",
+  "tr": "Gözler",
+  "en": "Eyes",
+  "say_tr": "Gözler",
+  "say_en": "Eyes",
+  "baslangic_sn": 132.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "👂",
+  "tr": "Kulak",
+  "en": "Ear",
+  "say_tr": "Kulak",
+  "say_en": "Ear",
+  "baslangic_sn": 134.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "👃",
+  "tr": "Burun",
+  "en": "Nose",
+  "say_tr": "Burun",
+  "say_en": "Nose",
+  "baslangic_sn": 136.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "👄",
+  "tr": "Ağız",
+  "en": "Mouth",
+  "say_tr": "Ağız",
+  "say_en": "Mouth",
+  "baslangic_sn": 138.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "✋",
+  "tr": "El",
+  "en": "Hand",
+  "say_tr": "El",
+  "say_en": "Hand",
+  "baslangic_sn": 140.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦶",
+  "tr": "Ayak",
+  "en": "Foot",
+  "say_tr": "Ayak",
+  "say_en": "Foot",
+  "baslangic_sn": 142.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦷",
+  "tr": "Diş",
+  "en": "Tooth",
+  "say_tr": "Diş",
+  "say_en": "Tooth",
+  "baslangic_sn": 144.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "💪",
+  "tr": "Kol",
+  "en": "Arm",
+  "say_tr": "Kol",
+  "say_en": "Arm",
+  "baslangic_sn": 146.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "☀️",
+  "tr": "Güneş",
+  "en": "Sun",
+  "say_tr": "Güneş",
+  "say_en": "Sun",
+  "baslangic_sn": 148.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🌙",
+  "tr": "Ay",
+  "en": "Moon",
+  "say_tr": "Ay",
+  "say_en": "Moon",
+  "baslangic_sn": 150.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "⭐",
+  "tr": "Yıldız",
+  "en": "Star",
+  "say_tr": "Yıldız",
+  "say_en": "Star",
+  "baslangic_sn": 152.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "☁️",
+  "tr": "Bulut",
+  "en": "Cloud",
+  "say_tr": "Bulut",
+  "say_en": "Cloud",
+  "baslangic_sn": 154.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🌧️",
+  "tr": "Yağmur",
+  "en": "Rain",
+  "say_tr": "Yağmur",
+  "say_en": "Rain",
+  "baslangic_sn": 156.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "❄️",
+  "tr": "Kar",
+  "en": "Snow",
+  "say_tr": "Kar",
+  "say_en": "Snow",
+  "baslangic_sn": 158.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🌈",
+  "tr": "Gökkuşağı",
+  "en": "Rainbow",
+  "say_tr": "Gökkuşağı",
+  "say_en": "Rainbow",
+  "baslangic_sn": 160.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "⚡",
+  "tr": "Şimşek",
+  "en": "Lightning",
+  "say_tr": "Şimşek",
+  "say_en": "Lightning",
+  "baslangic_sn": 162.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "💨",
+  "tr": "Rüzgar",
+  "en": "Wind",
+  "say_tr": "Rüzgar",
+  "say_en": "Wind",
+  "baslangic_sn": 164.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🌍",
+  "tr": "Dünya",
+  "en": "Earth",
+  "say_tr": "Dünya",
+  "say_en": "Earth",
+  "baslangic_sn": 166.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🪐",
+  "tr": "Gezegen",
+  "en": "Planet",
+  "say_tr": "Gezegen",
+  "say_en": "Planet",
+  "baslangic_sn": 168.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "😀",
+  "tr": "Mutlu",
+  "en": "Happy",
+  "say_tr": "Mutlu",
+  "say_en": "Happy",
+  "baslangic_sn": 170.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "😢",
+  "tr": "Üzgün",
+  "en": "Sad",
+  "say_tr": "Üzgün",
+  "say_en": "Sad",
+  "baslangic_sn": 172.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "😴",
+  "tr": "Uykulu",
+  "en": "Sleepy",
+  "say_tr": "Uykulu",
+  "say_en": "Sleepy",
+  "baslangic_sn": 174.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "😮",
+  "tr": "Şaşkın",
+  "en": "Surprised",
+  "say_tr": "Şaşkın",
+  "say_en": "Surprised",
+  "baslangic_sn": 176.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "😂",
+  "tr": "Gülüyor",
+  "en": "Laughing",
+  "say_tr": "Gülüyor",
+  "say_en": "Laughing",
+  "baslangic_sn": 178.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "😍",
+  "tr": "Seviyor",
+  "en": "Loving",
+  "say_tr": "Seviyor",
+  "say_en": "Loving",
+  "baslangic_sn": 180.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥶",
+  "tr": "Üşüyor",
+  "en": "Cold",
+  "say_tr": "Üşüyor",
+  "say_en": "Cold",
+  "baslangic_sn": 182.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥱",
+  "tr": "Esniyor",
+  "en": "Yawning",
+  "say_tr": "Esniyor",
+  "say_en": "Yawning",
+  "baslangic_sn": 184.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "😎",
+  "tr": "Havalı",
+  "en": "Cool",
+  "say_tr": "Havalı",
+  "say_en": "Cool",
+  "baslangic_sn": 186.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍞",
+  "tr": "Ekmek",
+  "en": "Bread",
+  "say_tr": "Ekmek",
+  "say_en": "Bread",
+  "baslangic_sn": 188.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥛",
+  "tr": "Süt",
+  "en": "Milk",
+  "say_tr": "Süt",
+  "say_en": "Milk",
+  "baslangic_sn": 190.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🧀",
+  "tr": "Peynir",
+  "en": "Cheese",
+  "say_tr": "Peynir",
+  "say_en": "Cheese",
+  "baslangic_sn": 192.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🥚",
+  "tr": "Yumurta",
+  "en": "Egg",
+  "say_tr": "Yumurta",
+  "say_en": "Egg",
+  "baslangic_sn": 194.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍪",
+  "tr": "Kurabiye",
+  "en": "Cookie",
+  "say_tr": "Kurabiye",
+  "say_en": "Cookie",
+  "baslangic_sn": 196.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍦",
+  "tr": "Dondurma",
+  "en": "Ice cream",
+  "say_tr": "Dondurma",
+  "say_en": "Ice cream",
+  "baslangic_sn": 198.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🍕",
+  "tr": "Pizza",
+  "en": "Pizza",
+  "say_tr": "Pizza",
+  "say_en": "Pizza",
+  "baslangic_sn": 200.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:star",
+  "tr": "Yıldız",
+  "en": "Star",
+  "say_tr": "Yıldız",
+  "say_en": "Star",
+  "baslangic_sn": 202.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚀",
+  "tr": "Roket",
+  "en": "Rocket",
+  "say_tr": "Roket",
+  "say_en": "Rocket",
+  "baslangic_sn": 204.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍎",
+  "tr": "Elma",
+  "en": "Apple",
+  "say_tr": "Elma",
+  "say_en": "Apple",
+  "baslangic_sn": 206.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍓",
+  "tr": "Çilek",
+  "en": "Strawberry",
+  "say_tr": "Çilek",
+  "say_en": "Strawberry",
+  "baslangic_sn": 208.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🛶",
+  "tr": "Kano",
+  "en": "Canoe",
+  "say_tr": "Kano",
+  "say_en": "Canoe",
+  "baslangic_sn": 210.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:circle",
+  "tr": "Daire",
+  "en": "Circle",
+  "say_tr": "Daire",
+  "say_en": "Circle",
+  "baslangic_sn": 212.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍠",
+  "tr": "Tatlı patates",
+  "en": "Sweet potato",
+  "say_tr": "Tatlı patates",
+  "say_en": "Sweet potato",
+  "baslangic_sn": 214.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍕",
+  "tr": "Pizza",
+  "en": "Pizza",
+  "say_tr": "Pizza",
+  "say_en": "Pizza",
+  "baslangic_sn": 216.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍌",
+  "tr": "Muz",
+  "en": "Banana",
+  "say_tr": "Muz",
+  "say_en": "Banana",
+  "baslangic_sn": 218.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚌",
+  "tr": "Otobüs",
+  "en": "Bus",
+  "say_tr": "Otobüs",
+  "say_en": "Bus",
+  "baslangic_sn": 220.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "👄",
+  "tr": "Ağız",
+  "en": "Mouth",
+  "say_tr": "Ağız",
+  "say_en": "Mouth",
+  "baslangic_sn": 222.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🧀",
+  "tr": "Peynir",
+  "en": "Cheese",
+  "say_tr": "Peynir",
+  "say_en": "Cheese",
+  "baslangic_sn": 224.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "👀",
+  "tr": "Gözler",
+  "en": "Eyes",
+  "say_tr": "Gözler",
+  "say_en": "Eyes",
+  "baslangic_sn": 226.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:oval",
+  "tr": "Oval",
+  "en": "Oval",
+  "say_tr": "Oval",
+  "say_en": "Oval",
+  "baslangic_sn": 228.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚇",
+  "tr": "Metro",
+  "en": "Subway",
+  "say_tr": "Metro",
+  "say_en": "Subway",
+  "baslangic_sn": 230.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍦",
+  "tr": "Dondurma",
+  "en": "Ice cream",
+  "say_tr": "Dondurma",
+  "say_en": "Ice cream",
+  "baslangic_sn": 232.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:pentagon",
+  "tr": "Beşgen",
+  "en": "Pentagon",
+  "say_tr": "Beşgen",
+  "say_en": "Pentagon",
+  "baslangic_sn": 234.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚡",
+  "tr": "Teleferik",
+  "en": "Cable car",
+  "say_tr": "Teleferik",
+  "say_en": "Cable car",
+  "baslangic_sn": 236.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🧄",
+  "tr": "Sarımsak",
+  "en": "Garlic",
+  "say_tr": "Sarımsak",
+  "say_en": "Garlic",
+  "baslangic_sn": 238.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "✈️",
+  "tr": "Uçak",
+  "en": "Airplane",
+  "say_tr": "Uçak",
+  "say_en": "Airplane",
+  "baslangic_sn": 240.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "😎",
+  "tr": "Havalı",
+  "en": "Cool",
+  "say_tr": "Havalı",
+  "say_en": "Cool",
+  "baslangic_sn": 242.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🌙",
+  "tr": "Ay",
+  "en": "Moon",
+  "say_tr": "Ay",
+  "say_en": "Moon",
+  "baslangic_sn": 244.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚲",
+  "tr": "Bisiklet",
+  "en": "Bicycle",
+  "say_tr": "Bisiklet",
+  "say_en": "Bicycle",
+  "baslangic_sn": 246.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥭",
+  "tr": "Mango",
+  "en": "Mango",
+  "say_tr": "Mango",
+  "say_en": "Mango",
+  "baslangic_sn": 248.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚚",
+  "tr": "Kamyon",
+  "en": "Truck",
+  "say_tr": "Kamyon",
+  "say_en": "Truck",
+  "baslangic_sn": 250.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:crescent",
+  "tr": "Hilal",
+  "en": "Crescent",
+  "say_tr": "Hilal",
+  "say_en": "Crescent",
+  "baslangic_sn": 252.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚂",
+  "tr": "Tren",
+  "en": "Train",
+  "say_tr": "Tren",
+  "say_en": "Train",
+  "baslangic_sn": 254.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "✋",
+  "tr": "El",
+  "en": "Hand",
+  "say_tr": "El",
+  "say_en": "Hand",
+  "baslangic_sn": 256.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🫑",
+  "tr": "Biber",
+  "en": "Pepper",
+  "say_tr": "Biber",
+  "say_en": "Pepper",
+  "baslangic_sn": 258.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "😴",
+  "tr": "Uykulu",
+  "en": "Sleepy",
+  "say_tr": "Uykulu",
+  "say_en": "Sleepy",
+  "baslangic_sn": 260.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚗",
+  "tr": "Araba",
+  "en": "Car",
+  "say_tr": "Araba",
+  "say_en": "Car",
+  "baslangic_sn": 262.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍍",
+  "tr": "Ananas",
+  "en": "Pineapple",
+  "say_tr": "Ananas",
+  "say_en": "Pineapple",
+  "baslangic_sn": 264.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "💪",
+  "tr": "Kol",
+  "en": "Arm",
+  "say_tr": "Kol",
+  "say_en": "Arm",
+  "baslangic_sn": 266.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍋",
+  "tr": "Limon",
+  "en": "Lemon",
+  "say_tr": "Limon",
+  "say_en": "Lemon",
+  "baslangic_sn": 268.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍇",
+  "tr": "Üzüm",
+  "en": "Grapes",
+  "say_tr": "Üzüm",
+  "say_en": "Grapes",
+  "baslangic_sn": 270.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍆",
+  "tr": "Patlıcan",
+  "en": "Eggplant",
+  "say_tr": "Patlıcan",
+  "say_en": "Eggplant",
+  "baslangic_sn": 272.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "👂",
+  "tr": "Kulak",
+  "en": "Ear",
+  "say_tr": "Kulak",
+  "say_en": "Ear",
+  "baslangic_sn": 274.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥝",
+  "tr": "Kivi",
+  "en": "Kiwi",
+  "say_tr": "Kivi",
+  "say_en": "Kiwi",
+  "baslangic_sn": 276.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚁",
+  "tr": "Helikopter",
+  "en": "Helicopter",
+  "say_tr": "Helikopter",
+  "say_en": "Helicopter",
+  "baslangic_sn": 278.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🪐",
+  "tr": "Gezegen",
+  "en": "Planet",
+  "say_tr": "Gezegen",
+  "say_en": "Planet",
+  "baslangic_sn": 280.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥦",
+  "tr": "Brokoli",
+  "en": "Broccoli",
+  "say_tr": "Brokoli",
+  "say_en": "Broccoli",
+  "baslangic_sn": 282.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🫐",
+  "tr": "Yaban mersini",
+  "en": "Blueberry",
+  "say_tr": "Yaban mersini",
+  "say_en": "Blueberry",
+  "baslangic_sn": 284.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥱",
+  "tr": "Esniyor",
+  "en": "Yawning",
+  "say_tr": "Esniyor",
+  "say_en": "Yawning",
+  "baslangic_sn": 286.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🎃",
+  "tr": "Balkabağı",
+  "en": "Pumpkin",
+  "say_tr": "Balkabağı",
+  "say_en": "Pumpkin",
+  "baslangic_sn": 288.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "⛵",
+  "tr": "Yelkenli",
+  "en": "Sailboat",
+  "say_tr": "Yelkenli",
+  "say_en": "Sailboat",
+  "baslangic_sn": 290.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚕",
+  "tr": "Taksi",
+  "en": "Taxi",
+  "say_tr": "Taksi",
+  "say_en": "Taxi",
+  "baslangic_sn": 292.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥚",
+  "tr": "Yumurta",
+  "en": "Egg",
+  "say_tr": "Yumurta",
+  "say_en": "Egg",
+  "baslangic_sn": 294.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍊",
+  "tr": "Portakal",
+  "en": "Orange",
+  "say_tr": "Portakal",
+  "say_en": "Orange",
+  "baslangic_sn": 296.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🌽",
+  "tr": "Mısır",
+  "en": "Corn",
+  "say_tr": "Mısır",
+  "say_en": "Corn",
+  "baslangic_sn": 298.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🛴",
+  "tr": "Scooter",
+  "en": "Scooter",
+  "say_tr": "Scooter",
+  "say_en": "Scooter",
+  "baslangic_sn": 300.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:triangle",
+  "tr": "Üçgen",
+  "en": "Triangle",
+  "say_tr": "Üçgen",
+  "say_en": "Triangle",
+  "baslangic_sn": 302.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:diamond",
+  "tr": "Baklava dilimi",
+  "en": "Diamond",
+  "say_tr": "Baklava dilimi",
+  "say_en": "Diamond",
+  "baslangic_sn": 304.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍐",
+  "tr": "Armut",
+  "en": "Pear",
+  "say_tr": "Armut",
+  "say_en": "Pear",
+  "baslangic_sn": 306.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "⚡",
+  "tr": "Şimşek",
+  "en": "Lightning",
+  "say_tr": "Şimşek",
+  "say_en": "Lightning",
+  "baslangic_sn": 308.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥑",
+  "tr": "Avokado",
+  "en": "Avocado",
+  "say_tr": "Avokado",
+  "say_en": "Avocado",
+  "baslangic_sn": 310.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍄",
+  "tr": "Mantar",
+  "en": "Mushroom",
+  "say_tr": "Mantar",
+  "say_en": "Mushroom",
+  "baslangic_sn": 312.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🏍️",
+  "tr": "Motosiklet",
+  "en": "Motorcycle",
+  "say_tr": "Motosiklet",
+  "say_en": "Motorcycle",
+  "baslangic_sn": 314.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚑",
+  "tr": "Ambulans",
+  "en": "Ambulance",
+  "say_tr": "Ambulans",
+  "say_en": "Ambulance",
+  "baslangic_sn": 316.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥥",
+  "tr": "Hindistan cevizi",
+  "en": "Coconut",
+  "say_tr": "Hindistan cevizi",
+  "say_en": "Coconut",
+  "baslangic_sn": 318.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍅",
+  "tr": "Domates",
+  "en": "Tomato",
+  "say_tr": "Domates",
+  "say_en": "Tomato",
+  "baslangic_sn": 320.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚢",
+  "tr": "Gemi",
+  "en": "Ship",
+  "say_tr": "Gemi",
+  "say_en": "Ship",
+  "baslangic_sn": 322.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "😍",
+  "tr": "Seviyor",
+  "en": "Loving",
+  "say_tr": "Seviyor",
+  "say_en": "Loving",
+  "baslangic_sn": 324.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚓",
+  "tr": "Polis arabası",
+  "en": "Police car",
+  "say_tr": "Polis arabası",
+  "say_en": "Police car",
+  "baslangic_sn": 326.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "☀️",
+  "tr": "Güneş",
+  "en": "Sun",
+  "say_tr": "Güneş",
+  "say_en": "Sun",
+  "baslangic_sn": 328.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🌈",
+  "tr": "Gökkuşağı",
+  "en": "Rainbow",
+  "say_tr": "Gökkuşağı",
+  "say_en": "Rainbow",
+  "baslangic_sn": 330.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🧅",
+  "tr": "Soğan",
+  "en": "Onion",
+  "say_tr": "Soğan",
+  "say_en": "Onion",
+  "baslangic_sn": 332.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:rectangle",
+  "tr": "Dikdörtgen",
+  "en": "Rectangle",
+  "say_tr": "Dikdörtgen",
+  "say_en": "Rectangle",
+  "baslangic_sn": 334.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥬",
+  "tr": "Marul",
+  "en": "Lettuce",
+  "say_tr": "Marul",
+  "say_en": "Lettuce",
+  "baslangic_sn": 336.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:heart",
+  "tr": "Kalp",
+  "en": "Heart",
+  "say_tr": "Kalp",
+  "say_en": "Heart",
+  "baslangic_sn": 338.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍒",
+  "tr": "Kiraz",
+  "en": "Cherry",
+  "say_tr": "Kiraz",
+  "say_en": "Cherry",
+  "baslangic_sn": 340.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥶",
+  "tr": "Üşüyor",
+  "en": "Cold",
+  "say_tr": "Üşüyor",
+  "say_en": "Cold",
+  "baslangic_sn": 342.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "😂",
+  "tr": "Gülüyor",
+  "en": "Laughing",
+  "say_tr": "Gülüyor",
+  "say_en": "Laughing",
+  "baslangic_sn": 344.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚜",
+  "tr": "Traktör",
+  "en": "Tractor",
+  "say_tr": "Traktör",
+  "say_en": "Tractor",
+  "baslangic_sn": 346.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "👃",
+  "tr": "Burun",
+  "en": "Nose",
+  "say_tr": "Burun",
+  "say_en": "Nose",
+  "baslangic_sn": 348.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🌧️",
+  "tr": "Yağmur",
+  "en": "Rain",
+  "say_tr": "Yağmur",
+  "say_en": "Rain",
+  "baslangic_sn": 350.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "😀",
+  "tr": "Mutlu",
+  "en": "Happy",
+  "say_tr": "Mutlu",
+  "say_en": "Happy",
+  "baslangic_sn": 352.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍑",
+  "tr": "Şeftali",
+  "en": "Peach",
+  "say_tr": "Şeftali",
+  "say_en": "Peach",
+  "baslangic_sn": 354.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🏎️",
+  "tr": "Yarış arabası",
+  "en": "Race car",
+  "say_tr": "Yarış arabası",
+  "say_en": "Race car",
+  "baslangic_sn": 356.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🌍",
+  "tr": "Dünya",
+  "en": "Earth",
+  "say_tr": "Dünya",
+  "say_en": "Earth",
+  "baslangic_sn": 358.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "😢",
+  "tr": "Üzgün",
+  "en": "Sad",
+  "say_tr": "Üzgün",
+  "say_en": "Sad",
+  "baslangic_sn": 360.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍪",
+  "tr": "Kurabiye",
+  "en": "Cookie",
+  "say_tr": "Kurabiye",
+  "say_en": "Cookie",
+  "baslangic_sn": 362.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "😮",
+  "tr": "Şaşkın",
+  "en": "Surprised",
+  "say_tr": "Şaşkın",
+  "say_en": "Surprised",
+  "baslangic_sn": 364.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍈",
+  "tr": "Kavun",
+  "en": "Melon",
+  "say_tr": "Kavun",
+  "say_en": "Melon",
+  "baslangic_sn": 366.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥕",
+  "tr": "Havuç",
+  "en": "Carrot",
+  "say_tr": "Havuç",
+  "say_en": "Carrot",
+  "baslangic_sn": 368.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦷",
+  "tr": "Diş",
+  "en": "Tooth",
+  "say_tr": "Diş",
+  "say_en": "Tooth",
+  "baslangic_sn": 370.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥒",
+  "tr": "Salatalık",
+  "en": "Cucumber",
+  "say_tr": "Salatalık",
+  "say_en": "Cucumber",
+  "baslangic_sn": 372.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍞",
+  "tr": "Ekmek",
+  "en": "Bread",
+  "say_tr": "Ekmek",
+  "say_en": "Bread",
+  "baslangic_sn": 374.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:square",
+  "tr": "Kare",
+  "en": "Square",
+  "say_tr": "Kare",
+  "say_en": "Square",
+  "baslangic_sn": 376.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥛",
+  "tr": "Süt",
+  "en": "Milk",
+  "say_tr": "Süt",
+  "say_en": "Milk",
+  "baslangic_sn": 378.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:hexagon",
+  "tr": "Altıgen",
+  "en": "Hexagon",
+  "say_tr": "Altıgen",
+  "say_en": "Hexagon",
+  "baslangic_sn": 380.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "⭐",
+  "tr": "Yıldız",
+  "en": "Star",
+  "say_tr": "Yıldız",
+  "say_en": "Star",
+  "baslangic_sn": 382.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "💨",
+  "tr": "Rüzgar",
+  "en": "Wind",
+  "say_tr": "Rüzgar",
+  "say_en": "Wind",
+  "baslangic_sn": 384.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚤",
+  "tr": "Sürat teknesi",
+  "en": "Speedboat",
+  "say_tr": "Sürat teknesi",
+  "say_en": "Speedboat",
+  "baslangic_sn": 386.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "❄️",
+  "tr": "Kar",
+  "en": "Snow",
+  "say_tr": "Kar",
+  "say_en": "Snow",
+  "baslangic_sn": 388.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🚒",
+  "tr": "İtfaiye",
+  "en": "Fire truck",
+  "say_tr": "İtfaiye",
+  "say_en": "Fire truck",
+  "baslangic_sn": 390.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🍉",
+  "tr": "Karpuz",
+  "en": "Watermelon",
+  "say_tr": "Karpuz",
+  "say_en": "Watermelon",
+  "baslangic_sn": 392.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦶",
+  "tr": "Ayak",
+  "en": "Foot",
+  "say_tr": "Ayak",
+  "say_en": "Foot",
+  "baslangic_sn": 394.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "☁️",
+  "tr": "Bulut",
+  "en": "Cloud",
+  "say_tr": "Bulut",
+  "say_en": "Cloud",
+  "baslangic_sn": 396.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🥔",
+  "tr": "Patates",
+  "en": "Potato",
+  "say_tr": "Patates",
+  "say_en": "Potato",
+  "baslangic_sn": 398.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:oval",
+  "tr": "Oval",
+  "en": "Oval",
+  "say_tr": "Oval",
+  "say_en": "Oval",
+  "baslangic_sn": 400.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚁",
+  "tr": "Helikopter",
+  "en": "Helicopter",
+  "say_tr": "Helikopter",
+  "say_en": "Helicopter",
+  "baslangic_sn": 402.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍦",
+  "tr": "Dondurma",
+  "en": "Ice cream",
+  "say_tr": "Dondurma",
+  "say_en": "Ice cream",
+  "baslangic_sn": 404.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "😍",
+  "tr": "Seviyor",
+  "en": "Loving",
+  "say_tr": "Seviyor",
+  "say_en": "Loving",
+  "baslangic_sn": 406.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "👂",
+  "tr": "Kulak",
+  "en": "Ear",
+  "say_tr": "Kulak",
+  "say_en": "Ear",
+  "baslangic_sn": 408.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "⛵",
+  "tr": "Yelkenli",
+  "en": "Sailboat",
+  "say_tr": "Yelkenli",
+  "say_en": "Sailboat",
+  "baslangic_sn": 410.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍐",
+  "tr": "Armut",
+  "en": "Pear",
+  "say_tr": "Armut",
+  "say_en": "Pear",
+  "baslangic_sn": 412.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥦",
+  "tr": "Brokoli",
+  "en": "Broccoli",
+  "say_tr": "Brokoli",
+  "say_en": "Broccoli",
+  "baslangic_sn": 414.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "⚡",
+  "tr": "Şimşek",
+  "en": "Lightning",
+  "say_tr": "Şimşek",
+  "say_en": "Lightning",
+  "baslangic_sn": 416.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:triangle",
+  "tr": "Üçgen",
+  "en": "Triangle",
+  "say_tr": "Üçgen",
+  "say_en": "Triangle",
+  "baslangic_sn": 418.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "👃",
+  "tr": "Burun",
+  "en": "Nose",
+  "say_tr": "Burun",
+  "say_en": "Nose",
+  "baslangic_sn": 420.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🏎️",
+  "tr": "Yarış arabası",
+  "en": "Race car",
+  "say_tr": "Yarış arabası",
+  "say_en": "Race car",
+  "baslangic_sn": 422.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚡",
+  "tr": "Teleferik",
+  "en": "Cable car",
+  "say_tr": "Teleferik",
+  "say_en": "Cable car",
+  "baslangic_sn": 424.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:diamond",
+  "tr": "Baklava dilimi",
+  "en": "Diamond",
+  "say_tr": "Baklava dilimi",
+  "say_en": "Diamond",
+  "baslangic_sn": 426.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍌",
+  "tr": "Muz",
+  "en": "Banana",
+  "say_tr": "Muz",
+  "say_en": "Banana",
+  "baslangic_sn": 428.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍪",
+  "tr": "Kurabiye",
+  "en": "Cookie",
+  "say_tr": "Kurabiye",
+  "say_en": "Cookie",
+  "baslangic_sn": 430.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥑",
+  "tr": "Avokado",
+  "en": "Avocado",
+  "say_tr": "Avokado",
+  "say_en": "Avocado",
+  "baslangic_sn": 432.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "✈️",
+  "tr": "Uçak",
+  "en": "Airplane",
+  "say_tr": "Uçak",
+  "say_en": "Airplane",
+  "baslangic_sn": 434.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍄",
+  "tr": "Mantar",
+  "en": "Mushroom",
+  "say_tr": "Mantar",
+  "say_en": "Mushroom",
+  "baslangic_sn": 436.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚌",
+  "tr": "Otobüs",
+  "en": "Bus",
+  "say_tr": "Otobüs",
+  "say_en": "Bus",
+  "baslangic_sn": 438.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥬",
+  "tr": "Marul",
+  "en": "Lettuce",
+  "say_tr": "Marul",
+  "say_en": "Lettuce",
+  "baslangic_sn": 440.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🌙",
+  "tr": "Ay",
+  "en": "Moon",
+  "say_tr": "Ay",
+  "say_en": "Moon",
+  "baslangic_sn": 442.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:crescent",
+  "tr": "Hilal",
+  "en": "Crescent",
+  "say_tr": "Hilal",
+  "say_en": "Crescent",
+  "baslangic_sn": 444.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🛴",
+  "tr": "Scooter",
+  "en": "Scooter",
+  "say_tr": "Scooter",
+  "say_en": "Scooter",
+  "baslangic_sn": 446.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥭",
+  "tr": "Mango",
+  "en": "Mango",
+  "say_tr": "Mango",
+  "say_en": "Mango",
+  "baslangic_sn": 448.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "😀",
+  "tr": "Mutlu",
+  "en": "Happy",
+  "say_tr": "Mutlu",
+  "say_en": "Happy",
+  "baslangic_sn": 450.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍇",
+  "tr": "Üzüm",
+  "en": "Grapes",
+  "say_tr": "Üzüm",
+  "say_en": "Grapes",
+  "baslangic_sn": 452.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚒",
+  "tr": "İtfaiye",
+  "en": "Fire truck",
+  "say_tr": "İtfaiye",
+  "say_en": "Fire truck",
+  "baslangic_sn": 454.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍆",
+  "tr": "Patlıcan",
+  "en": "Eggplant",
+  "say_tr": "Patlıcan",
+  "say_en": "Eggplant",
+  "baslangic_sn": 456.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍎",
+  "tr": "Elma",
+  "en": "Apple",
+  "say_tr": "Elma",
+  "say_en": "Apple",
+  "baslangic_sn": 458.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "😂",
+  "tr": "Gülüyor",
+  "en": "Laughing",
+  "say_tr": "Gülüyor",
+  "say_en": "Laughing",
+  "baslangic_sn": 460.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚂",
+  "tr": "Tren",
+  "en": "Train",
+  "say_tr": "Tren",
+  "say_en": "Train",
+  "baslangic_sn": 462.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥛",
+  "tr": "Süt",
+  "en": "Milk",
+  "say_tr": "Süt",
+  "say_en": "Milk",
+  "baslangic_sn": 464.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚤",
+  "tr": "Sürat teknesi",
+  "en": "Speedboat",
+  "say_tr": "Sürat teknesi",
+  "say_en": "Speedboat",
+  "baslangic_sn": 466.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🌽",
+  "tr": "Mısır",
+  "en": "Corn",
+  "say_tr": "Mısır",
+  "say_en": "Corn",
+  "baslangic_sn": 468.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦶",
+  "tr": "Ayak",
+  "en": "Foot",
+  "say_tr": "Ayak",
+  "say_en": "Foot",
+  "baslangic_sn": 470.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "☀️",
+  "tr": "Güneş",
+  "en": "Sun",
+  "say_tr": "Güneş",
+  "say_en": "Sun",
+  "baslangic_sn": 472.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥝",
+  "tr": "Kivi",
+  "en": "Kiwi",
+  "say_tr": "Kivi",
+  "say_en": "Kiwi",
+  "baslangic_sn": 474.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥕",
+  "tr": "Havuç",
+  "en": "Carrot",
+  "say_tr": "Havuç",
+  "say_en": "Carrot",
+  "baslangic_sn": 476.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🏍️",
+  "tr": "Motosiklet",
+  "en": "Motorcycle",
+  "say_tr": "Motosiklet",
+  "say_en": "Motorcycle",
+  "baslangic_sn": 478.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:rectangle",
+  "tr": "Dikdörtgen",
+  "en": "Rectangle",
+  "say_tr": "Dikdörtgen",
+  "say_en": "Rectangle",
+  "baslangic_sn": 480.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:hexagon",
+  "tr": "Altıgen",
+  "en": "Hexagon",
+  "say_tr": "Altıgen",
+  "say_en": "Hexagon",
+  "baslangic_sn": 482.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🛶",
+  "tr": "Kano",
+  "en": "Canoe",
+  "say_tr": "Kano",
+  "say_en": "Canoe",
+  "baslangic_sn": 484.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "👄",
+  "tr": "Ağız",
+  "en": "Mouth",
+  "say_tr": "Ağız",
+  "say_en": "Mouth",
+  "baslangic_sn": 486.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "😴",
+  "tr": "Uykulu",
+  "en": "Sleepy",
+  "say_tr": "Uykulu",
+  "say_en": "Sleepy",
+  "baslangic_sn": 488.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍈",
+  "tr": "Kavun",
+  "en": "Melon",
+  "say_tr": "Kavun",
+  "say_en": "Melon",
+  "baslangic_sn": 490.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:square",
+  "tr": "Kare",
+  "en": "Square",
+  "say_tr": "Kare",
+  "say_en": "Square",
+  "baslangic_sn": 492.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍒",
+  "tr": "Kiraz",
+  "en": "Cherry",
+  "say_tr": "Kiraz",
+  "say_en": "Cherry",
+  "baslangic_sn": 494.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🌍",
+  "tr": "Dünya",
+  "en": "Earth",
+  "say_tr": "Dünya",
+  "say_en": "Earth",
+  "baslangic_sn": 496.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🫐",
+  "tr": "Yaban mersini",
+  "en": "Blueberry",
+  "say_tr": "Yaban mersini",
+  "say_en": "Blueberry",
+  "baslangic_sn": 498.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "😢",
+  "tr": "Üzgün",
+  "en": "Sad",
+  "say_tr": "Üzgün",
+  "say_en": "Sad",
+  "baslangic_sn": 500.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍋",
+  "tr": "Limon",
+  "en": "Lemon",
+  "say_tr": "Limon",
+  "say_en": "Lemon",
+  "baslangic_sn": 502.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥶",
+  "tr": "Üşüyor",
+  "en": "Cold",
+  "say_tr": "Üşüyor",
+  "say_en": "Cold",
+  "baslangic_sn": 504.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚀",
+  "tr": "Roket",
+  "en": "Rocket",
+  "say_tr": "Roket",
+  "say_en": "Rocket",
+  "baslangic_sn": 506.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍞",
+  "tr": "Ekmek",
+  "en": "Bread",
+  "say_tr": "Ekmek",
+  "say_en": "Bread",
+  "baslangic_sn": 508.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍉",
+  "tr": "Karpuz",
+  "en": "Watermelon",
+  "say_tr": "Karpuz",
+  "say_en": "Watermelon",
+  "baslangic_sn": 510.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚇",
+  "tr": "Metro",
+  "en": "Subway",
+  "say_tr": "Metro",
+  "say_en": "Subway",
+  "baslangic_sn": 512.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "⭐",
+  "tr": "Yıldız",
+  "en": "Star",
+  "say_tr": "Yıldız",
+  "say_en": "Star",
+  "baslangic_sn": 514.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍓",
+  "tr": "Çilek",
+  "en": "Strawberry",
+  "say_tr": "Çilek",
+  "say_en": "Strawberry",
+  "baslangic_sn": 516.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚓",
+  "tr": "Polis arabası",
+  "en": "Police car",
+  "say_tr": "Polis arabası",
+  "say_en": "Police car",
+  "baslangic_sn": 518.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥱",
+  "tr": "Esniyor",
+  "en": "Yawning",
+  "say_tr": "Esniyor",
+  "say_en": "Yawning",
+  "baslangic_sn": 520.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "💪",
+  "tr": "Kol",
+  "en": "Arm",
+  "say_tr": "Kol",
+  "say_en": "Arm",
+  "baslangic_sn": 522.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍅",
+  "tr": "Domates",
+  "en": "Tomato",
+  "say_tr": "Domates",
+  "say_en": "Tomato",
+  "baslangic_sn": 524.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🧅",
+  "tr": "Soğan",
+  "en": "Onion",
+  "say_tr": "Soğan",
+  "say_en": "Onion",
+  "baslangic_sn": 526.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🪐",
+  "tr": "Gezegen",
+  "en": "Planet",
+  "say_tr": "Gezegen",
+  "say_en": "Planet",
+  "baslangic_sn": 528.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚜",
+  "tr": "Traktör",
+  "en": "Tractor",
+  "say_tr": "Traktör",
+  "say_en": "Tractor",
+  "baslangic_sn": 530.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚢",
+  "tr": "Gemi",
+  "en": "Ship",
+  "say_tr": "Gemi",
+  "say_en": "Ship",
+  "baslangic_sn": 532.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "💨",
+  "tr": "Rüzgar",
+  "en": "Wind",
+  "say_tr": "Rüzgar",
+  "say_en": "Wind",
+  "baslangic_sn": 534.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🧀",
+  "tr": "Peynir",
+  "en": "Cheese",
+  "say_tr": "Peynir",
+  "say_en": "Cheese",
+  "baslangic_sn": 536.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍍",
+  "tr": "Ananas",
+  "en": "Pineapple",
+  "say_tr": "Ananas",
+  "say_en": "Pineapple",
+  "baslangic_sn": 538.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚑",
+  "tr": "Ambulans",
+  "en": "Ambulance",
+  "say_tr": "Ambulans",
+  "say_en": "Ambulance",
+  "baslangic_sn": 540.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🎃",
+  "tr": "Balkabağı",
+  "en": "Pumpkin",
+  "say_tr": "Balkabağı",
+  "say_en": "Pumpkin",
+  "baslangic_sn": 542.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚕",
+  "tr": "Taksi",
+  "en": "Taxi",
+  "say_tr": "Taksi",
+  "say_en": "Taxi",
+  "baslangic_sn": 544.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥚",
+  "tr": "Yumurta",
+  "en": "Egg",
+  "say_tr": "Yumurta",
+  "say_en": "Egg",
+  "baslangic_sn": 546.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍑",
+  "tr": "Şeftali",
+  "en": "Peach",
+  "say_tr": "Şeftali",
+  "say_en": "Peach",
+  "baslangic_sn": 548.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥒",
+  "tr": "Salatalık",
+  "en": "Cucumber",
+  "say_tr": "Salatalık",
+  "say_en": "Cucumber",
+  "baslangic_sn": 550.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🫑",
+  "tr": "Biber",
+  "en": "Pepper",
+  "say_tr": "Biber",
+  "say_en": "Pepper",
+  "baslangic_sn": 552.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚲",
+  "tr": "Bisiklet",
+  "en": "Bicycle",
+  "say_tr": "Bisiklet",
+  "say_en": "Bicycle",
+  "baslangic_sn": 554.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥥",
+  "tr": "Hindistan cevizi",
+  "en": "Coconut",
+  "say_tr": "Hindistan cevizi",
+  "say_en": "Coconut",
+  "baslangic_sn": 556.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "😮",
+  "tr": "Şaşkın",
+  "en": "Surprised",
+  "say_tr": "Şaşkın",
+  "say_en": "Surprised",
+  "baslangic_sn": 558.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "✋",
+  "tr": "El",
+  "en": "Hand",
+  "say_tr": "El",
+  "say_en": "Hand",
+  "baslangic_sn": 560.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🌧️",
+  "tr": "Yağmur",
+  "en": "Rain",
+  "say_tr": "Yağmur",
+  "say_en": "Rain",
+  "baslangic_sn": 562.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍊",
+  "tr": "Portakal",
+  "en": "Orange",
+  "say_tr": "Portakal",
+  "say_en": "Orange",
+  "baslangic_sn": 564.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:pentagon",
+  "tr": "Beşgen",
+  "en": "Pentagon",
+  "say_tr": "Beşgen",
+  "say_en": "Pentagon",
+  "baslangic_sn": 566.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:circle",
+  "tr": "Daire",
+  "en": "Circle",
+  "say_tr": "Daire",
+  "say_en": "Circle",
+  "baslangic_sn": 568.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍠",
+  "tr": "Tatlı patates",
+  "en": "Sweet potato",
+  "say_tr": "Tatlı patates",
+  "say_en": "Sweet potato",
+  "baslangic_sn": 570.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "shape",
+  "em": "shape:star",
+  "tr": "Yıldız",
+  "en": "Star",
+  "say_tr": "Yıldız",
+  "say_en": "Star",
+  "baslangic_sn": 572.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🥔",
+  "tr": "Patates",
+  "en": "Potato",
+  "say_tr": "Patates",
+  "say_en": "Potato",
+  "baslangic_sn": 574.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "👀",
+  "tr": "Gözler",
+  "en": "Eyes",
+  "say_tr": "Gözler",
+  "say_en": "Eyes",
+  "baslangic_sn": 576.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🧄",
+  "tr": "Sarımsak",
+  "en": "Garlic",
+  "say_tr": "Sarımsak",
+  "say_en": "Garlic",
+  "baslangic_sn": 578.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦷",
+  "tr": "Diş",
+  "en": "Tooth",
+  "say_tr": "Diş",
+  "say_en": "Tooth",
+  "baslangic_sn": 580.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚗",
+  "tr": "Araba",
+  "en": "Car",
+  "say_tr": "Araba",
+  "say_en": "Car",
+  "baslangic_sn": 582.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "☁️",
+  "tr": "Bulut",
+  "en": "Cloud",
+  "say_tr": "Bulut",
+  "say_en": "Cloud",
+  "baslangic_sn": 584.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "😎",
+  "tr": "Havalı",
+  "en": "Cool",
+  "say_tr": "Havalı",
+  "say_en": "Cool",
+  "baslangic_sn": 586.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🚚",
+  "tr": "Kamyon",
+  "en": "Truck",
+  "say_tr": "Kamyon",
+  "say_en": "Truck",
+  "baslangic_sn": 588.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🍕",
+  "tr": "Pizza",
+  "en": "Pizza",
+  "say_tr": "Pizza",
+  "say_en": "Pizza",
+  "baslangic_sn": 590.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🌈",
+  "tr": "Gökkuşağı",
+  "en": "Rainbow",
+  "say_tr": "Gökkuşağı",
+  "say_en": "Rainbow",
+  "baslangic_sn": 592.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": [
+   "👋",
+   "😊",
+   "👋"
+  ],
+  "tr": "Hoşça kal!",
+  "en": "Bye bye!",
+  "say_tr": "Hoşça kal!",
+  "say_en": "Bye bye!",
+  "baslangic_sn": 594.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": [
+   "🎉",
+   "🌈",
+   "🎉"
+  ],
+  "tr": "Tekrar görüşürüz!",
+  "en": "See you soon!",
+  "say_tr": "Tekrar görüşürüz!",
+  "say_en": "See you soon!",
+  "baslangic_sn": 596.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": [
+   "❤️",
+   "👋",
+   "❤️"
+  ],
+  "tr": "Çok sevdik!",
+  "en": "Love you!",
+  "say_tr": "Çok sevdik!",
+  "say_en": "Love you!",
+  "baslangic_sn": 598.0,
+  "sure_sn": 2.0
+ }
+]

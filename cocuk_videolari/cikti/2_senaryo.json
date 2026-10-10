@@ -1,0 +1,3022 @@
+[
+ {
+  "tpl": "title",
+  "em": [
+   "🐯",
+   "🐘",
+   "🦁"
+  ],
+  "tr": "Hayvanlar ve Sesleri",
+  "en": "Animals and Sounds",
+  "say_tr": "Hayvanlar ve Sesleri",
+  "say_en": "Animals and Sounds",
+  "baslangic_sn": 0.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": [
+   "🐶",
+   "🐱",
+   "🐭"
+  ],
+  "tr": "Hadi hayvanları tanıyalım!",
+  "en": "Meet the animals!",
+  "say_tr": "Hadi hayvanları tanıyalım!",
+  "say_en": "Meet the animals!",
+  "baslangic_sn": 2.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐄",
+  "tr": "İnek",
+  "en": "Cow",
+  "say_tr": "İnek",
+  "say_en": "Cow",
+  "baslangic_sn": 4.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐖",
+  "tr": "Domuz",
+  "en": "Pig",
+  "say_tr": "Domuz",
+  "say_en": "Pig",
+  "baslangic_sn": 6.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐑",
+  "tr": "Koyun",
+  "en": "Sheep",
+  "say_tr": "Koyun",
+  "say_en": "Sheep",
+  "baslangic_sn": 8.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐐",
+  "tr": "Keçi",
+  "en": "Goat",
+  "say_tr": "Keçi",
+  "say_en": "Goat",
+  "baslangic_sn": 10.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐓",
+  "tr": "Horoz",
+  "en": "Rooster",
+  "say_tr": "Horoz",
+  "say_en": "Rooster",
+  "baslangic_sn": 12.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐔",
+  "tr": "Tavuk",
+  "en": "Hen",
+  "say_tr": "Tavuk",
+  "say_en": "Hen",
+  "baslangic_sn": 14.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦆",
+  "tr": "Ördek",
+  "en": "Duck",
+  "say_tr": "Ördek",
+  "say_en": "Duck",
+  "baslangic_sn": 16.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐴",
+  "tr": "At",
+  "en": "Horse",
+  "say_tr": "At",
+  "say_en": "Horse",
+  "baslangic_sn": 18.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐕",
+  "tr": "Köpek",
+  "en": "Dog",
+  "say_tr": "Köpek",
+  "say_en": "Dog",
+  "baslangic_sn": 20.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐈",
+  "tr": "Kedi",
+  "en": "Cat",
+  "say_tr": "Kedi",
+  "say_en": "Cat",
+  "baslangic_sn": 22.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐇",
+  "tr": "Tavşan",
+  "en": "Rabbit",
+  "say_tr": "Tavşan",
+  "say_en": "Rabbit",
+  "baslangic_sn": 24.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦃",
+  "tr": "Hindi",
+  "en": "Turkey",
+  "say_tr": "Hindi",
+  "say_en": "Turkey",
+  "baslangic_sn": 26.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐄",
+  "tr": "Möö!",
+  "en": "Moo!",
+  "say_tr": "Möö!",
+  "say_en": "Moo!",
+  "baslangic_sn": 28.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐖",
+  "tr": "Hrr hrr!",
+  "en": "Oink oink!",
+  "say_tr": "Hrr hrr!",
+  "say_en": "Oink oink!",
+  "baslangic_sn": 30.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐑",
+  "tr": "Mee!",
+  "en": "Baa!",
+  "say_tr": "Mee!",
+  "say_en": "Baa!",
+  "baslangic_sn": 32.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐐",
+  "tr": "Meee!",
+  "en": "Maa!",
+  "say_tr": "Meee!",
+  "say_en": "Maa!",
+  "baslangic_sn": 34.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐓",
+  "tr": "Ürü üüü!",
+  "en": "Cock-a-doodle-doo!",
+  "say_tr": "Ürü üüü!",
+  "say_en": "Cock-a-doodle-doo!",
+  "baslangic_sn": 36.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐔",
+  "tr": "Gıt gıt!",
+  "en": "Cluck cluck!",
+  "say_tr": "Gıt gıt!",
+  "say_en": "Cluck cluck!",
+  "baslangic_sn": 38.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦁",
+  "tr": "Aslan",
+  "en": "Lion",
+  "say_tr": "Aslan",
+  "say_en": "Lion",
+  "baslangic_sn": 40.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐯",
+  "tr": "Kaplan",
+  "en": "Tiger",
+  "say_tr": "Kaplan",
+  "say_en": "Tiger",
+  "baslangic_sn": 42.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐘",
+  "tr": "Fil",
+  "en": "Elephant",
+  "say_tr": "Fil",
+  "say_en": "Elephant",
+  "baslangic_sn": 44.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦒",
+  "tr": "Zürafa",
+  "en": "Giraffe",
+  "say_tr": "Zürafa",
+  "say_en": "Giraffe",
+  "baslangic_sn": 46.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦓",
+  "tr": "Zebra",
+  "en": "Zebra",
+  "say_tr": "Zebra",
+  "say_en": "Zebra",
+  "baslangic_sn": 48.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐒",
+  "tr": "Maymun",
+  "en": "Monkey",
+  "say_tr": "Maymun",
+  "say_en": "Monkey",
+  "baslangic_sn": 50.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦍",
+  "tr": "Goril",
+  "en": "Gorilla",
+  "say_tr": "Goril",
+  "say_en": "Gorilla",
+  "baslangic_sn": 52.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐻",
+  "tr": "Ayı",
+  "en": "Bear",
+  "say_tr": "Ayı",
+  "say_en": "Bear",
+  "baslangic_sn": 54.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐼",
+  "tr": "Panda",
+  "en": "Panda",
+  "say_tr": "Panda",
+  "say_en": "Panda",
+  "baslangic_sn": 56.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦘",
+  "tr": "Kanguru",
+  "en": "Kangaroo",
+  "say_tr": "Kanguru",
+  "say_en": "Kangaroo",
+  "baslangic_sn": 58.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐨",
+  "tr": "Koala",
+  "en": "Koala",
+  "say_tr": "Koala",
+  "say_en": "Koala",
+  "baslangic_sn": 60.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦏",
+  "tr": "Gergedan",
+  "en": "Rhino",
+  "say_tr": "Gergedan",
+  "say_en": "Rhino",
+  "baslangic_sn": 62.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦛",
+  "tr": "Su aygırı",
+  "en": "Hippo",
+  "say_tr": "Su aygırı",
+  "say_en": "Hippo",
+  "baslangic_sn": 64.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐊",
+  "tr": "Timsah",
+  "en": "Crocodile",
+  "say_tr": "Timsah",
+  "say_en": "Crocodile",
+  "baslangic_sn": 66.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐺",
+  "tr": "Kurt",
+  "en": "Wolf",
+  "say_tr": "Kurt",
+  "say_en": "Wolf",
+  "baslangic_sn": 68.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦊",
+  "tr": "Tilki",
+  "en": "Fox",
+  "say_tr": "Tilki",
+  "say_en": "Fox",
+  "baslangic_sn": 70.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦌",
+  "tr": "Geyik",
+  "en": "Deer",
+  "say_tr": "Geyik",
+  "say_en": "Deer",
+  "baslangic_sn": 72.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐿️",
+  "tr": "Sincap",
+  "en": "Squirrel",
+  "say_tr": "Sincap",
+  "say_en": "Squirrel",
+  "baslangic_sn": 74.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦔",
+  "tr": "Kirpi",
+  "en": "Hedgehog",
+  "say_tr": "Kirpi",
+  "say_en": "Hedgehog",
+  "baslangic_sn": 76.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦆",
+  "tr": "Vak vak!",
+  "en": "Quack quack!",
+  "say_tr": "Vak vak!",
+  "say_en": "Quack quack!",
+  "baslangic_sn": 78.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐴",
+  "tr": "İhaha!",
+  "en": "Neigh!",
+  "say_tr": "İhaha!",
+  "say_en": "Neigh!",
+  "baslangic_sn": 80.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐕",
+  "tr": "Hav hav!",
+  "en": "Woof woof!",
+  "say_tr": "Hav hav!",
+  "say_en": "Woof woof!",
+  "baslangic_sn": 82.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐈",
+  "tr": "Miyav!",
+  "en": "Meow!",
+  "say_tr": "Miyav!",
+  "say_en": "Meow!",
+  "baslangic_sn": 84.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦃",
+  "tr": "Glu glu!",
+  "en": "Gobble!",
+  "say_tr": "Glu glu!",
+  "say_en": "Gobble!",
+  "baslangic_sn": 86.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦁",
+  "tr": "Grrr!",
+  "en": "Roar!",
+  "say_tr": "Grrr!",
+  "say_en": "Roar!",
+  "baslangic_sn": 88.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐯",
+  "tr": "Grrr!",
+  "en": "Rawr!",
+  "say_tr": "Grrr!",
+  "say_en": "Rawr!",
+  "baslangic_sn": 90.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐘",
+  "tr": "Tuuut!",
+  "en": "Toot toot!",
+  "say_tr": "Tuuut!",
+  "say_en": "Toot toot!",
+  "baslangic_sn": 92.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐪",
+  "tr": "Deve",
+  "en": "Camel",
+  "say_tr": "Deve",
+  "say_en": "Camel",
+  "baslangic_sn": 94.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐟",
+  "tr": "Balık",
+  "en": "Fish",
+  "say_tr": "Balık",
+  "say_en": "Fish",
+  "baslangic_sn": 96.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐠",
+  "tr": "Tropik balık",
+  "en": "Tropical fish",
+  "say_tr": "Tropik balık",
+  "say_en": "Tropical fish",
+  "baslangic_sn": 98.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐬",
+  "tr": "Yunus",
+  "en": "Dolphin",
+  "say_tr": "Yunus",
+  "say_en": "Dolphin",
+  "baslangic_sn": 100.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐳",
+  "tr": "Balina",
+  "en": "Whale",
+  "say_tr": "Balina",
+  "say_en": "Whale",
+  "baslangic_sn": 102.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦈",
+  "tr": "Köpek balığı",
+  "en": "Shark",
+  "say_tr": "Köpek balığı",
+  "say_en": "Shark",
+  "baslangic_sn": 104.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐙",
+  "tr": "Ahtapot",
+  "en": "Octopus",
+  "say_tr": "Ahtapot",
+  "say_en": "Octopus",
+  "baslangic_sn": 106.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦀",
+  "tr": "Yengeç",
+  "en": "Crab",
+  "say_tr": "Yengeç",
+  "say_en": "Crab",
+  "baslangic_sn": 108.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐢",
+  "tr": "Kaplumbağa",
+  "en": "Turtle",
+  "say_tr": "Kaplumbağa",
+  "say_en": "Turtle",
+  "baslangic_sn": 110.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦞",
+  "tr": "Istakoz",
+  "en": "Lobster",
+  "say_tr": "Istakoz",
+  "say_en": "Lobster",
+  "baslangic_sn": 112.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐡",
+  "tr": "Balon balığı",
+  "en": "Pufferfish",
+  "say_tr": "Balon balığı",
+  "say_en": "Pufferfish",
+  "baslangic_sn": 114.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦑",
+  "tr": "Mürekkep balığı",
+  "en": "Squid",
+  "say_tr": "Mürekkep balığı",
+  "say_en": "Squid",
+  "baslangic_sn": 116.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐧",
+  "tr": "Penguen",
+  "en": "Penguin",
+  "say_tr": "Penguen",
+  "say_en": "Penguin",
+  "baslangic_sn": 118.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦭",
+  "tr": "Fok",
+  "en": "Seal",
+  "say_tr": "Fok",
+  "say_en": "Seal",
+  "baslangic_sn": 120.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐚",
+  "tr": "Deniz kabuğu",
+  "en": "Seashell",
+  "say_tr": "Deniz kabuğu",
+  "say_en": "Seashell",
+  "baslangic_sn": 122.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐒",
+  "tr": "İi i i!",
+  "en": "Ooh ooh!",
+  "say_tr": "İi i i!",
+  "say_en": "Ooh ooh!",
+  "baslangic_sn": 124.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐺",
+  "tr": "Uuuu!",
+  "en": "Awooo!",
+  "say_tr": "Uuuu!",
+  "say_en": "Awooo!",
+  "baslangic_sn": 126.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐬",
+  "tr": "Ciii ciii!",
+  "en": "Click click!",
+  "say_tr": "Ciii ciii!",
+  "say_en": "Click click!",
+  "baslangic_sn": 128.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐦",
+  "tr": "Cik cik!",
+  "en": "Tweet tweet!",
+  "say_tr": "Cik cik!",
+  "say_en": "Tweet tweet!",
+  "baslangic_sn": 130.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦉",
+  "tr": "Hu hu!",
+  "en": "Hoot hoot!",
+  "say_tr": "Hu hu!",
+  "say_en": "Hoot hoot!",
+  "baslangic_sn": 132.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦜",
+  "tr": "Merhaba!",
+  "en": "Hello!",
+  "say_tr": "Merhaba!",
+  "say_en": "Hello!",
+  "baslangic_sn": 134.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐝",
+  "tr": "Vızzz!",
+  "en": "Buzz!",
+  "say_tr": "Vızzz!",
+  "say_en": "Buzz!",
+  "baslangic_sn": 136.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦗",
+  "tr": "Cır cır!",
+  "en": "Chirp chirp!",
+  "say_tr": "Cır cır!",
+  "say_en": "Chirp chirp!",
+  "baslangic_sn": 138.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐸",
+  "tr": "Vrak vrak!",
+  "en": "Ribbit!",
+  "say_tr": "Vrak vrak!",
+  "say_en": "Ribbit!",
+  "baslangic_sn": 140.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐦",
+  "tr": "Kuş",
+  "en": "Bird",
+  "say_tr": "Kuş",
+  "say_en": "Bird",
+  "baslangic_sn": 142.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦉",
+  "tr": "Baykuş",
+  "en": "Owl",
+  "say_tr": "Baykuş",
+  "say_en": "Owl",
+  "baslangic_sn": 144.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦜",
+  "tr": "Papağan",
+  "en": "Parrot",
+  "say_tr": "Papağan",
+  "say_en": "Parrot",
+  "baslangic_sn": 146.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦢",
+  "tr": "Kuğu",
+  "en": "Swan",
+  "say_tr": "Kuğu",
+  "say_en": "Swan",
+  "baslangic_sn": 148.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦅",
+  "tr": "Kartal",
+  "en": "Eagle",
+  "say_tr": "Kartal",
+  "say_en": "Eagle",
+  "baslangic_sn": 150.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐝",
+  "tr": "Arı",
+  "en": "Bee",
+  "say_tr": "Arı",
+  "say_en": "Bee",
+  "baslangic_sn": 152.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐞",
+  "tr": "Uğur böceği",
+  "en": "Ladybug",
+  "say_tr": "Uğur böceği",
+  "say_en": "Ladybug",
+  "baslangic_sn": 154.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦋",
+  "tr": "Kelebek",
+  "en": "Butterfly",
+  "say_tr": "Kelebek",
+  "say_en": "Butterfly",
+  "baslangic_sn": 156.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐛",
+  "tr": "Tırtıl",
+  "en": "Caterpillar",
+  "say_tr": "Tırtıl",
+  "say_en": "Caterpillar",
+  "baslangic_sn": 158.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐌",
+  "tr": "Salyangoz",
+  "en": "Snail",
+  "say_tr": "Salyangoz",
+  "say_en": "Snail",
+  "baslangic_sn": 160.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐜",
+  "tr": "Karınca",
+  "en": "Ant",
+  "say_tr": "Karınca",
+  "say_en": "Ant",
+  "baslangic_sn": 162.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦗",
+  "tr": "Cırcır böceği",
+  "en": "Cricket",
+  "say_tr": "Cırcır böceği",
+  "say_en": "Cricket",
+  "baslangic_sn": 164.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐸",
+  "tr": "Kurbağa",
+  "en": "Frog",
+  "say_tr": "Kurbağa",
+  "say_en": "Frog",
+  "baslangic_sn": 166.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦆",
+  "tr": "Ördek yavrusu",
+  "en": "Duckling",
+  "say_tr": "Ördek yavrusu",
+  "say_en": "Duckling",
+  "baslangic_sn": 168.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐄",
+  "tr": "İnek",
+  "en": "Cow",
+  "say_tr": "İnek",
+  "say_en": "Cow",
+  "baslangic_sn": 170.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐪",
+  "tr": "Deve",
+  "en": "Camel",
+  "say_tr": "Deve",
+  "say_en": "Camel",
+  "baslangic_sn": 172.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦃",
+  "tr": "Glu glu!",
+  "en": "Gobble!",
+  "say_tr": "Glu glu!",
+  "say_en": "Gobble!",
+  "baslangic_sn": 174.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦆",
+  "tr": "Ördek",
+  "en": "Duck",
+  "say_tr": "Ördek",
+  "say_en": "Duck",
+  "baslangic_sn": 176.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦢",
+  "tr": "Kuğu",
+  "en": "Swan",
+  "say_tr": "Kuğu",
+  "say_en": "Swan",
+  "baslangic_sn": 178.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐡",
+  "tr": "Balon balığı",
+  "en": "Pufferfish",
+  "say_tr": "Balon balığı",
+  "say_en": "Pufferfish",
+  "baslangic_sn": 180.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐑",
+  "tr": "Koyun",
+  "en": "Sheep",
+  "say_tr": "Koyun",
+  "say_en": "Sheep",
+  "baslangic_sn": 182.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐴",
+  "tr": "İhaha!",
+  "en": "Neigh!",
+  "say_tr": "İhaha!",
+  "say_en": "Neigh!",
+  "baslangic_sn": 184.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐒",
+  "tr": "Maymun",
+  "en": "Monkey",
+  "say_tr": "Maymun",
+  "say_en": "Monkey",
+  "baslangic_sn": 186.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐯",
+  "tr": "Kaplan",
+  "en": "Tiger",
+  "say_tr": "Kaplan",
+  "say_en": "Tiger",
+  "baslangic_sn": 188.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐑",
+  "tr": "Mee!",
+  "en": "Baa!",
+  "say_tr": "Mee!",
+  "say_en": "Baa!",
+  "baslangic_sn": 190.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐈",
+  "tr": "Kedi",
+  "en": "Cat",
+  "say_tr": "Kedi",
+  "say_en": "Cat",
+  "baslangic_sn": 192.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐔",
+  "tr": "Tavuk",
+  "en": "Hen",
+  "say_tr": "Tavuk",
+  "say_en": "Hen",
+  "baslangic_sn": 194.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦗",
+  "tr": "Cırcır böceği",
+  "en": "Cricket",
+  "say_tr": "Cırcır böceği",
+  "say_en": "Cricket",
+  "baslangic_sn": 196.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐻",
+  "tr": "Ayı",
+  "en": "Bear",
+  "say_tr": "Ayı",
+  "say_en": "Bear",
+  "baslangic_sn": 198.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐊",
+  "tr": "Timsah",
+  "en": "Crocodile",
+  "say_tr": "Timsah",
+  "say_en": "Crocodile",
+  "baslangic_sn": 200.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐦",
+  "tr": "Cik cik!",
+  "en": "Tweet tweet!",
+  "say_tr": "Cik cik!",
+  "say_en": "Tweet tweet!",
+  "baslangic_sn": 202.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦍",
+  "tr": "Goril",
+  "en": "Gorilla",
+  "say_tr": "Goril",
+  "say_en": "Gorilla",
+  "baslangic_sn": 204.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐙",
+  "tr": "Ahtapot",
+  "en": "Octopus",
+  "say_tr": "Ahtapot",
+  "say_en": "Octopus",
+  "baslangic_sn": 206.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦉",
+  "tr": "Hu hu!",
+  "en": "Hoot hoot!",
+  "say_tr": "Hu hu!",
+  "say_en": "Hoot hoot!",
+  "baslangic_sn": 208.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐚",
+  "tr": "Deniz kabuğu",
+  "en": "Seashell",
+  "say_tr": "Deniz kabuğu",
+  "say_en": "Seashell",
+  "baslangic_sn": 210.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐝",
+  "tr": "Arı",
+  "en": "Bee",
+  "say_tr": "Arı",
+  "say_en": "Bee",
+  "baslangic_sn": 212.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐸",
+  "tr": "Vrak vrak!",
+  "en": "Ribbit!",
+  "say_tr": "Vrak vrak!",
+  "say_en": "Ribbit!",
+  "baslangic_sn": 214.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦓",
+  "tr": "Zebra",
+  "en": "Zebra",
+  "say_tr": "Zebra",
+  "say_en": "Zebra",
+  "baslangic_sn": 216.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐈",
+  "tr": "Miyav!",
+  "en": "Meow!",
+  "say_tr": "Miyav!",
+  "say_en": "Meow!",
+  "baslangic_sn": 218.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦁",
+  "tr": "Grrr!",
+  "en": "Roar!",
+  "say_tr": "Grrr!",
+  "say_en": "Roar!",
+  "baslangic_sn": 220.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦈",
+  "tr": "Köpek balığı",
+  "en": "Shark",
+  "say_tr": "Köpek balığı",
+  "say_en": "Shark",
+  "baslangic_sn": 222.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦆",
+  "tr": "Vak vak!",
+  "en": "Quack quack!",
+  "say_tr": "Vak vak!",
+  "say_en": "Quack quack!",
+  "baslangic_sn": 224.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦁",
+  "tr": "Aslan",
+  "en": "Lion",
+  "say_tr": "Aslan",
+  "say_en": "Lion",
+  "baslangic_sn": 226.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐖",
+  "tr": "Hrr hrr!",
+  "en": "Oink oink!",
+  "say_tr": "Hrr hrr!",
+  "say_en": "Oink oink!",
+  "baslangic_sn": 228.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦔",
+  "tr": "Kirpi",
+  "en": "Hedgehog",
+  "say_tr": "Kirpi",
+  "say_en": "Hedgehog",
+  "baslangic_sn": 230.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐛",
+  "tr": "Tırtıl",
+  "en": "Caterpillar",
+  "say_tr": "Tırtıl",
+  "say_en": "Caterpillar",
+  "baslangic_sn": 232.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦀",
+  "tr": "Yengeç",
+  "en": "Crab",
+  "say_tr": "Yengeç",
+  "say_en": "Crab",
+  "baslangic_sn": 234.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦞",
+  "tr": "Istakoz",
+  "en": "Lobster",
+  "say_tr": "Istakoz",
+  "say_en": "Lobster",
+  "baslangic_sn": 236.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐨",
+  "tr": "Koala",
+  "en": "Koala",
+  "say_tr": "Koala",
+  "say_en": "Koala",
+  "baslangic_sn": 238.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦑",
+  "tr": "Mürekkep balığı",
+  "en": "Squid",
+  "say_tr": "Mürekkep balığı",
+  "say_en": "Squid",
+  "baslangic_sn": 240.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐯",
+  "tr": "Grrr!",
+  "en": "Rawr!",
+  "say_tr": "Grrr!",
+  "say_en": "Rawr!",
+  "baslangic_sn": 242.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐺",
+  "tr": "Kurt",
+  "en": "Wolf",
+  "say_tr": "Kurt",
+  "say_en": "Wolf",
+  "baslangic_sn": 244.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦌",
+  "tr": "Geyik",
+  "en": "Deer",
+  "say_tr": "Geyik",
+  "say_en": "Deer",
+  "baslangic_sn": 246.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐐",
+  "tr": "Meee!",
+  "en": "Maa!",
+  "say_tr": "Meee!",
+  "say_en": "Maa!",
+  "baslangic_sn": 248.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦋",
+  "tr": "Kelebek",
+  "en": "Butterfly",
+  "say_tr": "Kelebek",
+  "say_en": "Butterfly",
+  "baslangic_sn": 250.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐧",
+  "tr": "Penguen",
+  "en": "Penguin",
+  "say_tr": "Penguen",
+  "say_en": "Penguin",
+  "baslangic_sn": 252.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦏",
+  "tr": "Gergedan",
+  "en": "Rhino",
+  "say_tr": "Gergedan",
+  "say_en": "Rhino",
+  "baslangic_sn": 254.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦭",
+  "tr": "Fok",
+  "en": "Seal",
+  "say_tr": "Fok",
+  "say_en": "Seal",
+  "baslangic_sn": 256.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐬",
+  "tr": "Ciii ciii!",
+  "en": "Click click!",
+  "say_tr": "Ciii ciii!",
+  "say_en": "Click click!",
+  "baslangic_sn": 258.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐕",
+  "tr": "Köpek",
+  "en": "Dog",
+  "say_tr": "Köpek",
+  "say_en": "Dog",
+  "baslangic_sn": 260.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦜",
+  "tr": "Papağan",
+  "en": "Parrot",
+  "say_tr": "Papağan",
+  "say_en": "Parrot",
+  "baslangic_sn": 262.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐄",
+  "tr": "Möö!",
+  "en": "Moo!",
+  "say_tr": "Möö!",
+  "say_en": "Moo!",
+  "baslangic_sn": 264.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐞",
+  "tr": "Uğur böceği",
+  "en": "Ladybug",
+  "say_tr": "Uğur böceği",
+  "say_en": "Ladybug",
+  "baslangic_sn": 266.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐖",
+  "tr": "Domuz",
+  "en": "Pig",
+  "say_tr": "Domuz",
+  "say_en": "Pig",
+  "baslangic_sn": 268.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐘",
+  "tr": "Fil",
+  "en": "Elephant",
+  "say_tr": "Fil",
+  "say_en": "Elephant",
+  "baslangic_sn": 270.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦒",
+  "tr": "Zürafa",
+  "en": "Giraffe",
+  "say_tr": "Zürafa",
+  "say_en": "Giraffe",
+  "baslangic_sn": 272.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦗",
+  "tr": "Cır cır!",
+  "en": "Chirp chirp!",
+  "say_tr": "Cır cır!",
+  "say_en": "Chirp chirp!",
+  "baslangic_sn": 274.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐳",
+  "tr": "Balina",
+  "en": "Whale",
+  "say_tr": "Balina",
+  "say_en": "Whale",
+  "baslangic_sn": 276.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐝",
+  "tr": "Vızzz!",
+  "en": "Buzz!",
+  "say_tr": "Vızzz!",
+  "say_en": "Buzz!",
+  "baslangic_sn": 278.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐠",
+  "tr": "Tropik balık",
+  "en": "Tropical fish",
+  "say_tr": "Tropik balık",
+  "say_en": "Tropical fish",
+  "baslangic_sn": 280.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐕",
+  "tr": "Hav hav!",
+  "en": "Woof woof!",
+  "say_tr": "Hav hav!",
+  "say_en": "Woof woof!",
+  "baslangic_sn": 282.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐺",
+  "tr": "Uuuu!",
+  "en": "Awooo!",
+  "say_tr": "Uuuu!",
+  "say_en": "Awooo!",
+  "baslangic_sn": 284.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦛",
+  "tr": "Su aygırı",
+  "en": "Hippo",
+  "say_tr": "Su aygırı",
+  "say_en": "Hippo",
+  "baslangic_sn": 286.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐸",
+  "tr": "Kurbağa",
+  "en": "Frog",
+  "say_tr": "Kurbağa",
+  "say_en": "Frog",
+  "baslangic_sn": 288.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐘",
+  "tr": "Tuuut!",
+  "en": "Toot toot!",
+  "say_tr": "Tuuut!",
+  "say_en": "Toot toot!",
+  "baslangic_sn": 290.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦆",
+  "tr": "Ördek yavrusu",
+  "en": "Duckling",
+  "say_tr": "Ördek yavrusu",
+  "say_en": "Duckling",
+  "baslangic_sn": 292.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐿️",
+  "tr": "Sincap",
+  "en": "Squirrel",
+  "say_tr": "Sincap",
+  "say_en": "Squirrel",
+  "baslangic_sn": 294.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦜",
+  "tr": "Merhaba!",
+  "en": "Hello!",
+  "say_tr": "Merhaba!",
+  "say_en": "Hello!",
+  "baslangic_sn": 296.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐐",
+  "tr": "Keçi",
+  "en": "Goat",
+  "say_tr": "Keçi",
+  "say_en": "Goat",
+  "baslangic_sn": 298.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐒",
+  "tr": "İi i i!",
+  "en": "Ooh ooh!",
+  "say_tr": "İi i i!",
+  "say_en": "Ooh ooh!",
+  "baslangic_sn": 300.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐬",
+  "tr": "Yunus",
+  "en": "Dolphin",
+  "say_tr": "Yunus",
+  "say_en": "Dolphin",
+  "baslangic_sn": 302.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐓",
+  "tr": "Ürü üüü!",
+  "en": "Cock-a-doodle-doo!",
+  "say_tr": "Ürü üüü!",
+  "say_en": "Cock-a-doodle-doo!",
+  "baslangic_sn": 304.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐜",
+  "tr": "Karınca",
+  "en": "Ant",
+  "say_tr": "Karınca",
+  "say_en": "Ant",
+  "baslangic_sn": 306.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦉",
+  "tr": "Baykuş",
+  "en": "Owl",
+  "say_tr": "Baykuş",
+  "say_en": "Owl",
+  "baslangic_sn": 308.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐔",
+  "tr": "Gıt gıt!",
+  "en": "Cluck cluck!",
+  "say_tr": "Gıt gıt!",
+  "say_en": "Cluck cluck!",
+  "baslangic_sn": 310.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦅",
+  "tr": "Kartal",
+  "en": "Eagle",
+  "say_tr": "Kartal",
+  "say_en": "Eagle",
+  "baslangic_sn": 312.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐌",
+  "tr": "Salyangoz",
+  "en": "Snail",
+  "say_tr": "Salyangoz",
+  "say_en": "Snail",
+  "baslangic_sn": 314.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐼",
+  "tr": "Panda",
+  "en": "Panda",
+  "say_tr": "Panda",
+  "say_en": "Panda",
+  "baslangic_sn": 316.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐓",
+  "tr": "Horoz",
+  "en": "Rooster",
+  "say_tr": "Horoz",
+  "say_en": "Rooster",
+  "baslangic_sn": 318.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦊",
+  "tr": "Tilki",
+  "en": "Fox",
+  "say_tr": "Tilki",
+  "say_en": "Fox",
+  "baslangic_sn": 320.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐟",
+  "tr": "Balık",
+  "en": "Fish",
+  "say_tr": "Balık",
+  "say_en": "Fish",
+  "baslangic_sn": 322.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐢",
+  "tr": "Kaplumbağa",
+  "en": "Turtle",
+  "say_tr": "Kaplumbağa",
+  "say_en": "Turtle",
+  "baslangic_sn": 324.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦘",
+  "tr": "Kanguru",
+  "en": "Kangaroo",
+  "say_tr": "Kanguru",
+  "say_en": "Kangaroo",
+  "baslangic_sn": 326.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐦",
+  "tr": "Kuş",
+  "en": "Bird",
+  "say_tr": "Kuş",
+  "say_en": "Bird",
+  "baslangic_sn": 328.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐇",
+  "tr": "Tavşan",
+  "en": "Rabbit",
+  "say_tr": "Tavşan",
+  "say_en": "Rabbit",
+  "baslangic_sn": 330.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🦃",
+  "tr": "Hindi",
+  "en": "Turkey",
+  "say_tr": "Hindi",
+  "say_en": "Turkey",
+  "baslangic_sn": 332.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": "🐴",
+  "tr": "At",
+  "en": "Horse",
+  "say_tr": "At",
+  "say_en": "Horse",
+  "baslangic_sn": 334.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦈",
+  "tr": "Köpek balığı",
+  "en": "Shark",
+  "say_tr": "Köpek balığı",
+  "say_en": "Shark",
+  "baslangic_sn": 336.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦑",
+  "tr": "Mürekkep balığı",
+  "en": "Squid",
+  "say_tr": "Mürekkep balığı",
+  "say_en": "Squid",
+  "baslangic_sn": 338.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐿️",
+  "tr": "Sincap",
+  "en": "Squirrel",
+  "say_tr": "Sincap",
+  "say_en": "Squirrel",
+  "baslangic_sn": 340.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐼",
+  "tr": "Panda",
+  "en": "Panda",
+  "say_tr": "Panda",
+  "say_en": "Panda",
+  "baslangic_sn": 342.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐴",
+  "tr": "İhaha!",
+  "en": "Neigh!",
+  "say_tr": "İhaha!",
+  "say_en": "Neigh!",
+  "baslangic_sn": 344.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦋",
+  "tr": "Kelebek",
+  "en": "Butterfly",
+  "say_tr": "Kelebek",
+  "say_en": "Butterfly",
+  "baslangic_sn": 346.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦗",
+  "tr": "Cırcır böceği",
+  "en": "Cricket",
+  "say_tr": "Cırcır böceği",
+  "say_en": "Cricket",
+  "baslangic_sn": 348.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐊",
+  "tr": "Timsah",
+  "en": "Crocodile",
+  "say_tr": "Timsah",
+  "say_en": "Crocodile",
+  "baslangic_sn": 350.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐝",
+  "tr": "Arı",
+  "en": "Bee",
+  "say_tr": "Arı",
+  "say_en": "Bee",
+  "baslangic_sn": 352.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦌",
+  "tr": "Geyik",
+  "en": "Deer",
+  "say_tr": "Geyik",
+  "say_en": "Deer",
+  "baslangic_sn": 354.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐟",
+  "tr": "Balık",
+  "en": "Fish",
+  "say_tr": "Balık",
+  "say_en": "Fish",
+  "baslangic_sn": 356.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐖",
+  "tr": "Hrr hrr!",
+  "en": "Oink oink!",
+  "say_tr": "Hrr hrr!",
+  "say_en": "Oink oink!",
+  "baslangic_sn": 358.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦘",
+  "tr": "Kanguru",
+  "en": "Kangaroo",
+  "say_tr": "Kanguru",
+  "say_en": "Kangaroo",
+  "baslangic_sn": 360.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐻",
+  "tr": "Ayı",
+  "en": "Bear",
+  "say_tr": "Ayı",
+  "say_en": "Bear",
+  "baslangic_sn": 362.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦢",
+  "tr": "Kuğu",
+  "en": "Swan",
+  "say_tr": "Kuğu",
+  "say_en": "Swan",
+  "baslangic_sn": 364.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐪",
+  "tr": "Deve",
+  "en": "Camel",
+  "say_tr": "Deve",
+  "say_en": "Camel",
+  "baslangic_sn": 366.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦃",
+  "tr": "Glu glu!",
+  "en": "Gobble!",
+  "say_tr": "Glu glu!",
+  "say_en": "Gobble!",
+  "baslangic_sn": 368.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐝",
+  "tr": "Vızzz!",
+  "en": "Buzz!",
+  "say_tr": "Vızzz!",
+  "say_en": "Buzz!",
+  "baslangic_sn": 370.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐄",
+  "tr": "Möö!",
+  "en": "Moo!",
+  "say_tr": "Möö!",
+  "say_en": "Moo!",
+  "baslangic_sn": 372.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐒",
+  "tr": "İi i i!",
+  "en": "Ooh ooh!",
+  "say_tr": "İi i i!",
+  "say_en": "Ooh ooh!",
+  "baslangic_sn": 374.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦔",
+  "tr": "Kirpi",
+  "en": "Hedgehog",
+  "say_tr": "Kirpi",
+  "say_en": "Hedgehog",
+  "baslangic_sn": 376.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐸",
+  "tr": "Vrak vrak!",
+  "en": "Ribbit!",
+  "say_tr": "Vrak vrak!",
+  "say_en": "Ribbit!",
+  "baslangic_sn": 378.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐦",
+  "tr": "Cik cik!",
+  "en": "Tweet tweet!",
+  "say_tr": "Cik cik!",
+  "say_en": "Tweet tweet!",
+  "baslangic_sn": 380.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐳",
+  "tr": "Balina",
+  "en": "Whale",
+  "say_tr": "Balina",
+  "say_en": "Whale",
+  "baslangic_sn": 382.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦍",
+  "tr": "Goril",
+  "en": "Gorilla",
+  "say_tr": "Goril",
+  "say_en": "Gorilla",
+  "baslangic_sn": 384.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦁",
+  "tr": "Aslan",
+  "en": "Lion",
+  "say_tr": "Aslan",
+  "say_en": "Lion",
+  "baslangic_sn": 386.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐄",
+  "tr": "İnek",
+  "en": "Cow",
+  "say_tr": "İnek",
+  "say_en": "Cow",
+  "baslangic_sn": 388.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐨",
+  "tr": "Koala",
+  "en": "Koala",
+  "say_tr": "Koala",
+  "say_en": "Koala",
+  "baslangic_sn": 390.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐌",
+  "tr": "Salyangoz",
+  "en": "Snail",
+  "say_tr": "Salyangoz",
+  "say_en": "Snail",
+  "baslangic_sn": 392.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦞",
+  "tr": "Istakoz",
+  "en": "Lobster",
+  "say_tr": "Istakoz",
+  "say_en": "Lobster",
+  "baslangic_sn": 394.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐐",
+  "tr": "Meee!",
+  "en": "Maa!",
+  "say_tr": "Meee!",
+  "say_en": "Maa!",
+  "baslangic_sn": 396.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐇",
+  "tr": "Tavşan",
+  "en": "Rabbit",
+  "say_tr": "Tavşan",
+  "say_en": "Rabbit",
+  "baslangic_sn": 398.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐛",
+  "tr": "Tırtıl",
+  "en": "Caterpillar",
+  "say_tr": "Tırtıl",
+  "say_en": "Caterpillar",
+  "baslangic_sn": 400.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦓",
+  "tr": "Zebra",
+  "en": "Zebra",
+  "say_tr": "Zebra",
+  "say_en": "Zebra",
+  "baslangic_sn": 402.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦭",
+  "tr": "Fok",
+  "en": "Seal",
+  "say_tr": "Fok",
+  "say_en": "Seal",
+  "baslangic_sn": 404.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐘",
+  "tr": "Tuuut!",
+  "en": "Toot toot!",
+  "say_tr": "Tuuut!",
+  "say_en": "Toot toot!",
+  "baslangic_sn": 406.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦉",
+  "tr": "Baykuş",
+  "en": "Owl",
+  "say_tr": "Baykuş",
+  "say_en": "Owl",
+  "baslangic_sn": 408.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐡",
+  "tr": "Balon balığı",
+  "en": "Pufferfish",
+  "say_tr": "Balon balığı",
+  "say_en": "Pufferfish",
+  "baslangic_sn": 410.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐓",
+  "tr": "Horoz",
+  "en": "Rooster",
+  "say_tr": "Horoz",
+  "say_en": "Rooster",
+  "baslangic_sn": 412.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐯",
+  "tr": "Grrr!",
+  "en": "Rawr!",
+  "say_tr": "Grrr!",
+  "say_en": "Rawr!",
+  "baslangic_sn": 414.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐔",
+  "tr": "Tavuk",
+  "en": "Hen",
+  "say_tr": "Tavuk",
+  "say_en": "Hen",
+  "baslangic_sn": 416.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐕",
+  "tr": "Hav hav!",
+  "en": "Woof woof!",
+  "say_tr": "Hav hav!",
+  "say_en": "Woof woof!",
+  "baslangic_sn": 418.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐬",
+  "tr": "Ciii ciii!",
+  "en": "Click click!",
+  "say_tr": "Ciii ciii!",
+  "say_en": "Click click!",
+  "baslangic_sn": 420.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦃",
+  "tr": "Hindi",
+  "en": "Turkey",
+  "say_tr": "Hindi",
+  "say_en": "Turkey",
+  "baslangic_sn": 422.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦆",
+  "tr": "Ördek yavrusu",
+  "en": "Duckling",
+  "say_tr": "Ördek yavrusu",
+  "say_en": "Duckling",
+  "baslangic_sn": 424.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦏",
+  "tr": "Gergedan",
+  "en": "Rhino",
+  "say_tr": "Gergedan",
+  "say_en": "Rhino",
+  "baslangic_sn": 426.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦅",
+  "tr": "Kartal",
+  "en": "Eagle",
+  "say_tr": "Kartal",
+  "say_en": "Eagle",
+  "baslangic_sn": 428.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐑",
+  "tr": "Koyun",
+  "en": "Sheep",
+  "say_tr": "Koyun",
+  "say_en": "Sheep",
+  "baslangic_sn": 430.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐚",
+  "tr": "Deniz kabuğu",
+  "en": "Seashell",
+  "say_tr": "Deniz kabuğu",
+  "say_en": "Seashell",
+  "baslangic_sn": 432.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦊",
+  "tr": "Tilki",
+  "en": "Fox",
+  "say_tr": "Tilki",
+  "say_en": "Fox",
+  "baslangic_sn": 434.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐐",
+  "tr": "Keçi",
+  "en": "Goat",
+  "say_tr": "Keçi",
+  "say_en": "Goat",
+  "baslangic_sn": 436.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦜",
+  "tr": "Merhaba!",
+  "en": "Hello!",
+  "say_tr": "Merhaba!",
+  "say_en": "Hello!",
+  "baslangic_sn": 438.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦒",
+  "tr": "Zürafa",
+  "en": "Giraffe",
+  "say_tr": "Zürafa",
+  "say_en": "Giraffe",
+  "baslangic_sn": 440.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐒",
+  "tr": "Maymun",
+  "en": "Monkey",
+  "say_tr": "Maymun",
+  "say_en": "Monkey",
+  "baslangic_sn": 442.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐕",
+  "tr": "Köpek",
+  "en": "Dog",
+  "say_tr": "Köpek",
+  "say_en": "Dog",
+  "baslangic_sn": 444.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐠",
+  "tr": "Tropik balık",
+  "en": "Tropical fish",
+  "say_tr": "Tropik balık",
+  "say_en": "Tropical fish",
+  "baslangic_sn": 446.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦜",
+  "tr": "Papağan",
+  "en": "Parrot",
+  "say_tr": "Papağan",
+  "say_en": "Parrot",
+  "baslangic_sn": 448.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦉",
+  "tr": "Hu hu!",
+  "en": "Hoot hoot!",
+  "say_tr": "Hu hu!",
+  "say_en": "Hoot hoot!",
+  "baslangic_sn": 450.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐸",
+  "tr": "Kurbağa",
+  "en": "Frog",
+  "say_tr": "Kurbağa",
+  "say_en": "Frog",
+  "baslangic_sn": 452.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐜",
+  "tr": "Karınca",
+  "en": "Ant",
+  "say_tr": "Karınca",
+  "say_en": "Ant",
+  "baslangic_sn": 454.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐈",
+  "tr": "Miyav!",
+  "en": "Meow!",
+  "say_tr": "Miyav!",
+  "say_en": "Meow!",
+  "baslangic_sn": 456.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐘",
+  "tr": "Fil",
+  "en": "Elephant",
+  "say_tr": "Fil",
+  "say_en": "Elephant",
+  "baslangic_sn": 458.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐙",
+  "tr": "Ahtapot",
+  "en": "Octopus",
+  "say_tr": "Ahtapot",
+  "say_en": "Octopus",
+  "baslangic_sn": 460.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐬",
+  "tr": "Yunus",
+  "en": "Dolphin",
+  "say_tr": "Yunus",
+  "say_en": "Dolphin",
+  "baslangic_sn": 462.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦆",
+  "tr": "Ördek",
+  "en": "Duck",
+  "say_tr": "Ördek",
+  "say_en": "Duck",
+  "baslangic_sn": 464.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐴",
+  "tr": "At",
+  "en": "Horse",
+  "say_tr": "At",
+  "say_en": "Horse",
+  "baslangic_sn": 466.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐯",
+  "tr": "Kaplan",
+  "en": "Tiger",
+  "say_tr": "Kaplan",
+  "say_en": "Tiger",
+  "baslangic_sn": 468.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦛",
+  "tr": "Su aygırı",
+  "en": "Hippo",
+  "say_tr": "Su aygırı",
+  "say_en": "Hippo",
+  "baslangic_sn": 470.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐖",
+  "tr": "Domuz",
+  "en": "Pig",
+  "say_tr": "Domuz",
+  "say_en": "Pig",
+  "baslangic_sn": 472.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐧",
+  "tr": "Penguen",
+  "en": "Penguin",
+  "say_tr": "Penguen",
+  "say_en": "Penguin",
+  "baslangic_sn": 474.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐈",
+  "tr": "Kedi",
+  "en": "Cat",
+  "say_tr": "Kedi",
+  "say_en": "Cat",
+  "baslangic_sn": 476.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐦",
+  "tr": "Kuş",
+  "en": "Bird",
+  "say_tr": "Kuş",
+  "say_en": "Bird",
+  "baslangic_sn": 478.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐔",
+  "tr": "Gıt gıt!",
+  "en": "Cluck cluck!",
+  "say_tr": "Gıt gıt!",
+  "say_en": "Cluck cluck!",
+  "baslangic_sn": 480.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐑",
+  "tr": "Mee!",
+  "en": "Baa!",
+  "say_tr": "Mee!",
+  "say_en": "Baa!",
+  "baslangic_sn": 482.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐺",
+  "tr": "Kurt",
+  "en": "Wolf",
+  "say_tr": "Kurt",
+  "say_en": "Wolf",
+  "baslangic_sn": 484.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐢",
+  "tr": "Kaplumbağa",
+  "en": "Turtle",
+  "say_tr": "Kaplumbağa",
+  "say_en": "Turtle",
+  "baslangic_sn": 486.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🐞",
+  "tr": "Uğur böceği",
+  "en": "Ladybug",
+  "say_tr": "Uğur böceği",
+  "say_en": "Ladybug",
+  "baslangic_sn": 488.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐺",
+  "tr": "Uuuu!",
+  "en": "Awooo!",
+  "say_tr": "Uuuu!",
+  "say_en": "Awooo!",
+  "baslangic_sn": 490.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦗",
+  "tr": "Cır cır!",
+  "en": "Chirp chirp!",
+  "say_tr": "Cır cır!",
+  "say_en": "Chirp chirp!",
+  "baslangic_sn": 492.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦆",
+  "tr": "Vak vak!",
+  "en": "Quack quack!",
+  "say_tr": "Vak vak!",
+  "say_en": "Quack quack!",
+  "baslangic_sn": 494.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦁",
+  "tr": "Grrr!",
+  "en": "Roar!",
+  "say_tr": "Grrr!",
+  "say_en": "Roar!",
+  "baslangic_sn": 496.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐓",
+  "tr": "Ürü üüü!",
+  "en": "Cock-a-doodle-doo!",
+  "say_tr": "Ürü üüü!",
+  "say_en": "Cock-a-doodle-doo!",
+  "baslangic_sn": 498.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "spin",
+  "em": "🦀",
+  "tr": "Yengeç",
+  "en": "Crab",
+  "say_tr": "Yengeç",
+  "say_en": "Crab",
+  "baslangic_sn": 500.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐊",
+  "tr": "Timsah",
+  "en": "Crocodile",
+  "say_tr": "Timsah",
+  "say_en": "Crocodile",
+  "baslangic_sn": 502.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐺",
+  "tr": "Uuuu!",
+  "en": "Awooo!",
+  "say_tr": "Uuuu!",
+  "say_en": "Awooo!",
+  "baslangic_sn": 504.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐖",
+  "tr": "Domuz",
+  "en": "Pig",
+  "say_tr": "Domuz",
+  "say_en": "Pig",
+  "baslangic_sn": 506.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐼",
+  "tr": "Panda",
+  "en": "Panda",
+  "say_tr": "Panda",
+  "say_en": "Panda",
+  "baslangic_sn": 508.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐈",
+  "tr": "Miyav!",
+  "en": "Meow!",
+  "say_tr": "Miyav!",
+  "say_en": "Meow!",
+  "baslangic_sn": 510.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦔",
+  "tr": "Kirpi",
+  "en": "Hedgehog",
+  "say_tr": "Kirpi",
+  "say_en": "Hedgehog",
+  "baslangic_sn": 512.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦁",
+  "tr": "Aslan",
+  "en": "Lion",
+  "say_tr": "Aslan",
+  "say_en": "Lion",
+  "baslangic_sn": 514.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐸",
+  "tr": "Vrak vrak!",
+  "en": "Ribbit!",
+  "say_tr": "Vrak vrak!",
+  "say_en": "Ribbit!",
+  "baslangic_sn": 516.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐳",
+  "tr": "Balina",
+  "en": "Whale",
+  "say_tr": "Balina",
+  "say_en": "Whale",
+  "baslangic_sn": 518.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦃",
+  "tr": "Glu glu!",
+  "en": "Gobble!",
+  "say_tr": "Glu glu!",
+  "say_en": "Gobble!",
+  "baslangic_sn": 520.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦈",
+  "tr": "Köpek balığı",
+  "en": "Shark",
+  "say_tr": "Köpek balığı",
+  "say_en": "Shark",
+  "baslangic_sn": 522.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐸",
+  "tr": "Kurbağa",
+  "en": "Frog",
+  "say_tr": "Kurbağa",
+  "say_en": "Frog",
+  "baslangic_sn": 524.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐄",
+  "tr": "Möö!",
+  "en": "Moo!",
+  "say_tr": "Möö!",
+  "say_en": "Moo!",
+  "baslangic_sn": 526.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐦",
+  "tr": "Kuş",
+  "en": "Bird",
+  "say_tr": "Kuş",
+  "say_en": "Bird",
+  "baslangic_sn": 528.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐻",
+  "tr": "Ayı",
+  "en": "Bear",
+  "say_tr": "Ayı",
+  "say_en": "Bear",
+  "baslangic_sn": 530.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦑",
+  "tr": "Mürekkep balığı",
+  "en": "Squid",
+  "say_tr": "Mürekkep balığı",
+  "say_en": "Squid",
+  "baslangic_sn": 532.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦘",
+  "tr": "Kanguru",
+  "en": "Kangaroo",
+  "say_tr": "Kanguru",
+  "say_en": "Kangaroo",
+  "baslangic_sn": 534.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦉",
+  "tr": "Hu hu!",
+  "en": "Hoot hoot!",
+  "say_tr": "Hu hu!",
+  "say_en": "Hoot hoot!",
+  "baslangic_sn": 536.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐨",
+  "tr": "Koala",
+  "en": "Koala",
+  "say_tr": "Koala",
+  "say_en": "Koala",
+  "baslangic_sn": 538.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐪",
+  "tr": "Deve",
+  "en": "Camel",
+  "say_tr": "Deve",
+  "say_en": "Camel",
+  "baslangic_sn": 540.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐜",
+  "tr": "Karınca",
+  "en": "Ant",
+  "say_tr": "Karınca",
+  "say_en": "Ant",
+  "baslangic_sn": 542.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐬",
+  "tr": "Yunus",
+  "en": "Dolphin",
+  "say_tr": "Yunus",
+  "say_en": "Dolphin",
+  "baslangic_sn": 544.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐺",
+  "tr": "Kurt",
+  "en": "Wolf",
+  "say_tr": "Kurt",
+  "say_en": "Wolf",
+  "baslangic_sn": 546.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦉",
+  "tr": "Baykuş",
+  "en": "Owl",
+  "say_tr": "Baykuş",
+  "say_en": "Owl",
+  "baslangic_sn": 548.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐐",
+  "tr": "Meee!",
+  "en": "Maa!",
+  "say_tr": "Meee!",
+  "say_en": "Maa!",
+  "baslangic_sn": 550.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐬",
+  "tr": "Ciii ciii!",
+  "en": "Click click!",
+  "say_tr": "Ciii ciii!",
+  "say_en": "Click click!",
+  "baslangic_sn": 552.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐌",
+  "tr": "Salyangoz",
+  "en": "Snail",
+  "say_tr": "Salyangoz",
+  "say_en": "Snail",
+  "baslangic_sn": 554.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦀",
+  "tr": "Yengeç",
+  "en": "Crab",
+  "say_tr": "Yengeç",
+  "say_en": "Crab",
+  "baslangic_sn": 556.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦜",
+  "tr": "Merhaba!",
+  "en": "Hello!",
+  "say_tr": "Merhaba!",
+  "say_en": "Hello!",
+  "baslangic_sn": 558.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦭",
+  "tr": "Fok",
+  "en": "Seal",
+  "say_tr": "Fok",
+  "say_en": "Seal",
+  "baslangic_sn": 560.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐝",
+  "tr": "Vızzz!",
+  "en": "Buzz!",
+  "say_tr": "Vızzz!",
+  "say_en": "Buzz!",
+  "baslangic_sn": 562.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦛",
+  "tr": "Su aygırı",
+  "en": "Hippo",
+  "say_tr": "Su aygırı",
+  "say_en": "Hippo",
+  "baslangic_sn": 564.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐝",
+  "tr": "Arı",
+  "en": "Bee",
+  "say_tr": "Arı",
+  "say_en": "Bee",
+  "baslangic_sn": 566.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐈",
+  "tr": "Kedi",
+  "en": "Cat",
+  "say_tr": "Kedi",
+  "say_en": "Cat",
+  "baslangic_sn": 568.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐄",
+  "tr": "İnek",
+  "en": "Cow",
+  "say_tr": "İnek",
+  "say_en": "Cow",
+  "baslangic_sn": 570.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐴",
+  "tr": "İhaha!",
+  "en": "Neigh!",
+  "say_tr": "İhaha!",
+  "say_en": "Neigh!",
+  "baslangic_sn": 572.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐓",
+  "tr": "Ürü üüü!",
+  "en": "Cock-a-doodle-doo!",
+  "say_tr": "Ürü üüü!",
+  "say_en": "Cock-a-doodle-doo!",
+  "baslangic_sn": 574.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦊",
+  "tr": "Tilki",
+  "en": "Fox",
+  "say_tr": "Tilki",
+  "say_en": "Fox",
+  "baslangic_sn": 576.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦜",
+  "tr": "Papağan",
+  "en": "Parrot",
+  "say_tr": "Papağan",
+  "say_en": "Parrot",
+  "baslangic_sn": 578.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦏",
+  "tr": "Gergedan",
+  "en": "Rhino",
+  "say_tr": "Gergedan",
+  "say_en": "Rhino",
+  "baslangic_sn": 580.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🦁",
+  "tr": "Grrr!",
+  "en": "Roar!",
+  "say_tr": "Grrr!",
+  "say_en": "Roar!",
+  "baslangic_sn": 582.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐢",
+  "tr": "Kaplumbağa",
+  "en": "Turtle",
+  "say_tr": "Kaplumbağa",
+  "say_en": "Turtle",
+  "baslangic_sn": 584.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🦢",
+  "tr": "Kuğu",
+  "en": "Swan",
+  "say_tr": "Kuğu",
+  "say_en": "Swan",
+  "baslangic_sn": 586.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐙",
+  "tr": "Ahtapot",
+  "en": "Octopus",
+  "say_tr": "Ahtapot",
+  "say_en": "Octopus",
+  "baslangic_sn": 588.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "single",
+  "em": "🐔",
+  "tr": "Tavuk",
+  "en": "Hen",
+  "say_tr": "Tavuk",
+  "say_en": "Hen",
+  "baslangic_sn": 590.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "sound",
+  "em": "🐘",
+  "tr": "Tuuut!",
+  "en": "Toot toot!",
+  "say_tr": "Tuuut!",
+  "say_en": "Toot toot!",
+  "baslangic_sn": 592.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": [
+   "👋",
+   "🐾",
+   "👋"
+  ],
+  "tr": "Hoşça kal!",
+  "en": "Bye bye!",
+  "say_tr": "Hoşça kal!",
+  "say_en": "Bye bye!",
+  "baslangic_sn": 594.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": [
+   "🐶",
+   "🐱",
+   "🐰"
+  ],
+  "tr": "Hayvanları çok sevdik!",
+  "en": "We love animals!",
+  "say_tr": "Hayvanları çok sevdik!",
+  "say_en": "We love animals!",
+  "baslangic_sn": 596.0,
+  "sure_sn": 2.0
+ },
+ {
+  "tpl": "trio",
+  "em": [
+   "🎉",
+   "🌈",
+   "🎉"
+  ],
+  "tr": "Tekrar görüşürüz!",
+  "en": "See you soon!",
+  "say_tr": "Tekrar görüşürüz!",
+  "say_en": "See you soon!",
+  "baslangic_sn": 598.0,
+  "sure_sn": 2.0
+ }
+]
