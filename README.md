@@ -98,6 +98,11 @@ setup.bat dosyasına çift tıklayın
 ```
 (Daha sonra uygulamayı tekrar açmak için `baslat.bat` kullanın.)
 
+> **ZIP olarak indirdiyseniz:** önce ZIP'e sağ tıklayıp **"Tümünü ayıkla"** (Extract All)
+> deyin, ardından açılan klasördeki `setup.bat`'ı çalıştırın. ZIP'in içinden doğrudan
+> çift tıklarsanız Windows yalnızca o tek dosyayı geçici klasöre çıkarır ve kurulum
+> projeyi bulamaz.
+>
 > **Pencere hemen kapanıyorsa:** Başlat menüsünden "Komut İstemi"ni (cmd) açın,
 > `cd` ile Koruma klasörüne gidip `setup.bat` yazın; hata mesajını görürsünüz.
 > Betik her durumda sonda bir tuşa basmanızı bekler, hata varsa ekranda kalır.

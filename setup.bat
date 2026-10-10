@@ -28,6 +28,24 @@ exit /b %RC%
 :main
 set "ROOT=%~dp0"
 
+echo [0/5] Dosyalar kontrol ediliyor...
+if exist "%ROOT%pyproject.toml" if exist "%ROOT%desktop\package.json" goto :files_ok
+echo.
+echo   HATA: Koruma dosyalarinin tamami bu klasorde yok.
+echo   Buyuk olasilikla setup.bat dosyasini ZIP icinden dogrudan calistirdiniz.
+echo   Windows bu durumda yalnizca setup.bat dosyasini gecici bir klasore cikarir.
+echo.
+echo   Cozum:
+echo     1. ZIP dosyasina sag tiklayin ve Tumunu ayikla - Extract All - secenegini secin.
+echo     2. Acilan klasorun icindeki setup.bat dosyasini calistirin.
+echo.
+echo   Su an calisilan klasor: %ROOT%
+exit /b 1
+
+:files_ok
+echo   Tamam.
+echo.
+
 echo [1/5] Python kontrol ediliyor...
 set "PYCMD="
 py -3 -c "import sys" >nul 2>nul
