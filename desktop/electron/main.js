@@ -16,10 +16,13 @@ function resolvePython() {
 }
 
 // Python motorunun (koruma paketi) bulunacağı kök dizin + PYTHONPATH.
+//  - Paketlenmiş uygulama (kurulum/.exe): extraResources ile resources/engine altına kopyalanır.
+//  - Paketlenmemiş (npm start, npm run dev, baslat.bat): depo kökü (desktop klasörünün bir üstü).
+// Not: isDev'e güvenilmez; o yalnızca "npm run dev" ile ayarlanır. "npm start" da
+// paketlenmemiştir ve resources/engine orada yoktur (spawn ... ENOENT hatası verirdi).
 function engineRoot() {
-  if (isDev) return path.resolve(__dirname, "..", "..");
-  // Paketlenmiş uygulamada koruma, extraResources ile resources/engine altına kopyalanır.
-  return path.join(process.resourcesPath, "engine");
+  if (app.isPackaged) return path.join(process.resourcesPath, "engine");
+  return path.resolve(__dirname, "..", "..");
 }
 
 function createWindow() {
@@ -108,6 +111,15 @@ ipcMain.handle("scan:start", async (event, opts) => {
   }
 
   const root = engineRoot();
+  if (!fs.existsSync(path.join(root, "koruma"))) {
+    return {
+      ok: false,
+      error:
+        "Tarama motoru (koruma klasörü) bulunamadı: " + root + "\n" +
+        "Uygulamayı Koruma klasörünün içinden başlatın (baslat.bat) ve klasörün tamamının " +
+        "ZIP'ten çıkarıldığından emin olun.",
+    };
+  }
   const env = { ...process.env, PYTHONPATH: root + path.delimiter + (process.env.PYTHONPATH || ""),
                 PYTHONIOENCODING: "utf-8", PYTHONUTF8: "1" };
 
