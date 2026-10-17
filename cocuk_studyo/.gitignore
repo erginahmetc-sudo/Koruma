@@ -1,0 +1,5 @@
+cikti/**/*.mp4
+cikti/**/*.wav
+.cache/
+__pycache__/
+cikti/**/*_onizleme.mp4
